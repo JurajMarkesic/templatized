@@ -7,5 +7,9 @@ layout: default
         {% include {{ page.intro }} %}
         {% include {{ page.about }} %}
         {% if page.work %}{% include {{ page.work }} %}{% endif %}
+        {% if page.products %}{% include {{ page.products }} %}{% endif %}
+        {% if page.team %}{% include {{ page.team }} %}{% endif %}
+        {% if page.events %}{% include {{ page.events }} %}{% endif %}
+        {% if page.careers %}{% include {{ page.careers }} %}{% endif %}
     </main>
 </div>
