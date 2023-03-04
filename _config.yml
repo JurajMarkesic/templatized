@@ -24,10 +24,6 @@ collections:
 
 defaults:
   - scope:
-      path: "index"
-    values:
-      layout: "home"
-  - scope:
       path: ""
       type: "pages"
     values:

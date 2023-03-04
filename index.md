@@ -1,4 +1,5 @@
 ---
+layout: home
 title: Home
 intro:       sections/intro.html
 about:       sections/about.html
