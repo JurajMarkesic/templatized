@@ -1,0 +1,16 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: red;
+    color: gold;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}

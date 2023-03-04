@@ -1,0 +1,5 @@
+<div class="nav-legal">
+    {% for item in site.data.nav-legal %}
+        <a href="{{ item.link | relative_url }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name | escape }}</a>
+    {% endfor %}
+</div>

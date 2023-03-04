@@ -1,0 +1,78 @@
+html {
+    font-family: var(--font-family-base);
+}
+
+html.dark {
+    color-scheme: dark;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-heading);
+}
+
+html, body {
+    height: 100%;
+}
+
+.body-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.scroll-content {
+    flex-grow: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.footer-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.is-visually-hidden:not(:focus):not(:active) {
+    clip: rect(1px 1px 1px 1px); 
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%); 
+    height: 1px; 
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.brand-link {
+    display: flex;
+    height: 100%;
+
+    & > svg {
+        pointer-events: none;
+    }
+}
+
+.footer-brand {
+    width: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.current {
+    background-color: gold;
+}
+
+

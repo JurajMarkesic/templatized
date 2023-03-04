@@ -1,0 +1,42 @@
+@font-face {
+	font-family: 'Mona Sans Regular';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	// src: local(''), url('../fonts/playfair-display.woff2') format('woff2'); // theme default whn using googlefonts
+	src: local(''), url('../fonts/Mona-Sans-Regular.woff2') format('woff2');
+}
+
+/**
+ * @license
+ *
+ * Font Family: Zodiak
+ * Designed by: Jérémie Hornus, Gaetan Baehr, Jean-Baptiste Morizot, Alisa Nowak, Theo Guillard
+ * URL: https://www.fontshare.com/fonts/zodiak
+ * © 2023 Indian Type Foundry
+ *
+ * Font Styles:
+ * Zodiak Variable(Variable font)
+ * Zodiak Variable Italic(Variable font)
+ * Zodiak Thin
+ * Zodiak Thin Italic
+ * Zodiak Light
+ * Zodiak Light Italic
+ * Zodiak Regular
+ * Zodiak Italic
+ * Zodiak Bold
+ * Zodiak Bold Italic
+ * Zodiak Extrabold         
+ * Zodiak Extrabold Italic
+ * Zodiak Black
+ * Zodiak Black Italic
+ *
+*/
+
+@font-face {
+	font-family: 'Zodiak-Black';
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+	src: local(''), url('../fonts/Zodiak-Black.woff2') format('woff2');
+}

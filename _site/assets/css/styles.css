@@ -1,0 +1,124 @@
+@charset "UTF-8";
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: red;
+  color: gold;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+html {
+  font-family: var(--font-family-base);
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+}
+
+html, body {
+  height: 100%;
+}
+
+.body-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.scroll-content {
+  flex-grow: 1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+.footer-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.is-visually-hidden:not(:focus):not(:active) {
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.brand-link {
+  display: flex;
+  height: 100%;
+}
+.brand-link > svg {
+  pointer-events: none;
+}
+
+.footer-brand {
+  width: 40px;
+}
+
+.current {
+  background-color: gold;
+}
+
+@font-face {
+  font-family: "Mona Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""), url("../fonts/Mona-Sans-Regular.woff2") format("woff2");
+}
+/**
+ * @license
+ *
+ * Font Family: Zodiak
+ * Designed by: Jérémie Hornus, Gaetan Baehr, Jean-Baptiste Morizot, Alisa Nowak, Theo Guillard
+ * URL: https://www.fontshare.com/fonts/zodiak
+ * © 2023 Indian Type Foundry
+ *
+ * Font Styles:
+ * Zodiak Variable(Variable font)
+ * Zodiak Variable Italic(Variable font)
+ * Zodiak Thin
+ * Zodiak Thin Italic
+ * Zodiak Light
+ * Zodiak Light Italic
+ * Zodiak Regular
+ * Zodiak Italic
+ * Zodiak Bold
+ * Zodiak Bold Italic
+ * Zodiak Extrabold         
+ * Zodiak Extrabold Italic
+ * Zodiak Black
+ * Zodiak Black Italic
+ *
+*/
+@font-face {
+  font-family: "Zodiak-Black";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local(""), url("../fonts/Zodiak-Black.woff2") format("woff2");
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,19 @@
+<div class="dev-only">
+  <div class="info-layout">
+    <code>layout: {{ page.layout }}</code>
+  </div>
+</div>
+
+<style>
+.dev-only .info-layout {
+  position: fixed;
+  left: 0.5rem;
+  bottom: 1.5rem;
+  padding: 0.25em;
+  background-color: var(--light-100);
+  font-size: 0.875rem;
+}
+html.dark .dev-only .info-layout {
+  background-color: var(--dark-100);
+}
+</style>

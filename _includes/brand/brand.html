@@ -1,0 +1,5 @@
+{% if site.brand_logo %}
+    {% include brand/brand-logo.html %}
+{% else %}
+    <span>{{ site.brand_name_description }}</span>
+{% endif %}

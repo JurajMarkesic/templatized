@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include head.html %}
+  <body>
+    <div class="body-content">
+
+      <div class="scroll-content">
+        {% include header.html %}
+        {{ content }}
+      </div>
+
+      {% include footer.html %}
+      <script type="text/javascript" src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
+
+      {% if jekyll.environment == "development" %}{% include dev-helpers.html %}{% endif %}
+      
+    </div>
+  </body>
+</html>

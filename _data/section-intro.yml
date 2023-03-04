@@ -1,0 +1,10 @@
+pretitle: Welcome to
+title: YOUR_BRAND_NAME
+tagline: YOUR_BRAND_NAME tagline
+button_discover:
+  label: Discover more
+  link: target-section-about
+#   link: # toggle intro CTA here
+button_contact:
+  label: Contact
+  link: /contact

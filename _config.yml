@@ -1,0 +1,61 @@
+# https://github.com/zerostaticthemes/jekyll-serif-theme#github-pages
+# baseurl: "/jekyll-in-2023-lol/"
+
+# lang: hr # overrides default en
+
+css:
+  light_100: '#e9e9e9'
+  dark_100: '#161616'
+
+  # using github's free font Mona Sans - https://github.com/github/mona-sans
+  font_base: Mona Sans Regular
+  # using fontshare's free font Zodiak - https://www.fontshare.com/fonts/zodiak
+  font_heading: Zodiak-Black
+
+company_name: "YOUR_BRAND_NAME"
+
+brand_name_description: "YOUR_BRAND_NAME logo"
+brand_logo: true # if false text will be displayed
+brand_svg: true # if false a png will be used
+
+collections:
+  authors:
+    output: false
+
+defaults:
+  - scope:
+      path: "index"
+    values:
+      layout: "home"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: "blog"
+      type: "pages"
+    values:
+      layout: "blog"
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  # - jekyll-github-metadata # TODO - rate limited - setup at the end # https://docs.github.com/en/rest/overview/resources-in-the-rest-api?apiVersion=2022-11-28#rate-limiting
+
+# environment: production # overrides jekyll.environment which is the default

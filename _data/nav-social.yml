@@ -1,0 +1,44 @@
+# use svg from websites like https://feathericons.com/
+
+# add icons to your _includes/social/ folder
+
+# NOTE: if an icon is missing in the folder the build process will throw an error
+
+# if the name of the file in the folder doesn't match the filename property below, the title property will be displayed
+
+# if you want to use icons set use_icon: true
+
+# if you want to use short text instead of icons set use_short: true and use_icon: true
+
+# use_icon takes priority over use_short, meaning if you set both to true use_icon will be used
+
+settings:
+  # use_icon: true            # disable like this
+  use_icon: anything_but_true # or like this
+  use_short: true
+  
+items:
+  - title: Github
+    short: gh
+    url: https://github.com/YOUR_GITHUB_HANDLE
+    filename: github
+
+  - title: Gitlab
+    short: gl
+    url: https://gitlab.com/YOUR_GITLAB_HANDLE
+    filename: gitlab
+
+  - title: Facebook
+    short: fb
+    url: https://facebook.com/YOUR_FACEBOOK_HANDLE
+    filename: facebook
+
+  - title: Twitter
+    short: tw
+    url: https://twitter.com/YOUR_TWITTER_HANDLE
+    filename: twitter
+
+  - title: LinkedIn
+    short: in
+    url: https://linkedin.com/in/YOUR_LINKEDIN_HANDLE
+    filename: linkedin
