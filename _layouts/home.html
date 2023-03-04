@@ -6,7 +6,7 @@ layout: default
     <main>
         {% include {{ page.intro }} %}
         {% include {{ page.about }} %}
-        {% if page.highlighted %}{% include {{ page.highlighted }} %}{% endif %}
+        {% if page.featured %}{% include {{ page.featured }} %}{% endif %}
         {% if page.work %}{% include {{ page.work }} %}{% endif %}
         {% if page.products %}{% include {{ page.products }} %}{% endif %}
         {% if page.team %}{% include {{ page.team }} %}{% endif %}

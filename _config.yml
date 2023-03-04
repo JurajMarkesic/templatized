@@ -1,5 +1,5 @@
 # https://github.com/zerostaticthemes/jekyll-serif-theme#github-pages
-# baseurl: "/jekyll-in-2023-lol/"
+# baseurl: "/jekyll-theme/"
 
 # lang: hr # overrides default en
 
@@ -19,10 +19,17 @@ brand_logo: true # if false text will be displayed
 brand_svg: true # if false a png will be used
 
 collections:
+  stories:
+    output: true
   authors:
     output: false
 
 defaults:
+  - scope:
+      path: ""
+      type: "stories"
+    values:
+      layout: "featured"
   - scope:
       path: ""
       type: "pages"

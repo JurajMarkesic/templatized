@@ -1,0 +1,14 @@
+homepage_intro:
+    button_goto:
+        label: Discover more
+        target: target-section-about
+        # link: # toggle intro CTA here
+    button_contact:
+        label: Contact
+        link: contact
+homepage_about:
+    label: Read more
+    link: about
+homepage_featured:
+    label: Learn more
+    link: featured

@@ -7,11 +7,12 @@
                 {% if item.section_label %}<p>{{ item.section_label }}</p>{% endif %}
             </div>
             <div class="col-md-6 col-lg-5">
-                <h1>{{ item.title }}</h1>
+                <h2>{{ item.title }}</h2>
                 {% if item.paragraph_1 %}<p>{{ item.paragraph_1 }}</p>{% endif %}
                 {% if item.paragraph_2 %}<p>{{ item.paragraph_2 }}</p>{% endif %}
                 {% if item.paragraph_3 %}<p>{{ item.paragraph_3 }}</p>{% endif %}
-                <a href="{{ item.button.link | relative_url }}">{{ item.button.label | escape }}</a>
+                {% assign button = site.data.buttons.homepage_about %}
+                <a href="{{ button.link | relative_url }}">{{ button.label | escape }}</a>
             </div>
         </div>
     </div>
