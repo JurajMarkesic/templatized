@@ -1,7 +1,6 @@
-pretitle: Welcome to
-title: YOUR_BRAND_NAME
-tagline: YOUR_BRAND_NAME tagline
-button_discover:
+title: Do more now
+tagline: New way to do ABC and get more out of your XYZ
+button_goto:
   label: Discover more
   link: target-section-about
 #   link: # toggle intro CTA here

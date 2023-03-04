@@ -1,5 +1,4 @@
-pretitle: pretitle products
 title: title products
-button_products:
+button:
   label: See all
   link: /products

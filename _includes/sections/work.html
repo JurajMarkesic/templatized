@@ -1,10 +1,11 @@
-{% if site.data.section-work %}
 {% assign item = site.data.section-work %}
 <section>
-    {% if item.pretitle %}
-    <p>{{ item.pretitle }}</p>
-    {% endif %}
-    <h1>{{ item.title }}</h1>
-    <a href="{{ item.button.link | relative_url }}">{{ item.button.label | escape }}</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-1 col-lg-4">
+                <h1>{{ item.title }}</h1>
+                <a href="{{ item.button.link | relative_url }}">{{ item.button.label | escape }}</a>
+            </div>
+        </div>
+    </div>
 </section>
-{% endif %}

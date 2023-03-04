@@ -1,5 +1,8 @@
-pretitle: About us
-title: Our mission
+section_label: About us
+title: Our mission/vision
+paragraph_1: Sed ante lacus, feugiat a laoreet sed, commodo vel tortor. Quisque eget metus sit amet arcu convallis iaculis nec ac ex.
+paragraph_2: Donec ante felis, malesuada sit amet dapibus egestas, pulvinar vel augue. Aliquam semper accumsan dolor, sit amet malesuada diam maximus eu.
+paragraph_3: Fusce dictum, leo mattis rutrum volutpat, velit ante blandit nisi est.
 button:
-  label: About
+  label: Read more
   link: /about

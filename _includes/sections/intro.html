@@ -1,12 +1,17 @@
-{% if site.data.section-intro %}
 {% assign item = site.data.section-intro %}
 <section>
-    <p>{{ item.pretitle }}</p>
-    <h1>{{ item.title }}</h1>
-    <h2>{{ item.tagline }}</h2>
-    {% if item.button_discover.link %}
-    <a href="#{{ item.button_discover.link }}">{{ item.button_discover.label | escape }}</a>
-    {% endif %}
-    <a href="{{ item.button_contact.link | relative_url }}">{{ item.button_contact.label | escape }}</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-1 col-lg-4">
+                <h1>{{ item.title }}</h1>
+                <h2>{{ item.tagline }}</h2>
+                {% if item.button_goto.link %}
+                <a href="#{{ item.button_goto.link }}">{{ item.button_goto.label | escape }}</a>
+                {% endif %}
+                {% if item.button_contact.link %}
+                <a href="{{ item.button_contact.link | relative_url }}">{{ item.button_contact.label | escape }}</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
 </section>
-{% endif %}
