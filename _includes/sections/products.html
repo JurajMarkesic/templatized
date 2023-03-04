@@ -1,0 +1,10 @@
+{% if site.data.section-products %}
+{% assign item = site.data.section-products %}
+<section>
+    {% if item.pretitle %}
+    <p>{{ item.pretitle }}</p>
+    {% endif %}
+    <h1>{{ item.title }}</h1>
+    <a href="{{ item.button.link | relative_url }}">{{ item.button.label | escape }}</a>
+</section>
+{% endif %}
