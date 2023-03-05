@@ -3,12 +3,8 @@
 }
 
 ::selection {
-    background-color: red;
-    color: gold;
-}
-
-body {
-    margin: 0;
+    background-color: var(--selection-bg);
+    color: var(--selection-text);
 }
 
 a {

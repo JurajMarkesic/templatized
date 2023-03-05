@@ -1,14 +1,29 @@
-homepage_intro:
-    button_goto:
-        label: Discover more
-        target: target-section-about
-        # link: # toggle intro CTA here
-    button_contact:
-        label: Contact
-        link: contact
+homepage_intro_goto:
+    label: Discover more
+    target: target-section-about
+    # target: # toggle intro CTA button here
+homepage_intro_contact:
+    label: Contact
+    link: contact
 homepage_about:
     label: Read more
     link: about
-homepage_featured:
-    label: Learn more
-    link: featured
+homepage_work:
+    label: See all of our work
+    link: work
+    label_list_item: Learn more
+homepage_products:
+    label: See all of our products
+    link: products
+    label_list_item: Learn more
+homepage_team:
+    label: Meet the team
+    link: team
+homepage_posts:
+    label: See all posts
+    link: blog
+    label_list_item: Read more
+homepage_careers:
+    label: See all
+    link: careers
+    label_list_item: Read more

@@ -1,6 +1,6 @@
 {% assign item = site.data.section-about %}
-{% assign goto_target = site.data.section-intro.button_goto.link %}
-<section {% if goto_target %}id="target-section-about"{% endif %}>
+{% assign goto_target = site.data.buttons.homepage_intro_goto.target %}
+<section {% if goto_target %}id="{{ goto_target }}"{% endif %}>
     <div class="container">
         <div class="row">
             <div class="col-md-4 offset-md-1 col-lg-5">

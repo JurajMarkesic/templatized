@@ -1,0 +1,27 @@
+{% assign homepage_posts = site.posts | where: 'list_on', 'homepage' %}
+{% assign button = site.data.buttons.homepage_posts %}
+{% assign limit = site.home.limit_posts %}
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-1 col-lg-4">
+                {% if homepage_posts %}
+                <ul>
+                  {% for item in homepage_posts limit: limit %}
+                  <li>
+                    {% if item.category %}<p>{{ category }}</p>{% endif %}
+                    {% if item.avatar %}<img alt="{{ item.title }}" src="{{ item.avatar | relative_url }}" />{% endif %}
+                    {% if item.is_highlighted %}<p>highlighted</p>{% endif %}
+                    <h3>{{ item.title }}</h3>
+                    {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+                    {% if item.thumbnail %}<img alt="{{ item.title }}" src="{{ item.thumbnail | relative_url }}" />{% endif %}
+                    <a href="{{ item.url | relative_url }}">{{ button.label_list_item }}</a>
+                  </li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+                <a href="{{ button.link | relative_url }}">{{ button.label | escape }}</a>
+            </div>
+        </div>
+    </div>
+</section>

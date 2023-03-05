@@ -72,7 +72,23 @@ header {
 
 
 .current {
-    background-color: gold;
+    position: relative;
+    color: var(--button-label);
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        // box-shadow: inset 0 0 0 2px currentColor;
+        background-color: var(--button-bg);
+        margin: -0.175em -0.35em;
+        padding: 0.175em 0.35em;
+        border-radius: 9999em;
+        z-index: -1;
+    }
 }
 
 

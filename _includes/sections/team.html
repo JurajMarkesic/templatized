@@ -1,10 +1,23 @@
-{% assign item = site.data.section-team %}
+{% assign team = site.team | sort: 'weight' %}
+{% assign button = site.data.buttons.homepage_team %}
+{% assign limit = site.home.limit_team %}
 <section>
     <div class="container">
         <div class="row">
             <div class="col-md-6 offset-md-1 col-lg-4">
-                <h2>{{ item.title }}</h2>
-                <a href="{{ item.button.link | relative_url }}">{{ item.button.label | escape }}</a>
+                {% if team %}
+                <ul>
+                  {% for item in team limit: limit %}
+                  <li>
+                    {% if item.thumbnail %}<img alt="{{ item.title }}" src="{{ item.thumbnail | relative_url }}" />{% endif %}
+                    {% if item.is_prominent %}<p>prominent</p>{% endif %}
+                    <h3>{{ item.title }}</h3>
+                    {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+                  </li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+                <a href="{{ button.link | relative_url }}">{{ button.label | escape }}</a>
             </div>
         </div>
     </div>

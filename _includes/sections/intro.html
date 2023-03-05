@@ -5,11 +5,13 @@
             <div class="col-md-6 offset-md-1 col-lg-4">
                 <h1>{{ item.title }}</h1>
                 <h2>{{ item.tagline }}</h2>
-                {% if item.button_goto.link %}
-                <a href="#{{ item.button_goto.link }}">{{ item.button_goto.label | escape }}</a>
+                {% assign button_goto = site.data.buttons.homepage_intro_goto %}
+                {% if button_goto.target %}
+                <a href="#{{ button_goto.target }}">{{ button_goto.label | escape }}</a>
                 {% endif %}
-                {% if item.button_contact.link %}
-                <a href="{{ item.button_contact.link | relative_url }}">{{ item.button_contact.label | escape }}</a>
+                {% assign button_contact = site.data.buttons.homepage_intro_contact %}
+                {% if button_contact.link %}
+                <a href="{{ button_contact.link | relative_url }}">{{ button_contact.label | escape }}</a>
                 {% endif %}
             </div>
         </div>

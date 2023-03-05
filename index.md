@@ -3,10 +3,9 @@ layout: home
 title: Home
 intro:    sections/intro.html
 about:    sections/about.html
-featured: sections/featured.html
 work:     sections/work.html
 products: sections/products.html
 team:     sections/team.html
-events:   sections/events.html
+posts:    sections/posts.html
 careers:  sections/careers.html
 ---

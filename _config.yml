@@ -4,13 +4,19 @@
 # lang: hr # overrides default en
 
 css:
-  light_100: '#e9e9e9'
-  dark_100: '#161616'
+  theme_paper: '#f7f9f9'
+  theme_ink: '#15202b'
+  button_bg: '#1d9bf0'
+  button_label: '#fafdff'
+  selection_bg: '#1d9bf0'
+  selection_text: '#fafdff'
 
   # using github's free font Mona Sans - https://github.com/github/mona-sans
   font_base: Mona Sans Regular
   # using fontshare's free font Zodiak - https://www.fontshare.com/fonts/zodiak
-  font_heading: Zodiak-Black
+  # font_heading: Zodiak-Black
+  # using fontshare's free font Literata - https://www.fontshare.com/fonts/literata
+  font_heading: Literata-Medium
 
 company_name: "YOUR_BRAND_NAME"
 
@@ -18,38 +24,35 @@ brand_name_description: "YOUR_BRAND_NAME logo"
 brand_logo: true # if false text will be displayed
 brand_svg: true # if false a png will be used
 
+home:
+  limit_works: 6
+  # limit_works: # toggle if not used
+  # limit_products: 3
+  # limit_team: 3
+  # limit_posts: 3
+  limit_careers: 3
+
 collections:
+  team:
+    output: true
+  products:
+    output: true
   stories:
     output: true
-  authors:
-    output: false
 
 defaults:
   - scope:
-      path: ""
-      type: "stories"
+      type: "products"
     values:
-      layout: "featured"
+      layout: "post"
   - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  - scope:
-      path: "blog"
-      type: "pages"
-    values:
-      layout: "blog"
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
-  - scope:
-      path: ""
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      type: "pages"
+    values:
+      layout: "page"
   - scope:
       path: ""
     values:

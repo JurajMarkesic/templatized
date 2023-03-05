@@ -1,4 +1,78 @@
 title: Our work
-button:
-  label: See our work
-  link: /work
+intro: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibulum nisi. Ut a velit ut erat venenatis euismod. Nulla dictum maximus luctus. Vestibulum et quam efficitur, auctor metus id, iaculis massa. Nulla facilisi. Donec sodales lacinia metus.
+# intro: # toggle intro text if needed
+items:
+  - name: Uno
+    url: /work/uno
+    description: Condimentum neque sit amet id.
+    # is_external: true
+    is_flagship: true
+    weight: 1
+  - name: Due
+    url: /work/due
+    description: Pellentesque rhoncus sapien vel erat mattis, id tincidunt diam porttitor. Duis vestibulum.
+    # is_external: true
+    is_flagship: true
+    weight: 2
+  - name: Tre
+    url: /work/tre
+    description: Vestibulum euismod felis vitae vestibulum iaculis. Suspendisse vitae metus.
+    # is_external: true
+    is_flagship: true
+    weight: 3
+  - name: Quattro
+    url: /work/quattro
+    description: Praesent a quam nec erat commodo facilisis. Donec at mauris.
+    # is_external: true
+    is_flagship: true
+    weight: 4
+
+  - name: Google
+    url: https://google.com
+    # description: Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.
+    is_external: true
+    # is_flagship: true
+    weight: 10
+  - name: Microsoft
+    url: https://microsoft.com
+    # description: Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.
+    is_external: true
+    # is_flagship: true
+    weight: 20
+  - name: Amazon
+    url: https://amazon.com
+    # description: Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.
+    is_external: true
+    # is_flagship: true
+    weight: 30
+  - name: Netflix
+    url: https://netflix.com
+    description: Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.
+    # description: Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.
+    is_external: true
+    # is_flagship: true
+    weight: 40
+  - name: Facebook
+    url: https://facebook.com
+    # description: Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.
+    is_external: true
+    # is_flagship: true
+    weight: 50
+  - name: Wordpress
+    url: https://wordpress.com
+    # description: Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.
+    is_external: true
+    # is_flagship: true
+    weight: 60
+  - name: Paypal
+    url: https://paypal.com
+    # description: Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.
+    is_external: true
+    # is_flagship: true
+    weight: 70
+  - name: Tiktok
+    url: https://tiktok.com
+    # description: Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.
+    is_external: true
+    # is_flagship: true
+    weight: 80

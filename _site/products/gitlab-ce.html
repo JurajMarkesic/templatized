@@ -1,0 +1,268 @@
+<!doctype html><!-- layout: post -->
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gitlab CE</title>
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Gitlab CE</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Gitlab CE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Pellentesque sodales sit amet purus ut posuere. In maximus augue et nisl varius commodo vel eu nisi." />
+<meta property="og:description" content="Pellentesque sodales sit amet purus ut posuere. In maximus augue et nisl varius commodo vel eu nisi." />
+<link rel="canonical" href="http://localhost:4000/products/gitlab-ce" />
+<meta property="og:url" content="http://localhost:4000/products/gitlab-ce" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-01-01T01:00:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Gitlab CE" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-01-01T01:00:00+01:00","datePublished":"2023-01-01T01:00:00+01:00","description":"Pellentesque sodales sit amet purus ut posuere. In maximus augue et nisl varius commodo vel eu nisi.","headline":"Gitlab CE","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/products/gitlab-ce"},"url":"http://localhost:4000/products/gitlab-ce"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  <link rel="preload" href="/assets/fonts/Mona-Sans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/Zodiak-Black.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap-grid.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
+
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+<link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#da532c">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+  
+  
+  <style> 
+  :root {
+    --font-family-base: "Mona Sans Regular", sans-serif;
+    --font-family-heading: "Literata-Medium", serif;
+    --theme-paper: #f7f9f9;
+    --theme-ink: #15202b;
+    --button-bg: #1d9bf0;
+    --button-label: #fafdff;
+    --selection-bg: #1d9bf0;
+    --selection-text: #fafdff;
+  }
+  </style>
+</head>
+
+  <body>
+    <div class="body-content">
+
+      <div class="scroll-content">
+        <header>
+  <a href="/" rel="author" class="brand-link">
+    
+    
+    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 56">
+	<g>
+		<polygon points="16,38 4.45,38 10.23,28 16,18 21.77,28 27.55,38"/>
+		<rect x="31.55" y="18" width="20" height="20"/>
+		<circle cx="65.55" cy="28" r="10"/>
+	</g>
+</svg>
+    <span class="is-visually-hidden">YOUR_BRAND_NAME logo</span>
+
+
+
+</a>
+
+  <nav>
+    
+        <a href="/" >Home</a>
+    
+        <a href="/about.html" >About</a>
+    
+        <a href="/products.html" >Products</a>
+    
+        <a href="/blog.html" >Blog</a>
+    
+        <a href="/team.html" >Team</a>
+    
+        <a href="/contact.html" >Contact</a>
+    
+</nav>
+  <button class="js-nav-main-trigger">burger</button>
+</header>
+
+        <p>
+    01 Jan 2023
+</p>
+
+<h1 id="gitlab-community-edition">GitLab Community Edition</h1>
+
+<p>GitLab is a full-featured DevOps platform that can be used to manage all aspects from application development through build and deployment. The implementation of Git source code management (SCM) system is one of the main features among multiple features it offers out-of-the-box. GitLab has a community edition which is open-source and free, and a licensed enterprise edition that has extra features. This AMI contains the community edition.</p>
+
+<h1 id="features"><a href="https://github.com/kurianinc/ami-pub/wiki/GitLab-CE#features"></a>Features</h1>
+
+<ul>
+  <li>Full featured implementation of Git source code management system.</li>
+  <li>An integrated DevOps environment that covers standard source code control, build, artifacts management and deployment features.</li>
+  <li>Built-in support for setting up CI/CD pipeline.</li>
+</ul>
+
+<h1 id="configuration"><a href="https://github.com/kurianinc/ami-pub/wiki/GitLab-CE#configuration"></a>Configuration</h1>
+
+<ul>
+  <li>When an EC2 node is spun up from this AMI, GitLab would be up and running on port 80 over HTTP.</li>
+  <li>Configure a CNAME for the instance and point that to the new instance. Example, gitlab.yourcompany.com.</li>
+  <li>When GitLab is accessed on the browser first time you will be asked to set the password for the administrative user <code class="language-plaintext highlighter-rouge">root</code>. Set that and login into the application to complete the configuration and initial set up such as creating source code repositories.</li>
+  <li>Refer official documentation for specific maintenance and configuration tasks <a href="https://docs.gitlab.com/ee/administration/">https://docs.gitlab.com/ee/administration/</a></li>
+</ul>
+
+<h1 id="unsupported-configurations"><a href="https://github.com/kurianinc/ami-pub/wiki/GitLab-CE#unsupported-configurations"></a>Unsupported Configurations</h1>
+
+<p>Kurian releases latest, stable versions of open source software on popular Linux distributions. If you need a configuration that is not currently available in marketplace, send us your requirements to <a href="mailto:contact@kurianinc.us">contact@kurianinc.us</a>. Please include the following info in the email:</p>
+
+<ul>
+  <li>Name of Software to be on the AMI with version numbers.</li>
+  <li>Linux distribution and the version.</li>
+  <li>The EC2 instance type you plan to spin up from the AMI (optional).</li>
+</ul>
+
+<h1 id="how-it-works"><a href="https://github.com/kurianinc/ami-pub/wiki/GitLab-CE#how-it-works"></a>How It Works</h1>
+
+<ul>
+  <li>When an EC2 node spun up from this AMI, Tomcat would be up and running on port 8080 over HTTP.</li>
+  <li>Additional configurations such as adding SSL encryption (access over HTTPS), reverse proxy and Docker registry can be set up following the official documentation.</li>
+</ul>
+
+<p>Click on the links below to take you to Amazon Marketplace for spinning up EC2 nodes.</p>
+
+<ul>
+  <li><a href="https://aws.amazon.com/marketplace/pp/prodview-m746lne7zhrqk?sr=0-11&amp;ref_=beagle&amp;applicationId=AWSMPContessa">GitLab CE AMI for Amazon Linux 2018</a></li>
+  <li><a href="https://aws.amazon.com/marketplace/pp/prodview-aqihm6gvq7vty?sr=0-10&amp;ref_=beagle&amp;applicationId=AWSMPContessa">GitLab CE AMI AMI for Amazon Linux 2</a></li>
+  <li><a href="https://aws.amazon.com/marketplace/pp/prodview-72obtmcs2qhug?sr=0-2&amp;ref_=beagle&amp;applicationId=AWSMPContessa">GitLab CE AMI AMI for CentOS 7</a></li>
+  <li><a href="https://aws.amazon.com/marketplace/pp/prodview-cq6uby2ochism?sr=0-4&amp;ref_=beagle&amp;applicationId=AWSMPContessa">GitLab CE AMI AMI for CentOS 8</a></li>
+  <li><a href="https://aws.amazon.com/marketplace/pp/prodview-m254pku4pu3lq?sr=0-13&amp;ref_=beagle&amp;applicationId=AWSMPContessa">GitLab CE AMI AMI for Red Hat Enterprise Linux 7</a></li>
+  <li><a href="https://aws.amazon.com/marketplace/pp/prodview-yjx4dlhicuhdk?sr=0-12&amp;ref_=beagle&amp;applicationId=AWSMPContessa">GitLab CE AMI AMI for Red Hat Enterprise Linux 8</a></li>
+  <li><a href="https://aws.amazon.com/marketplace/pp/prodview-jgfqdyim5jhyc?sr=0-5&amp;ref_=beagle&amp;applicationId=AWSMPContessa">GitLab CE AMI AMI for Fedora 31</a></li>
+  <li><a href="https://aws.amazon.com/marketplace/pp/prodview-t4pdmys3xr3aa?sr=0-9&amp;ref_=beagle&amp;applicationId=AWSMPContessa">GitLab CE AMI AMI for Debian 10</a></li>
+  <li><a href="https://aws.amazon.com/marketplace/pp/prodview-46e6llajyvmz2?sr=0-1&amp;ref_=beagle&amp;applicationId=AWSMPContessa">GitLab CE AMI for Ubuntu 16.04</a></li>
+  <li><a href="https://aws.amazon.com/marketplace/pp/prodview-jlr6htvnw4fv4?sr=0-2&amp;ref_=beagle&amp;applicationId=AWSMPContessa">GitLab CE AMI for Ubuntu 18.04</a></li>
+  <li><a href="https://aws.amazon.com/marketplace/pp/prodview-v2bgawmu4hyqs?sr=0-1&amp;ref_=beagle&amp;applicationId=AWSMPContessa">GitLab CE AMI for Ubuntu 20.04</a></li>
+  <li><a href="https://github.com/kurianinc/ami-pub/wiki/GitLab-CE">GitLab CE AMI for openSUSE Leap 15.2</a></li>
+  <li><a href="https://aws.amazon.com/marketplace/pp/B08X4QZ6LP">GitLab CE AMI for SUSE Linux Enterprise Server 12 SP5</a></li>
+  <li><a href="https://aws.amazon.com/marketplace/pp/prodview-6ndrzhw74btwo?sr=0-8&amp;ref_=beagle&amp;applicationId=AWSMPContessa">GitLab CE AMI for SUSE Linux Enterprise Server 15 SP2</a></li>
+</ul>
+
+<h1 id="upgrade"><a href="https://github.com/kurianinc/ami-pub/wiki/GitLab-CE#upgrade"></a>Upgrade</h1>
+
+<p>Follow official GitLab documentation for possible upgrade options.</p>
+
+<h1 id="maintenance-and-troubleshooting"><a href="https://github.com/kurianinc/ami-pub/wiki/GitLab-CE#maintenance-and-troubleshooting"></a>Maintenance and Troubleshooting</h1>
+
+<ul>
+  <li>Kurian can help with configuring the application for your specific needs using this AMI. Contact us with details to <a href="mailto:contact@kurianinc.us">contact@kurianinc.us</a></li>
+</ul>
+
+<h1 id="remote-access-to-ec2-node"><a href="https://github.com/kurianinc/ami-pub/wiki/GitLab-CE#remote-access-to-ec2-node"></a>Remote Access to EC2 Node</h1>
+
+<p>Following are the standard AWS defined users available for SSH when a node is provisioned:</p>
+
+<ul>
+  <li>Amazon Linux: ec2-user</li>
+  <li>Red Hat Linux: ec2-user</li>
+  <li>SuSE Linux: ec2-user</li>
+  <li>Fedora: fedora</li>
+  <li>CentOS: centos</li>
+  <li>Debian Linux: admin</li>
+  <li>Ubuntu: ubuntu</li>
+</ul>
+
+<h1 id="release-history"><a href="https://github.com/kurianinc/ami-pub/wiki/GitLab-CE#release-history"></a>Release history</h1>
+
+<ul>
+  <li>02/18/2021 – Initial release of version 13.8.4 on Debian 10, Ubuntu 16.04/18.04/20.04, Amazon Linux 2018/2, Fedora 31, CentOS 7.9/8.3, RHEL 7.9/8.3, SUSE 12.5/15.2, openSUSE Leap 15.2</li>
+</ul>
+
+
+      </div>
+
+      <footer class="footer-layout">
+  <div class="footer-brand">
+    <a href="/" rel="author" class="brand-link">
+    
+    
+    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 56">
+	<g>
+		<polygon points="16,38 4.45,38 10.23,28 16,18 21.77,28 27.55,38"/>
+		<rect x="31.55" y="18" width="20" height="20"/>
+		<circle cx="65.55" cy="28" r="10"/>
+	</g>
+</svg>
+    <span class="is-visually-hidden">YOUR_BRAND_NAME logo</span>
+
+
+
+</a>
+
+  </div>
+  
+  <div class="nav-social">
+    
+        <a class="xxxxxxx" href="https://github.com/YOUR_GITHUB_HANDLE" target="_blank">gh</a>
+    
+        <a class="xxxxxxx" href="https://gitlab.com/YOUR_GITLAB_HANDLE" target="_blank">gl</a>
+    
+        <a class="xxxxxxx" href="https://facebook.com/YOUR_FACEBOOK_HANDLE" target="_blank">fb</a>
+    
+        <a class="xxxxxxx" href="https://twitter.com/YOUR_TWITTER_HANDLE" target="_blank">tw</a>
+    
+        <a class="xxxxxxx" href="https://linkedin.com/in/YOUR_LINKEDIN_HANDLE" target="_blank">in</a>
+    
+</div>
+
+  <div class="nav-legal">
+    
+        <a href="/privacy-policy.html" >Privacy policy</a>
+    
+        <a href="/terms-of-service.html" >Terms of service</a>
+    
+</div>
+  
+<div class="footer-copyright">
+    
+    <div class="copyright">&copy; <span id="js-copyright-year"></span> YOUR_BRAND_NAME</div>
+    
+</div>
+</footer>
+
+      <script type="text/javascript" src="/assets/js/scripts.js"></script>
+
+      <div class="dev-only">
+  <div class="info-layout">
+    <code>layout: post</code>
+  </div>
+</div>
+
+<style>
+.dev-only .info-layout {
+  position: fixed;
+  left: 0.5rem;
+  bottom: 1.5rem;
+  padding: 0.25em;
+  background-color: var(--button-bg);
+  color: var(--button-label);
+  font-size: 0.875rem;
+}
+/* html.dark .dev-only .info-layout {
+  background-color: var(--theme-ink);
+} */
+</style>
+
+      
+    </div>
+  </body>
+</html>

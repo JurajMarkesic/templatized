@@ -1,4 +1,17 @@
 title: Careers
-button:
-  label: Careers
-  link: /careers
+
+items:
+  - title: Full Stack Software Engineer
+    url: https://talentlyft.com/ # example - add your url to the job post
+
+  - title: Privacy Data Analyst
+    url: https://talentlyft.com/ # example - add your url to the job post
+
+  - title: iOS Software Engineer
+    url: https://talentlyft.com/ # example - add your url to the job post
+
+  - title: Strategic Insurance Program Manager
+    url: https://talentlyft.com/ # example - add your url to the job post
+
+  - title: Art Director
+    url: https://talentlyft.com/ # example - add your url to the job post

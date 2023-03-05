@@ -42,10 +42,14 @@
   
   <style> 
   :root {
-    --light-100: #e9e9e9;
-    --dark-100: #161616;
-    --font-family-base: "Mona Sans Regular", Arial, sans-serif, -apple-system;
-    --font-family-heading: "Zodiak-Black", serif, -apple-system;
+    --font-family-base: "Mona Sans Regular", sans-serif;
+    --font-family-heading: "Literata-Medium", serif;
+    --theme-paper: #f7f9f9;
+    --theme-ink: #15202b;
+    --button-bg: #1d9bf0;
+    --button-label: #fafdff;
+    --selection-bg: #1d9bf0;
+    --selection-text: #fafdff;
   }
   </style>
 </head>
@@ -77,9 +81,13 @@
     
         <a href="/about.html" class="current">About</a>
     
+        <a href="/products.html" >Products</a>
+    
         <a href="/blog.html" >Blog</a>
     
-        <a href="/staff.html" >Staff</a>
+        <a href="/team.html" >Team</a>
+    
+        <a href="/contact.html" >Contact</a>
     
 </nav>
   <button class="js-nav-main-trigger">burger</button>
@@ -120,17 +128,7 @@
 </a>
 
   </div>
-  <nav>
-    
-        <a href="/" >Home</a>
-    
-        <a href="/about.html" class="current">About</a>
-    
-        <a href="/blog.html" >Blog</a>
-    
-        <a href="/staff.html" >Staff</a>
-    
-</nav>
+  
   <div class="nav-social">
     
         <a class="xxxxxxx" href="https://github.com/YOUR_GITHUB_HANDLE" target="_blank">gh</a>
@@ -174,12 +172,13 @@
   left: 0.5rem;
   bottom: 1.5rem;
   padding: 0.25em;
-  background-color: var(--light-100);
+  background-color: var(--button-bg);
+  color: var(--button-label);
   font-size: 0.875rem;
 }
-html.dark .dev-only .info-layout {
-  background-color: var(--dark-100);
-}
+/* html.dark .dev-only .info-layout {
+  background-color: var(--theme-ink);
+} */
 </style>
 
       

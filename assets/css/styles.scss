@@ -1,8 +1,10 @@
 ---
 ---
 
+@import "normalize";
 @import "my-resets";
 
 @import "main";
 
 @import "components/fonts"; // Uncomment this line to self host font
+@import "components/buttons";

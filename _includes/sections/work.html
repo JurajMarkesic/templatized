@@ -1,10 +1,29 @@
-{% assign item = site.data.section-work %}
+{% assign work = site.data.section-work %}
+{% assign button = site.data.buttons.homepage_work %}
+{% assign limit = site.home.limit_works %}
 <section>
     <div class="container">
         <div class="row">
             <div class="col-md-6 offset-md-1 col-lg-4">
-                <h2>{{ item.title }}</h2>
-                <a href="{{ item.button.link | relative_url }}">{{ item.button.label | escape }}</a>
+                <h2>{{ work.title }}</h2>
+                {% if work.intro %}<p>{{ work.intro }}</p>{% endif %}
+                {% assign work_items = site.data.section-work.items | sort: 'weight' %}
+                {% if work_items %}
+                <ul>
+                  {% for item in work_items limit: limit %}
+                  <li>
+                    {% if item.is_flagship %}<p>flagship</p>{% endif %}
+                    <h3>{{ item.name }}</h3>
+                    {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+                    <a href="{{ item.url | relative_url }}" {% if item.is_external %}target="_blank"{% endif %}>
+                        {{ button.label_list_item }}
+                        {% if item.is_external %}+++{% endif %}
+                    </a>
+                  </li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+                <a href="{{ button.link | relative_url }}">{{ button.label | escape }}</a>
             </div>
         </div>
     </div>

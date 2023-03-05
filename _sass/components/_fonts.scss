@@ -40,3 +40,41 @@
 	font-display: swap;
 	src: local(''), url('../fonts/Zodiak-Black.woff2') format('woff2');
 }
+
+/**
+ * @license
+ *
+ * Font Family: Literata
+ * Designed by: TypeTogether
+ * URL: https://www.fontshare.com/fonts/literata
+ * © 2023 Indian Type Foundry
+ *
+ * Font Styles:
+ * Literata Variable(Variable font)
+ * Literata Variable Italic(Variable font)
+ * Literata Extra Light
+ * Literata Extra Light Italic
+ * Literata Light
+ * Literata Light Italic
+ * Literata Regular
+ * Literata Italic
+ * Literata Medium
+ * Literata Medium Italic
+ * Literata Semi Bold
+ * Literata Semi Bold Italic
+ * Literata Bold
+ * Literata Bold Italic
+ * Literata Extra Bold
+ * Literata Extra Bold Italic
+ * Literata Black
+ * Literata Black Italic
+ *
+*/
+
+@font-face {
+	font-family: 'Literata-Medium';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: local(''), url('../fonts/Literata-Medium.woff2') format('woff2');
+  }
