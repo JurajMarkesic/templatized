@@ -45,18 +45,19 @@
   
   <style> 
   :root {
-    --selection-bg: #1d9bf0;
-    --selection-text: #fafdff;
+    --selection-bg: #0fc5b4;
+    --selection-text: #d9fcf9;
     --font-family-base: "Mona Sans Regular", sans-serif;
     --font-family-heading: "Literata-Medium", serif;
     --theme-paper: white;
     --theme-ink: black;
-    --theme-dark-paper: #15202b;
-    --theme-dark-ink: #f7f9f9;
-    --button-bg: #1d9bf0;
-    --button-label: #fafdff;
+    --theme-dark-paper: black;
+    --theme-dark-ink: white;
+    --button-bg: #0fc5b4;
+    --button-label: white;
     --header-height: 2.5rem;
-    --header-bg: #f7f9f9;
+    --header-bg: #0fc5b4;
+    --mobile-nav-bg: #d9fcf9;
     --transition-duration-slow: 0.9s;
     --transition-duration-fast: 0.3s;
     --easing: cubic-bezier(.4,0,0,1);
@@ -87,36 +88,120 @@
 
 </a>
 
-      <div class="nav-main-wrapper">
+      
+<div class="nav-main-wrapper">
     <nav class="nav-main">
-    
-        <a href="/" class="nav-link ">
-            <span class="nav-link-label">Home</span>
-        </a>
-    
-        <a href="/about.html" class="nav-link ">
-            <span class="nav-link-label">About</span>
-        </a>
-    
-        <a href="/products.html" class="nav-link ">
-            <span class="nav-link-label">Products</span>
-        </a>
-    
-        <a href="/blog.html" class="nav-link ">
-            <span class="nav-link-label">Blog</span>
-        </a>
-    
-        <a href="/team.html" class="nav-link ">
-            <span class="nav-link-label">Team</span>
-        </a>
-    
-        <a href="/contact.html" class="nav-link ">
-            <span class="nav-link-label">Contact</span>
-        </a>
-    
+        <ul>
+        
+            <li class="nav-link ">
+                
+                    <a href="/">
+                        <span class="nav-link-label">Home</span>
+                    </a>
+                
+            </li>
+        
+            <li class="nav-link ">
+                
+                    <a href="/about.html">
+                        <span class="nav-link-label">About</span>
+                    </a>
+                
+            </li>
+        
+            <li class="nav-link ">
+                
+                    <a href="/products.html">
+                        <span class="nav-link-label">Products</span>
+                    </a>
+                
+            </li>
+        
+            <li class="nav-link ">
+                
+                    <a href="/blog.html">
+                        <span class="nav-link-label">Blog</span>
+                    </a>
+                
+            </li>
+        
+            <li class="nav-link ">
+                
+                    <a href="/team.html">
+                        <span class="nav-link-label">Team</span>
+                    </a>
+                
+            </li>
+        
+            <li class="nav-link ">
+                
+                    <button class="nav-link nav-main-submenu-toggle js-mobile-accordion-trigger">
+                        <span>Resources</span>
+                        <span class="submenu-indicator">+++</span>
+                    </button>
+
+                        
+                        <ul class="nav-main-submenu js-mobile-accordion-panel">
+                        
+
+                            <li class="">
+                            
+                                <a href="https://github.com/kurianinc/ami-pub" class="nav-link " target="_blank">
+                                    <span>Github</span>
+                                </a>
+                            
+                            </li>
+
+                        
+
+                            <li class="">
+                            
+                                <a href="https://kurianinc.medium.com/" class="nav-link " target="_blank">
+                                    <span>Kurian DevOps Blog</span>
+                                </a>
+                            
+                            </li>
+
+                        
+
+                            <li class="">
+                            
+                                <a href="https://aws.amazon.com/marketplace/search/" class="nav-link " target="_blank">
+                                    <span>AWS Marketplace Listing</span>
+                                </a>
+                            
+                            </li>
+
+                        
+
+                            <li class="">
+                            
+                                <a href="https://www.facebook.com/kurianinc/" class="nav-link " target="_blank">
+                                    <span>Facebook page</span>
+                                </a>
+                            
+                            </li>
+
+                        
+                        </ul>
+                
+            </li>
+        
+            <li class="nav-link ">
+                
+                    <a href="/contact.html">
+                        <span class="nav-link-label">Contact</span>
+                    </a>
+                
+            </li>
+        
+        </ul>
     </nav>
 </div>
-      <button class="js-nav-main-trigger">burger</button>
+      <button class="nav-main-trigger js-nav-main-trigger" aria-label="Mobile Menu">
+        <span class="nav-main-trigger-icon-menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></span>
+        <span class="nav-main-trigger-icon-close"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
+      </button>
     </div>
   </div>
 </header>
@@ -199,7 +284,7 @@
   bottom: 1.5rem;
   padding: 0.25em;
   background-color: var(--button-bg);
-  color: var(--button-label);
+  /* color: var(--button-label); */
   font-size: 0.875rem;
 }
 /* html.dark .dev-only .info-layout {

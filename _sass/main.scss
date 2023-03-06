@@ -1,3 +1,8 @@
+::selection {
+    background-color: var(--selection-bg);
+    color: var(--selection-text);
+}
+
 html {
     font-family: var(--font-family-base);
     line-height: 1.5;
@@ -85,11 +90,47 @@ html, body, .body-content, .page-content {
 
 
 
+.nav-main-trigger {
+    position: relative;
+
+    & > * {
+        pointer-events: none;
+    }
+}
+
+.nav-main-trigger-icon-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity var(--transition-duration-fast) var(--easing);
+
+    .nav-main-trigger.is-active & {
+        opacity: 0;
+    }
+}
+
+.nav-main-trigger-icon-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transform: scale(1.5);
+    transition-delay: var(--transition-duration-fast);
+    transition: transform var(--transition-duration-fast) var(--easing), opacity var(--transition-duration-fast) var(--easing);
+
+    .nav-main-trigger.is-active & {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+
 .nav-link {
     line-height: 1;
     text-decoration: none;
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
 
     &.is-current .nav-link-label {
         position: relative;
@@ -132,14 +173,34 @@ html, body, .body-content, .page-content {
         }
     }
     .nav-main {
-        background: var(--theme-paper);
-        font-size: 10vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        background: var(--mobile-nav-bg);
+        font-size: 150%;
+        text-align: center;
         padding-top: var(--header-height);
         padding-bottom: var(--header-height);
         height: 100%;
         overflow-y: auto;
+    }
+    .nav-main-submenu-toggle {
+        & > * {
+            pointer-events: none;
+        }
+    }
+    .nav-main-submenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+        overflow: hidden;
+        transition: height var(--transition-duration-slow) var(--easing);
+    
+        &:not(.active) {
+            display: none;
+        }
+    }
+    .nav-link {
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        margin: 0.25em 0;
     }
 }

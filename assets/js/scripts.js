@@ -10,8 +10,8 @@ menuTrigger.onclick = function() {
 // custom
 document.getElementById("js-copyright-year").innerHTML = new Date().getFullYear();
 
-var mobileDropdownToggleButtons = [...document.querySelectorAll(".js-mobile-dropdown-toggle")]
-var mobileDropdownPanels = [...document.querySelectorAll(".js-mobile-dropdown-panel")]
+var mobileDropdownToggleButtons = [...document.querySelectorAll(".js-mobile-accordion-trigger")]
+var mobileDropdownPanels = [...document.querySelectorAll(".js-mobile-accordion-panel")]
 
 function handleClickMobileDropdownToggle(el) {
     
@@ -42,3 +42,5 @@ function handleClickMobileDropdownToggle(el) {
 mobileDropdownToggleButtons.forEach((item) => {
     item.addEventListener("click", handleClickMobileDropdownToggle)
 })
+
+// window.addEventListener("resize", reportWindowSize);

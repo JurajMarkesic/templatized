@@ -1,9 +1,36 @@
+{% assign menu = site.data.navigation | sort: 'weight' %}
 <div class="nav-main-wrapper">
     <nav class="nav-main">
-    {% for item in site.data.navigation %}
-        <a href="{{ item.link | relative_url }}" class="nav-link {% if page.url == item.link %}is-current{% endif %}">
-            <span class="nav-link-label">{{ item.name | escape }}</span>
-        </a>
-    {% endfor %}
+        <ul>
+        {% for item in menu %}
+            <li class="nav-link {% if page.url == item.link %}is-current{% endif %}">
+                {% if item.link %}
+                    <a href="{{ item.link | relative_url }}">
+                        <span class="nav-link-label">{{ item.name | escape }}</span>
+                    </a>
+                {% else %}
+                    <button class="nav-link nav-main-submenu-toggle js-mobile-accordion-trigger">
+                        <span>{{ item.name }}</span>
+                        <span class="submenu-indicator">+++</span>
+                    </button>
+
+                        {% assign submenu = item.submenu | sort: 'weight' %}
+                        <ul class="nav-main-submenu js-mobile-accordion-panel">
+                        {% for item in submenu %}
+
+                            <li class="{% if item.url == page.url %}is-current{% endif %}">
+                            {% if item.link %}
+                                <a href="{{ item.link | relative_url }}" class="nav-link {% if page.url == item.link %}is-current{% endif %}" {% if item.is_external %}target="_blank"{% endif %}>
+                                    <span>{{ item.name }}</span>
+                                </a>
+                            {% endif %}
+                            </li>
+
+                        {% endfor %}
+                        </ul>
+                {% endif %}
+            </li>
+        {% endfor %}
+        </ul>
     </nav>
 </div>

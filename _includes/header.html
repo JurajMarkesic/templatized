@@ -3,7 +3,10 @@
     <div class="header-layout">
       {% include brand/brand-link.html %}
       {% include navigation.html %}
-      <button class="js-nav-main-trigger">burger</button>
+      <button class="nav-main-trigger js-nav-main-trigger" aria-label="Mobile Menu">
+        <span class="nav-main-trigger-icon-menu">{%- include icons/mobile-nav/menu.svg -%}</span>
+        <span class="nav-main-trigger-icon-close">{%- include icons/mobile-nav/close.svg -%}</span>
+      </button>
     </div>
   </div>
 </header>

@@ -2,9 +2,8 @@
     box-sizing: border-box;
 }
 
-::selection {
-    background-color: var(--selection-bg);
-    color: var(--selection-text);
+html {
+    -webkit-tap-highlight-color: transparent;
 }
 
 a {
