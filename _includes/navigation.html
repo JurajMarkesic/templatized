@@ -3,9 +3,9 @@
     <nav class="nav-main">
         <ul>
         {% for item in menu %}
-            <li class="nav-link {% if page.url == item.link %}is-current{% endif %}">
+            <li class="nav-item {% if page.url == item.link %}is-current{% endif %}">
                 {% if item.link %}
-                    <a href="{{ item.link | relative_url }}">
+                    <a href="{{ item.link | relative_url }}" class="nav-link {% if page.url == item.link %}is-current{% endif %}" {% if item.is_external %}target="_blank"{% endif %}>
                         <span class="nav-link-label">{{ item.name | escape }}</span>
                     </a>
                 {% else %}
@@ -18,7 +18,7 @@
                         <ul class="nav-main-submenu js-mobile-accordion-panel">
                         {% for item in submenu %}
 
-                            <li class="{% if item.url == page.url %}is-current{% endif %}">
+                            <li class="nav-item {% if item.url == page.url %}is-current{% endif %}">
                             {% if item.link %}
                                 <a href="{{ item.link | relative_url }}" class="nav-link {% if page.url == item.link %}is-current{% endif %}" {% if item.is_external %}target="_blank"{% endif %}>
                                     <span>{{ item.name }}</span>

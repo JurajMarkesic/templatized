@@ -128,6 +128,14 @@ html, body, .body-content, .page-content {
 
 
 
+.nav-main ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+
 .nav-link {
     line-height: 1;
     text-decoration: none;
@@ -153,7 +161,8 @@ html, body, .body-content, .page-content {
 
 @media (max-width: 991px) {
     html.lock-scroll {
-        overflow: hidden;
+        // overflow: hidden;
+        position: fixed;
     }
     .nav-main-wrapper {
         position: fixed;
@@ -198,9 +207,11 @@ html, body, .body-content, .page-content {
             display: none;
         }
     }
+    .nav-item {
+        margin: 0.25em 0;
+    }
     .nav-link {
         padding-top: 0.25em;
         padding-bottom: 0.25em;
-        margin: 0.25em 0;
     }
 }
