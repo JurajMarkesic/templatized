@@ -4,12 +4,19 @@
 # lang: hr # overrides default en
 
 css:
-  theme_paper: '#f7f9f9'
-  theme_ink: '#15202b'
-  button_bg: '#1d9bf0'
-  button_label: '#fafdff'
   selection_bg: '#1d9bf0'
   selection_text: '#fafdff'
+  theme_paper: 'white'
+  theme_ink: 'black'
+  theme_dark_paper: '#15202b'
+  theme_dark_ink: '#f7f9f9'
+  button_bg: '#1d9bf0'
+  button_label: '#fafdff'
+  header_height: '2.5rem'
+  header_bg: '#f7f9f9'
+  transition-duration-slow: '0.9s'
+  transition-duration-fast: '0.3s'
+  easing: 'cubic-bezier(.4,0,0,1)'
 
   # using github's free font Mona Sans - https://github.com/github/mona-sans
   font_base: Mona Sans Regular

@@ -45,14 +45,21 @@
   
   <style> 
   :root {
-    --font-family-base: "Mona Sans Regular", sans-serif;
-    --font-family-heading: "Literata-Medium", serif;
-    --theme-paper: #f7f9f9;
-    --theme-ink: #15202b;
-    --button-bg: #1d9bf0;
-    --button-label: #fafdff;
     --selection-bg: #1d9bf0;
     --selection-text: #fafdff;
+    --font-family-base: "Mona Sans Regular", sans-serif;
+    --font-family-heading: "Literata-Medium", serif;
+    --theme-paper: white;
+    --theme-ink: black;
+    --theme-dark-paper: #15202b;
+    --theme-dark-ink: #f7f9f9;
+    --button-bg: #1d9bf0;
+    --button-label: #fafdff;
+    --header-height: 2.5rem;
+    --header-bg: #f7f9f9;
+    --transition-duration-slow: 0.9s;
+    --transition-duration-fast: 0.3s;
+    --easing: cubic-bezier(.4,0,0,1);
   }
   </style>
 </head>
@@ -61,8 +68,10 @@
     <div class="body-content">
 
       <div class="scroll-content">
-        <header>
-  <a href="/" rel="author" class="brand-link">
+        <header class="header">
+  <div class="container">
+    <div class="header-layout">
+      <a href="/" rel="author" class="brand-link">
     
     
     <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 56">
@@ -78,22 +87,38 @@
 
 </a>
 
-  <nav>
+      <div class="nav-main-wrapper">
+    <nav class="nav-main">
     
-        <a href="/" >Home</a>
+        <a href="/" class="nav-link ">
+            <span class="nav-link-label">Home</span>
+        </a>
     
-        <a href="/about.html" >About</a>
+        <a href="/about.html" class="nav-link ">
+            <span class="nav-link-label">About</span>
+        </a>
     
-        <a href="/products.html" >Products</a>
+        <a href="/products.html" class="nav-link ">
+            <span class="nav-link-label">Products</span>
+        </a>
     
-        <a href="/blog.html" >Blog</a>
+        <a href="/blog.html" class="nav-link ">
+            <span class="nav-link-label">Blog</span>
+        </a>
     
-        <a href="/team.html" >Team</a>
+        <a href="/team.html" class="nav-link ">
+            <span class="nav-link-label">Team</span>
+        </a>
     
-        <a href="/contact.html" >Contact</a>
+        <a href="/contact.html" class="nav-link ">
+            <span class="nav-link-label">Contact</span>
+        </a>
     
-</nav>
-  <button class="js-nav-main-trigger">burger</button>
+    </nav>
+</div>
+      <button class="js-nav-main-trigger">burger</button>
+    </div>
+  </div>
 </header>
 
         <h1 id="sam-smith">Sam Smith</h1>
@@ -104,9 +129,11 @@
 
       </div>
 
-      <footer class="footer-layout">
-  <div class="footer-brand">
-    <a href="/" rel="author" class="brand-link">
+      <footer>
+  <div class="container">
+    <div class="footer-layout">
+      <div class="footer-brand">
+        <a href="/" rel="author" class="brand-link">
     
     
     <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 56">
@@ -122,9 +149,9 @@
 
 </a>
 
-  </div>
-  
-  <div class="nav-social">
+      </div>
+      
+      <div class="nav-social">
     
         <a class="xxxxxxx" href="https://github.com/YOUR_GITHUB_HANDLE" target="_blank">gh</a>
     
@@ -138,21 +165,22 @@
     
 </div>
 
-  <div class="nav-legal">
+      <div class="nav-legal">
     
         <a href="/privacy-policy.html" >Privacy policy</a>
     
         <a href="/terms-of-service.html" >Terms of service</a>
     
 </div>
-  
+      
 <div class="footer-copyright">
     
     <div class="copyright">&copy; <span id="js-copyright-year"></span> YOUR_BRAND_NAME</div>
     
 </div>
+    </div>
+  </div>
 </footer>
-
       <script type="text/javascript" src="/assets/js/scripts.js"></script>
 
       <div class="dev-only">

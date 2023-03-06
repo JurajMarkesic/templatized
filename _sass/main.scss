@@ -1,5 +1,6 @@
 html {
     font-family: var(--font-family-base);
+    line-height: 1.5;
 }
 
 html.dark {
@@ -10,25 +11,38 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-heading);
 }
 
-html, body {
+html, body, .body-content, .page-content {
     height: 100%;
 }
 
 .body-content {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    // min-height: 100vh;
 }
 
 .scroll-content {
     flex-grow: 1;
 }
 
-header {
+.page-content {
+    padding-top: var(--header-height);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--header-bg);
+    z-index: 1000;
+}
+
+.header-layout {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 40px;
+    height: var(--header-height);
 }
 
 .footer-layout {
@@ -71,24 +85,61 @@ header {
 
 
 
-.current {
-    position: relative;
-    color: var(--button-label);
+.nav-link {
+    line-height: 1;
+    text-decoration: none;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
 
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        // box-shadow: inset 0 0 0 2px currentColor;
-        background-color: var(--button-bg);
-        margin: -0.175em -0.35em;
-        padding: 0.175em 0.35em;
-        border-radius: 9999em;
-        z-index: -1;
+    &.is-current .nav-link-label {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: auto;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 0.1em;
+            // box-shadow: inset 0 0 0 2px currentColor;
+            background-color: var(--button-bg);
+            pointer-events: none;
+        }
     }
 }
 
 
+@media (max-width: 991px) {
+    html.lock-scroll {
+        overflow: hidden;
+    }
+    .nav-main-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-top: var(--header-height);
+        z-index: -1;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity var(--transition-duration-fast) var(--easing);
+        
+        html.nav-main-open & {
+            opacity: 1;
+            pointer-events: auto;
+        }
+    }
+    .nav-main {
+        background: var(--theme-paper);
+        font-size: 10vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: var(--header-height);
+        padding-bottom: var(--header-height);
+        height: 100%;
+        overflow-y: auto;
+    }
+}

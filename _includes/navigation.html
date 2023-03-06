@@ -1,5 +1,9 @@
-<nav>
+<div class="nav-main-wrapper">
+    <nav class="nav-main">
     {% for item in site.data.navigation %}
-        <a href="{{ item.link | relative_url }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name | escape }}</a>
+        <a href="{{ item.link | relative_url }}" class="nav-link {% if page.url == item.link %}is-current{% endif %}">
+            <span class="nav-link-label">{{ item.name | escape }}</span>
+        </a>
     {% endfor %}
-</nav>
+    </nav>
+</div>

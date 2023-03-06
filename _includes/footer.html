@@ -1,11 +1,15 @@
-<footer class="footer-layout">
-  <div class="footer-brand">
-    {% include brand/brand-link.html %}
+<footer>
+  <div class="container">
+    <div class="footer-layout">
+      <div class="footer-brand">
+        {% include brand/brand-link.html %}
+      </div>
+      {% comment %}
+      {% include navigation.html %}
+      {% endcomment %}
+      {% include footer/nav-social.html %}
+      {% include footer/nav-legal.html %}
+      {% include footer/copyright.html %}
+    </div>
   </div>
-  {% comment %}
-  {% include navigation.html %}
-  {% endcomment %}
-  {% include footer/nav-social.html %}
-  {% include footer/nav-legal.html %}
-  {% include footer/copyright.html %}
 </footer>
