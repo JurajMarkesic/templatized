@@ -7,9 +7,6 @@ menuTrigger.onclick = function() {
     html.classList.toggle('lock-scroll')
 }
 
-// custom
-document.getElementById("js-copyright-year").innerHTML = new Date().getFullYear();
-
 var mobileDropdownToggleButtons = [...document.querySelectorAll(".js-mobile-accordion-trigger")]
 var mobileDropdownPanels = [...document.querySelectorAll(".js-mobile-accordion-panel")]
 
@@ -39,8 +36,22 @@ function handleClickMobileDropdownToggle(el) {
     }
 }
 
+function destroyHeights() {
+    mobileDropdownToggleButtons.forEach((item) => {
+        var panel = item.nextElementSibling;
+        if (panel.classList.contains('active')) {
+            panel.classList.remove('active')
+            setTimeout(function () {
+                panel.style.height = 'auto';
+            }, 0);
+        }
+    })
+}
+
 mobileDropdownToggleButtons.forEach((item) => {
     item.addEventListener("click", handleClickMobileDropdownToggle)
 })
 
-// window.addEventListener("resize", reportWindowSize);
+window.addEventListener("resize", destroyHeights);
+
+document.getElementById("js-copyright-year").innerHTML = new Date().getFullYear();

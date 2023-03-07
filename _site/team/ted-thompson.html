@@ -47,17 +47,33 @@
   :root {
     --selection-bg: #0fc5b4;
     --selection-text: #d9fcf9;
+
     --font-family-base: "Mona Sans Regular", sans-serif;
     --font-family-heading: "Literata-Medium", serif;
+
     --theme-paper: white;
     --theme-ink: black;
     --theme-dark-paper: black;
     --theme-dark-ink: white;
+
     --button-bg: #0fc5b4;
     --button-label: white;
-    --header-height: 2.5rem;
+
+    --header-height: 4rem;
     --header-bg: #0fc5b4;
-    --mobile-nav-bg: #d9fcf9;
+
+    --mobile-nav-bg: #12edd9;
+    --mobile-current-bg: white;
+
+    --desktop-current-bg: white;
+    --desktop-nav-text-size: 1.125em;
+    --desktop-nav-space-between-items: 1.5em;
+    --desktop-nav-link-hover-bg: #12edd9;
+    
+    --desktop-nav-submenu-bg: #12edd9;
+    --desktop-nav-submenu-hover-bg: #89f6ec;
+    --desktop-nav-submenu-width: 16em;
+
     --transition-duration-slow: 0.9s;
     --transition-duration-fast: 0.3s;
     --easing: cubic-bezier(.4,0,0,1);
@@ -91,106 +107,140 @@
       
 <div class="nav-main-wrapper">
     <nav class="nav-main">
-        <ul>
+        <ul class="nav-main-list-reset nav-main-list">
         
-            <li class="nav-item ">
+            <li class="nav-item">
                 
                     <a href="/" class="nav-link " >
-                        <span class="nav-link-label">Home</span>
+                        <span class="nav-link-label">
+                            <span class="nav-link-label-inner">
+                                Home
+                            </span>
+                        </span>
                     </a>
                 
             </li>
         
-            <li class="nav-item ">
+            <li class="nav-item">
                 
                     <a href="/about.html" class="nav-link " >
-                        <span class="nav-link-label">About</span>
+                        <span class="nav-link-label">
+                            <span class="nav-link-label-inner">
+                                About
+                            </span>
+                        </span>
                     </a>
                 
             </li>
         
-            <li class="nav-item ">
+            <li class="nav-item">
                 
                     <a href="/products.html" class="nav-link " >
-                        <span class="nav-link-label">Products</span>
+                        <span class="nav-link-label">
+                            <span class="nav-link-label-inner">
+                                Products
+                            </span>
+                        </span>
                     </a>
                 
             </li>
         
-            <li class="nav-item ">
+            <li class="nav-item">
                 
                     <a href="/blog.html" class="nav-link " >
-                        <span class="nav-link-label">Blog</span>
+                        <span class="nav-link-label">
+                            <span class="nav-link-label-inner">
+                                Blog
+                            </span>
+                        </span>
                     </a>
                 
             </li>
         
-            <li class="nav-item ">
+            <li class="nav-item">
                 
                     <a href="/team.html" class="nav-link " >
-                        <span class="nav-link-label">Team</span>
+                        <span class="nav-link-label">
+                            <span class="nav-link-label-inner">
+                                Team
+                            </span>
+                        </span>
                     </a>
                 
             </li>
         
-            <li class="nav-item ">
+            <li class="nav-item">
                 
                     <button class="nav-link nav-main-submenu-toggle js-mobile-accordion-trigger">
-                        <span>Resources</span>
-                        <span class="submenu-indicator">+++</span>
+                        <span class="nav-link-label">
+                            Resources
+                        </span>
+                        <span class="nav-submenu-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
                     </button>
 
+                    
+                    <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
+                    
+
+                        <li class="nav-item-submenu">
                         
-                        <ul class="nav-main-submenu js-mobile-accordion-panel">
+                            <a href="https://github.com/kurianinc/ami-pub" class="nav-link nav-link-submenu " target="_blank">
+                                <span class="nav-link-label">
+                                    Github
+                                </span>
+                            </a>
                         
+                        </li>
 
-                            <li class="nav-item ">
-                            
-                                <a href="https://github.com/kurianinc/ami-pub" class="nav-link " target="_blank">
-                                    <span>Github</span>
-                                </a>
-                            
-                            </li>
+                    
 
+                        <li class="nav-item-submenu">
                         
-
-                            <li class="nav-item ">
-                            
-                                <a href="https://kurianinc.medium.com/" class="nav-link " target="_blank">
-                                    <span>Kurian DevOps Blog</span>
-                                </a>
-                            
-                            </li>
-
+                            <a href="https://kurianinc.medium.com/" class="nav-link nav-link-submenu " target="_blank">
+                                <span class="nav-link-label">
+                                    Kurian DevOps Blog
+                                </span>
+                            </a>
                         
+                        </li>
 
-                            <li class="nav-item ">
-                            
-                                <a href="https://aws.amazon.com/marketplace/search/" class="nav-link " target="_blank">
-                                    <span>AWS Marketplace Listing</span>
-                                </a>
-                            
-                            </li>
+                    
 
+                        <li class="nav-item-submenu">
                         
-
-                            <li class="nav-item ">
-                            
-                                <a href="https://www.facebook.com/kurianinc/" class="nav-link " target="_blank">
-                                    <span>Facebook page</span>
-                                </a>
-                            
-                            </li>
-
+                            <a href="https://aws.amazon.com/marketplace/search/" class="nav-link nav-link-submenu " target="_blank">
+                                <span class="nav-link-label">
+                                    AWS Marketplace Listing
+                                </span>
+                            </a>
                         
-                        </ul>
+                        </li>
+
+                    
+
+                        <li class="nav-item-submenu">
+                        
+                            <a href="https://www.facebook.com/kurianinc/" class="nav-link nav-link-submenu " target="_blank">
+                                <span class="nav-link-label">
+                                    Facebook page
+                                </span>
+                            </a>
+                        
+                        </li>
+
+                    
+                    </ul>
                 
             </li>
         
-            <li class="nav-item ">
+            <li class="nav-item">
                 
                     <a href="/contact.html" class="nav-link " >
-                        <span class="nav-link-label">Contact</span>
+                        <span class="nav-link-label">
+                            <span class="nav-link-label-inner">
+                                Contact
+                            </span>
+                        </span>
                     </a>
                 
             </li>

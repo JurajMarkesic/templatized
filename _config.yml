@@ -6,17 +6,31 @@
 css:
   selection_bg: '#0fc5b4'
   selection_text: '#d9fcf9'
+
   theme_paper: 'white'
   theme_ink: 'black'
   theme_dark_paper: 'black'
   theme_dark_ink: 'white'
+
   button_bg: '#0fc5b4'
   button_label: 'white'
-  header_height: '2.5rem'
+
+  header_height: '4rem'
   header_bg: '#0fc5b4'
-  mobile_nav_bg: '#d9fcf9'
-  transition-duration-slow: '0.9s'
-  transition-duration-fast: '0.3s'
+
+  mobile_nav_bg: '#12edd9'
+  mobile_current_bg: 'white'
+
+  desktop_current_bg: 'white'
+  desktop_nav_space_between_items: '1.5em'
+  desktop_nav_text_size: '1.125em'
+  desktop_nav_link_hover_bg: '#12edd9'
+  desktop_nav_submenu_bg: '#12edd9'
+  desktop_nav_submenu_hover_bg: '#89f6ec'
+  desktop_nav_submenu_width: '16em'
+  
+  transition_duration_slow: '0.9s'
+  transition_duration_fast: '0.3s'
   easing: 'cubic-bezier(.4,0,0,1)'
 
   # using github's free font Mona Sans - https://github.com/github/mona-sans

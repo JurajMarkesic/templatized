@@ -29,11 +29,18 @@
     - name: Public Cloud Machine Image
       link: /aws-professional-services/public-cloud-machine-image/
       weight: 50
+      
+- name: Blog
+  link: /blog.html
+  weight: 40
+
+- name: Team
+  link: /team.html
+  weight: 50
     
 - name: Resources
   # link: /resources.html # toggle comment to use dropdown
-  weight: 50
-  
+  weight: 60
   submenu:
     - name: Github
       link: https://github.com/kurianinc/ami-pub
@@ -54,15 +61,7 @@
       link: https://www.facebook.com/kurianinc/
       is_external: true
       weight: 40
-      
-- name: Blog
-  link: /blog.html
-  weight: 40
-
-- name: Team
-  link: /team.html
-  weight: 50
 
 - name: Contact
   link: /contact.html
-  weight: 60
+  weight: 70
