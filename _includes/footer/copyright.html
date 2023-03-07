@@ -1,6 +1,9 @@
 
-<div class="footer-copyright">
-    {% if site.company_name %}
-    <div class="copyright">&copy; <span id="js-copyright-year"></span> {{ site.company_name }}</div>
-    {% endif %}
+<div class="footer-brand-link">
+    <div class="copyright">
+        <span>&copy; <span id="js-copyright-year"></span>
+        {% if site.copyright_label %}
+        <span>{{ site.copyright_label }}</span>
+        {% endif %}
+    </div>
 </div>

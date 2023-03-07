@@ -13,9 +13,9 @@
 # use_icon takes priority over use_short, meaning if you set both to true use_icon will be used
 
 settings:
-  # use_icon: true            # disable like this
-  use_icon: anything_but_true # or like this
-  use_short: true
+  use_icon: true            # disable like this
+  # use_icon: anything_but_true # or like this
+  # use_short: true
   
 items:
   - title: Github

@@ -1,7 +1,9 @@
 <header class="header">
   <div class="container">
     <div class="header-layout">
-      {% include brand/brand-link.html %}
+      <div class="header-brand">
+        {% include brand/brand-link.html %}
+      </div>
       {% include navigation.html %}
       <button class="nav-main-trigger js-nav-main-trigger" aria-label="Mobile Menu">
         <span class="nav-main-trigger-icon-menu">{%- include icons/mobile-nav/menu.svg -%}</span>

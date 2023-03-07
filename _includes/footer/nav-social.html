@@ -1,6 +1,6 @@
 <div class="nav-social">
     {% for item in site.data.nav-social.items %}
-        <a class="xxxxxxx" href="{{ item.url }}" target="_blank">
+        <a class="nav-social-link" href="{{ item.url }}" target="_blank">
             {%- if site.data.nav-social.settings.use_icon == true -%}
                 {%- include {{ item.filename | prepend: 'icons/social/' | append: '.svg' }} -%}
                 <span class="is-visually-hidden">{{ item.filename }}</span>

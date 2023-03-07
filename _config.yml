@@ -5,7 +5,7 @@
 
 css:
   selection_bg: '#0fc5b4'
-  selection_text: '#d9fcf9'
+  selection_text: '#d0fbf7'
 
   theme_paper: 'white'
   theme_ink: 'black'
@@ -15,11 +15,20 @@ css:
   button_bg: '#0fc5b4'
   button_label: 'white'
 
-  header_height: '4rem'
+  header_height: '4em'
   header_bg: '#0fc5b4'
+  header_brand_link_height: 36px
+
+  footer_padding_top: '2.5em'
+  footer_padding_bottom: '0.5em'
+  footer_bg: '#d0fbf7'
+  footer_brand_link_height: 28px
+  footer_socials_size: 1.5em
+  footer_socials_space_between_items: 0.5em
 
   mobile_nav_bg: '#12edd9'
   mobile_current_bg: 'white'
+  mobile_submenu_bg: '#d0fbf7'
 
   desktop_current_bg: 'white'
   desktop_nav_space_between_items: '1.5em'
@@ -40,7 +49,10 @@ css:
   # using fontshare's free font Literata - https://www.fontshare.com/fonts/literata
   font_heading: Literata-Medium
 
+# ends css
+
 company_name: "YOUR_BRAND_NAME"
+copyright_label: "All right reserved"
 
 brand_name_description: "YOUR_BRAND_NAME logo"
 brand_logo: true # if false text will be displayed
@@ -64,14 +76,17 @@ collections:
 
 defaults:
   - scope:
+      path: ""
       type: "products"
     values:
       layout: "post"
   - scope:
+      path: ""
       type: "posts"
     values:
       layout: "post"
   - scope:
+      path: ""
       type: "pages"
     values:
       layout: "page"
