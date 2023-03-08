@@ -8,17 +8,43 @@
         {%- endfor -%}
     ></div>
     <div class="container">
-        <div class="row">
-            <div class="col-md-4 offset-md-1 col-lg-5">
-                {% if item.section_label %}<p>{{ item.section_label }}</p>{% endif %}
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-1">
+                <div class="about-content">
+                    {% if item.section_label %}
+                    <div class="section-header">
+                        <p class="section-label">
+                            {{ item.section_label }}
+                        </p>
+                    </div>
+                    {% endif %}
+                    <div class="about-copy">
+                        <h2 class="section-title">{{ item.title }}</h2>
+
+                        {% if item.paragraph_1 %}<p>{{ item.paragraph_1 }}</p>{% endif %}
+                        {% if item.paragraph_2 %}<p>{{ item.paragraph_2 }}</p>{% endif %}
+                        {% if item.paragraph_3 %}<p>{{ item.paragraph_3 }}</p>{% endif %}
+
+                        {% assign buttons = site.data.buttons.homepage_about.items %}
+                        {%- if buttons -%}
+                        <div class="section-links">
+                            {%- for item in buttons -%}
+                            {% assign button_style = item.style %}
+                            <span class="section-links-item">
+                                <a class="button {% if item.style == 'primary' %}button-primary {% elsif item.style == 'outline' %}button-outline {% endif %}" href="{{ item.link | relative_url }}">{{ item.label | escape }}</a>
+                            </span>
+                            {%- endfor -%}
+                        </div>
+                        {%- endif -%}
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 col-lg-5">
-                <h2>{{ item.title }}</h2>
-                {% if item.paragraph_1 %}<p>{{ item.paragraph_1 }}</p>{% endif %}
-                {% if item.paragraph_2 %}<p>{{ item.paragraph_2 }}</p>{% endif %}
-                {% if item.paragraph_3 %}<p>{{ item.paragraph_3 }}</p>{% endif %}
-                {% assign button = site.data.buttons.homepage_about %}
-                <a href="{{ button.link | relative_url }}">{{ button.label | escape }}</a>
+            <div class="col-lg-6">
+                <div class="o-ratio o-ratio-5:4 media-rounded">
+                    {% if item.image %}
+                    <img draggable="false" alt="{{ item.title }}" src="{{ item.image | relative_url }}" />
+                    {% endif %}
+                </div>
             </div>
         </div>
     </div>

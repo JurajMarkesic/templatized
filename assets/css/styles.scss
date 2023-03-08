@@ -2,7 +2,7 @@
 ---
 
 // Bootstrap
-// @import "bootstrap-variables";
+@import "bootstrap-variables";
 @import "bootstrap-5.0.2/scss/bootstrap-grid"; // using only grid
 
 // the project uses a simplified version of ITCSS methodology
@@ -17,7 +17,7 @@
 @import "components/fonts"; // Uncomment this line to self host font
 @import "components/buttons";
 
-@import "sections/id-aligner";
+@import "sections/general";
 @import "sections/intro";
 @import "sections/about";
 

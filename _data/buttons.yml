@@ -2,15 +2,17 @@ homepage_intro:
     items:
         - style: primary
           label: Discover more
-          link: aaaaaaaa
+        #   link: example
           target: target-section-about
           # target: # toggle intro CTA button here
         - style: outline
           label: Contact
           link: contact
 homepage_about:
-    label: Read more
-    link: about
+    items:
+        - style: primary
+          label: Go to About page
+          link: about
 homepage_work:
     label: See all of our work
     link: work
