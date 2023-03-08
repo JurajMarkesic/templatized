@@ -3,12 +3,22 @@
 
 // Bootstrap
 // @import "bootstrap-variables";
-@import "bootstrap-5.0.2/scss/bootstrap-grid";
+@import "bootstrap-5.0.2/scss/bootstrap-grid"; // using only grid
 
-@import "normalize";
-@import "my-resets";
+// the project uses a simplified version of ITCSS methodology
+// example here https://github.com/locomotivemtl/locomotive-boilerplate/blob/master/assets/styles/main.scss
 
-@import "main";
+@import "normalize"; // normalize.css
+
+@import "generic/resets"; // additional resets on top of normalize.css
+
+@import "objects/ratio";
 
 @import "components/fonts"; // Uncomment this line to self host font
 @import "components/buttons";
+
+@import "sections/id-aligner";
+@import "sections/intro";
+@import "sections/about";
+
+@import "main";

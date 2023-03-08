@@ -4,38 +4,38 @@
         <ul class="nav-main-list-reset nav-main-list">
         {% for item in menu %}
             <li class="nav-item">
-                {% if item.link %}
-                    <a href="{{ item.link | relative_url }}" class="nav-link {% if page.url == item.link %}is-current{% endif %}" {% if item.is_external %}target="_blank"{% endif %}>
-                        <span class="nav-link-label">
-                            <span class="nav-link-label-inner">
-                                {{ item.name | escape }}
+                {% if item.submenu %}
+                <button class="nav-link nav-main-submenu-toggle js-mobile-accordion-trigger">
+                    <span class="nav-link-label">
+                        {{ item.name }}
+                    </span>
+                    <span class="nav-submenu-indicator">{%- include icons/mobile-nav/chevron-down.svg -%}</span>
+                </button>
+
+                {% assign submenu = item.submenu | sort: 'weight' %}
+                <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
+                {% for item in submenu %}
+
+                    <li class="nav-item-submenu">
+                    {% if item.link %}
+                        <a href="{{ item.link | relative_url }}" class="nav-link nav-link-submenu {% if page.url == item.link %}is-current{% endif %}" {% if item.is_external %}target="_blank"{% endif %}>
+                            <span class="nav-link-label">
+                                {{ item.name }}
                             </span>
-                        </span>
-                    </a>
+                        </a>
+                    {% endif %}
+                    </li>
+
+                {% endfor %}
+                </ul>
                 {% else %}
-                    <button class="nav-link nav-main-submenu-toggle js-mobile-accordion-trigger">
-                        <span class="nav-link-label">
-                            {{ item.name }}
+                <a href="{{ item.link | relative_url }}" class="nav-link {% if page.url == item.link %}is-current{% endif %}" {% if item.is_external %}target="_blank"{% endif %}>
+                    <span class="nav-link-label">
+                        <span class="nav-link-label-inner">
+                            {{ item.name | escape }}
                         </span>
-                        <span class="nav-submenu-indicator">{%- include icons/mobile-nav/chevron-down.svg -%}</span>
-                    </button>
-
-                    {% assign submenu = item.submenu | sort: 'weight' %}
-                    <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
-                    {% for item in submenu %}
-
-                        <li class="nav-item-submenu">
-                        {% if item.link %}
-                            <a href="{{ item.link | relative_url }}" class="nav-link nav-link-submenu {% if page.url == item.link %}is-current{% endif %}" {% if item.is_external %}target="_blank"{% endif %}>
-                                <span class="nav-link-label">
-                                    {{ item.name }}
-                                </span>
-                            </a>
-                        {% endif %}
-                        </li>
-
-                    {% endfor %}
-                    </ul>
+                    </span>
+                </a>
                 {% endif %}
             </li>
         {% endfor %}

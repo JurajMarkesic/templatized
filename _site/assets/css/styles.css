@@ -4381,6 +4381,233 @@ a {
   color: inherit;
 }
 
+.o-ratio {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.o-ratio:before {
+  display: block;
+  padding-bottom: 100%;
+  width: 100%;
+  content: "";
+}
+
+.o-ratio_content,
+.o-ratio > img,
+.o-ratio > iframe,
+.o-ratio > embed,
+.o-ratio > object {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.o-ratio-5\:4:before {
+  padding-bottom: 80%;
+}
+
+@font-face {
+  font-family: "Mona Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""), url("../fonts/Mona-Sans-Regular.woff2") format("woff2");
+}
+/**
+ * @license
+ *
+ * Font Family: Zodiak
+ * Designed by: Jérémie Hornus, Gaetan Baehr, Jean-Baptiste Morizot, Alisa Nowak, Theo Guillard
+ * URL: https://www.fontshare.com/fonts/zodiak
+ * © 2023 Indian Type Foundry
+ *
+ * Font Styles:
+ * Zodiak Variable(Variable font)
+ * Zodiak Variable Italic(Variable font)
+ * Zodiak Thin
+ * Zodiak Thin Italic
+ * Zodiak Light
+ * Zodiak Light Italic
+ * Zodiak Regular
+ * Zodiak Italic
+ * Zodiak Bold
+ * Zodiak Bold Italic
+ * Zodiak Extrabold         
+ * Zodiak Extrabold Italic
+ * Zodiak Black
+ * Zodiak Black Italic
+ *
+*/
+@font-face {
+  font-family: "Zodiak-Black";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local(""), url("../fonts/Zodiak-Black.woff2") format("woff2");
+}
+/**
+ * @license
+ *
+ * Font Family: Literata
+ * Designed by: TypeTogether
+ * URL: https://www.fontshare.com/fonts/literata
+ * © 2023 Indian Type Foundry
+ *
+ * Font Styles:
+ * Literata Variable(Variable font)
+ * Literata Variable Italic(Variable font)
+ * Literata Extra Light
+ * Literata Extra Light Italic
+ * Literata Light
+ * Literata Light Italic
+ * Literata Regular
+ * Literata Italic
+ * Literata Medium
+ * Literata Medium Italic
+ * Literata Semi Bold
+ * Literata Semi Bold Italic
+ * Literata Bold
+ * Literata Bold Italic
+ * Literata Extra Bold
+ * Literata Extra Bold Italic
+ * Literata Black
+ * Literata Black Italic
+ *
+*/
+@font-face {
+  font-family: "Literata-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(""), url("../fonts/Literata-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Literata-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(""), url("../fonts/Literata-Medium.woff2") format("woff2");
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none transparent;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  font: inherit;
+  line-height: normal;
+  cursor: pointer;
+  user-select: none;
+}
+
+.button {
+  background-color: var(--button-basic-bg);
+  display: inline-flex;
+  padding: 0.75em 1.5em;
+  border-radius: 9999em;
+  text-decoration: none;
+}
+.button:focus, .button:hover {
+  background-color: var(--button-basic-hover-bg);
+}
+
+.button-primary {
+  background-color: var(--button-primary-bg);
+  color: var(--button-primary-label);
+}
+.button-primary:focus, .button-primary:hover {
+  background-color: var(--button-primary-hover-bg);
+}
+
+.button-outline {
+  box-shadow: inset 0 0 0 2px var(--button-outline-color);
+  color: var(--button-outline-color);
+}
+.button-outline:focus, .button-outline:hover {
+  background-color: var(--button-outline-hover-bg);
+  box-shadow: inset 0 0 0 2px var(--button-outline-hover-color);
+  color: var(--button-outline-hover-color);
+}
+
+.section-id-aligner {
+  padding-top: var(--header-height);
+  margin-top: calc(var(--header-height) * -1);
+}
+
+.intro-copy {
+  padding: 3em 0;
+}
+
+.intro-copy-holder {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-eyebrow {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.intro-title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 2.5em;
+}
+
+.intro-tagline {
+  line-height: 1.25;
+  font-size: 1.375em;
+}
+
+.intro-description {
+  font-size: 1.125em;
+  margin-bottom: 0;
+}
+
+.intro-links {
+  margin-top: 2em;
+}
+
+.intro-links > .intro-links-item {
+  margin-right: -0.5em;
+  margin-bottom: -0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.intro-links-item > * {
+  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+  margin-right: 1em;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .intro-copy-holder {
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .intro-content {
+    display: flex;
+  }
+  .intro-copy {
+    width: 50%;
+  }
+  .intro-media {
+    width: 50%;
+  }
+}
+.about {
+  padding: 3em 0;
+}
+
 ::selection {
   background-color: var(--selection-bg);
   color: var(--selection-text);
@@ -4422,6 +4649,7 @@ html, body, .body-content, .page-content {
   left: 0;
   width: 100%;
   background-color: var(--header-bg);
+  color: var(--header-color);
   z-index: 1000;
 }
 
@@ -4561,6 +4789,7 @@ html, body, .body-content, .page-content {
   }
   .nav-main {
     background-color: var(--mobile-nav-bg);
+    color: var(--mobile-nav-color);
     font-size: 150%;
     text-align: center;
     padding-top: var(--header-height);
@@ -4671,6 +4900,7 @@ html, body, .body-content, .page-content {
   }
   .nav-main {
     font-size: var(--desktop-nav-text-size);
+    color: var(--desktop-nav-color);
   }
   .nav-main-trigger {
     display: none;
@@ -4715,111 +4945,6 @@ html, body, .body-content, .page-content {
   .nav-link-submenu:hover {
     background-color: var(--desktop-nav-submenu-hover-bg);
   }
-}
-@font-face {
-  font-family: "Mona Sans Regular";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local(""), url("../fonts/Mona-Sans-Regular.woff2") format("woff2");
-}
-/**
- * @license
- *
- * Font Family: Zodiak
- * Designed by: Jérémie Hornus, Gaetan Baehr, Jean-Baptiste Morizot, Alisa Nowak, Theo Guillard
- * URL: https://www.fontshare.com/fonts/zodiak
- * © 2023 Indian Type Foundry
- *
- * Font Styles:
- * Zodiak Variable(Variable font)
- * Zodiak Variable Italic(Variable font)
- * Zodiak Thin
- * Zodiak Thin Italic
- * Zodiak Light
- * Zodiak Light Italic
- * Zodiak Regular
- * Zodiak Italic
- * Zodiak Bold
- * Zodiak Bold Italic
- * Zodiak Extrabold         
- * Zodiak Extrabold Italic
- * Zodiak Black
- * Zodiak Black Italic
- *
-*/
-@font-face {
-  font-family: "Zodiak-Black";
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: local(""), url("../fonts/Zodiak-Black.woff2") format("woff2");
-}
-/**
- * @license
- *
- * Font Family: Literata
- * Designed by: TypeTogether
- * URL: https://www.fontshare.com/fonts/literata
- * © 2023 Indian Type Foundry
- *
- * Font Styles:
- * Literata Variable(Variable font)
- * Literata Variable Italic(Variable font)
- * Literata Extra Light
- * Literata Extra Light Italic
- * Literata Light
- * Literata Light Italic
- * Literata Regular
- * Literata Italic
- * Literata Medium
- * Literata Medium Italic
- * Literata Semi Bold
- * Literata Semi Bold Italic
- * Literata Bold
- * Literata Bold Italic
- * Literata Extra Bold
- * Literata Extra Bold Italic
- * Literata Black
- * Literata Black Italic
- *
-*/
-@font-face {
-  font-family: "Literata-Medium";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local(""), url("../fonts/Literata-Medium.woff2") format("woff2");
-}
-button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background: none transparent;
-  color: inherit;
-  text-align: center;
-  text-decoration: none;
-  text-transform: none;
-  font: inherit;
-  line-height: normal;
-  cursor: pointer;
-  user-select: none;
-}
-
-.button {
-  padding: 0.75em 1.5em;
-  border-radius: 9999em;
-  text-decoration: none;
-}
-
-.button-primary {
-  background-color: var(--button-bg);
-  color: var(--button-label);
-}
-
-.button-outline {
-  box-shadow: inset 0 0 0 2px var(--button-bg);
-  color: var(--button-bg);
 }
 
 /*# sourceMappingURL=styles.css.map */

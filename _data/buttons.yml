@@ -1,10 +1,13 @@
-homepage_intro_goto:
-    label: Discover more
-    target: target-section-about
-    # target: # toggle intro CTA button here
-homepage_intro_contact:
-    label: Contact
-    link: contact
+homepage_intro:
+    items:
+        - style: primary
+          label: Discover more
+          link: aaaaaaaa
+          target: target-section-about
+          # target: # toggle intro CTA button here
+        - style: outline
+          label: Contact
+          link: contact
 homepage_about:
     label: Read more
     link: about

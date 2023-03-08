@@ -3,9 +3,36 @@
   weight: 10
   
 - name: About
-  link: /about.html
+  link: /about.html # link will be ignored if submenu exists
   weight: 20
+  submenu:
+  - name: Team
+    link: /team.html
+    weight: 10
+
+  - name: Contact
+    link: /contact.html
+    weight: 20
   
+- name: Materials
+  weight: 25
+  submenu:
+  - name: All Materials
+    link: /all-materials.html
+    weight: 0
+    
+  - name: Metal
+    link: /metal.html
+    weight: 10
+
+  - name: Wood
+    link: /wood.html
+    weight: 20
+    
+  - name: Plastic
+    link: /plastic.html
+    weight: 30
+
 - name: Products
   link: /products.html
   weight: 30
@@ -33,10 +60,6 @@
 - name: Blog
   link: /blog.html
   weight: 40
-
-- name: Team
-  link: /team.html
-  weight: 50
     
 - name: Resources
   # link: /resources.html # toggle comment to use dropdown
@@ -61,7 +84,3 @@
       link: https://www.facebook.com/kurianinc/
       is_external: true
       weight: 40
-
-- name: Contact
-  link: /contact.html
-  weight: 70

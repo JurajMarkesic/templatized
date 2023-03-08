@@ -49,18 +49,27 @@
     --selection-text: #d0fbf7;
 
     --font-family-base: "Mona Sans Regular", sans-serif;
-    --font-family-heading: "Literata-Medium", serif;
+    --font-family-heading: "Literata-Bold", serif;
 
     --theme-paper: white;
     --theme-ink: black;
     --theme-dark-paper: black;
     --theme-dark-ink: white;
 
-    --button-bg: #0fc5b4;
-    --button-label: white;
+    --button-basic-bg: white;
+    --button-basic-hover-bg: #d9fcf9;
+    
+    --button-primary-bg: #0fc5b4;
+    --button-primary-hover-bg: #0f99b4;
+    --button-primary-label: white;
 
+    --button-outline-color: #0fc5b4;
+    --button-outline-hover-bg: white;
+    --button-outline-hover-color: #0f99b4;
+    
     --header-height: 4em;
     --header-bg: #0fc5b4;
+    --header-color: white;
     --header-brand-link-height: 36px;
 
     --footer-padding-top: 2.5em;
@@ -71,10 +80,12 @@
     --footer-socials-space-between-items: 0.5em;
 
     --mobile-nav-bg: #12edd9;
+    --mobile-nav-color: black;
     --mobile-current-bg: white;
-    --mobile-submenu-bg: #d0fbf7;
+    --mobile-submenu-bg: #89f6ec;
 
     --desktop-current-bg: white;
+    --desktop-nav-color: black;
     --desktop-nav-text-size: 1.125em;
     --desktop-nav-space-between-items: 1.5em;
     --desktop-nav-link-hover-bg: #12edd9;
@@ -122,137 +133,269 @@
         
             <li class="nav-item">
                 
-                    <a href="/" class="nav-link " >
-                        <span class="nav-link-label">
-                            <span class="nav-link-label-inner">
-                                Home
-                            </span>
+                <a href="/" class="nav-link " >
+                    <span class="nav-link-label">
+                        <span class="nav-link-label-inner">
+                            Home
                         </span>
-                    </a>
+                    </span>
+                </a>
                 
             </li>
         
             <li class="nav-item">
                 
-                    <a href="/about.html" class="nav-link " >
-                        <span class="nav-link-label">
-                            <span class="nav-link-label-inner">
-                                About
-                            </span>
-                        </span>
-                    </a>
+                <button class="nav-link nav-main-submenu-toggle js-mobile-accordion-trigger">
+                    <span class="nav-link-label">
+                        About
+                    </span>
+                    <span class="nav-submenu-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                </button>
+
                 
-            </li>
-        
-            <li class="nav-item">
+                <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
                 
-                    <a href="/products.html" class="nav-link " >
-                        <span class="nav-link-label">
-                            <span class="nav-link-label-inner">
-                                Products
-                            </span>
-                        </span>
-                    </a>
-                
-            </li>
-        
-            <li class="nav-item">
-                
-                    <a href="/blog.html" class="nav-link " >
-                        <span class="nav-link-label">
-                            <span class="nav-link-label-inner">
-                                Blog
-                            </span>
-                        </span>
-                    </a>
-                
-            </li>
-        
-            <li class="nav-item">
-                
-                    <a href="/team.html" class="nav-link " >
-                        <span class="nav-link-label">
-                            <span class="nav-link-label-inner">
+
+                    <li class="nav-item-submenu">
+                    
+                        <a href="/team.html" class="nav-link nav-link-submenu " >
+                            <span class="nav-link-label">
                                 Team
                             </span>
-                        </span>
-                    </a>
+                        </a>
+                    
+                    </li>
+
                 
-            </li>
-        
-            <li class="nav-item">
-                
-                    <button class="nav-link nav-main-submenu-toggle js-mobile-accordion-trigger">
-                        <span class="nav-link-label">
-                            Resources
-                        </span>
-                        <span class="nav-submenu-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-                    </button>
 
+                    <li class="nav-item-submenu">
                     
-                    <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
-                    
-
-                        <li class="nav-item-submenu">
-                        
-                            <a href="https://github.com/kurianinc/ami-pub" class="nav-link nav-link-submenu " target="_blank">
-                                <span class="nav-link-label">
-                                    Github
-                                </span>
-                            </a>
-                        
-                        </li>
-
-                    
-
-                        <li class="nav-item-submenu">
-                        
-                            <a href="https://kurianinc.medium.com/" class="nav-link nav-link-submenu " target="_blank">
-                                <span class="nav-link-label">
-                                    Kurian DevOps Blog
-                                </span>
-                            </a>
-                        
-                        </li>
-
-                    
-
-                        <li class="nav-item-submenu">
-                        
-                            <a href="https://aws.amazon.com/marketplace/search/" class="nav-link nav-link-submenu " target="_blank">
-                                <span class="nav-link-label">
-                                    AWS Marketplace Listing
-                                </span>
-                            </a>
-                        
-                        </li>
-
-                    
-
-                        <li class="nav-item-submenu">
-                        
-                            <a href="https://www.facebook.com/kurianinc/" class="nav-link nav-link-submenu " target="_blank">
-                                <span class="nav-link-label">
-                                    Facebook page
-                                </span>
-                            </a>
-                        
-                        </li>
-
-                    
-                    </ul>
-                
-            </li>
-        
-            <li class="nav-item">
-                
-                    <a href="/contact.html" class="nav-link " >
-                        <span class="nav-link-label">
-                            <span class="nav-link-label-inner">
+                        <a href="/contact.html" class="nav-link nav-link-submenu " >
+                            <span class="nav-link-label">
                                 Contact
                             </span>
+                        </a>
+                    
+                    </li>
+
+                
+                </ul>
+                
+            </li>
+        
+            <li class="nav-item">
+                
+                <button class="nav-link nav-main-submenu-toggle js-mobile-accordion-trigger">
+                    <span class="nav-link-label">
+                        Materials
+                    </span>
+                    <span class="nav-submenu-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                </button>
+
+                
+                <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
+                
+
+                    <li class="nav-item-submenu">
+                    
+                        <a href="/all-materials.html" class="nav-link nav-link-submenu " >
+                            <span class="nav-link-label">
+                                All Materials
+                            </span>
+                        </a>
+                    
+                    </li>
+
+                
+
+                    <li class="nav-item-submenu">
+                    
+                        <a href="/metal.html" class="nav-link nav-link-submenu " >
+                            <span class="nav-link-label">
+                                Metal
+                            </span>
+                        </a>
+                    
+                    </li>
+
+                
+
+                    <li class="nav-item-submenu">
+                    
+                        <a href="/wood.html" class="nav-link nav-link-submenu " >
+                            <span class="nav-link-label">
+                                Wood
+                            </span>
+                        </a>
+                    
+                    </li>
+
+                
+
+                    <li class="nav-item-submenu">
+                    
+                        <a href="/plastic.html" class="nav-link nav-link-submenu " >
+                            <span class="nav-link-label">
+                                Plastic
+                            </span>
+                        </a>
+                    
+                    </li>
+
+                
+                </ul>
+                
+            </li>
+        
+            <li class="nav-item">
+                
+                <button class="nav-link nav-main-submenu-toggle js-mobile-accordion-trigger">
+                    <span class="nav-link-label">
+                        Products
+                    </span>
+                    <span class="nav-submenu-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                </button>
+
+                
+                <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
+                
+
+                    <li class="nav-item-submenu">
+                    
+                        <a href="/aws-professional-services/" class="nav-link nav-link-submenu " >
+                            <span class="nav-link-label">
+                                AWS Professional Services
+                            </span>
+                        </a>
+                    
+                    </li>
+
+                
+
+                    <li class="nav-item-submenu">
+                    
+                        <a href="/aws-professional-services/content-management-hosting/" class="nav-link nav-link-submenu " >
+                            <span class="nav-link-label">
+                                Content Management Hosting
+                            </span>
+                        </a>
+                    
+                    </li>
+
+                
+
+                    <li class="nav-item-submenu">
+                    
+                        <a href="/aws-professional-services/smallbiz-on-the-cloud/" class="nav-link nav-link-submenu " >
+                            <span class="nav-link-label">
+                                SmallBiz on the Cloud
+                            </span>
+                        </a>
+                    
+                    </li>
+
+                
+
+                    <li class="nav-item-submenu">
+                    
+                        <a href="/aws-professional-services/ci-cd-pipeline-cloud-resources/" class="nav-link nav-link-submenu " >
+                            <span class="nav-link-label">
+                                CI/CD Pipeline Cloud Resources
+                            </span>
+                        </a>
+                    
+                    </li>
+
+                
+
+                    <li class="nav-item-submenu">
+                    
+                        <a href="/aws-professional-services/public-cloud-machine-image/" class="nav-link nav-link-submenu " >
+                            <span class="nav-link-label">
+                                Public Cloud Machine Image
+                            </span>
+                        </a>
+                    
+                    </li>
+
+                
+                </ul>
+                
+            </li>
+        
+            <li class="nav-item">
+                
+                <a href="/blog.html" class="nav-link " >
+                    <span class="nav-link-label">
+                        <span class="nav-link-label-inner">
+                            Blog
                         </span>
-                    </a>
+                    </span>
+                </a>
+                
+            </li>
+        
+            <li class="nav-item">
+                
+                <button class="nav-link nav-main-submenu-toggle js-mobile-accordion-trigger">
+                    <span class="nav-link-label">
+                        Resources
+                    </span>
+                    <span class="nav-submenu-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                </button>
+
+                
+                <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
+                
+
+                    <li class="nav-item-submenu">
+                    
+                        <a href="https://github.com/kurianinc/ami-pub" class="nav-link nav-link-submenu " target="_blank">
+                            <span class="nav-link-label">
+                                Github
+                            </span>
+                        </a>
+                    
+                    </li>
+
+                
+
+                    <li class="nav-item-submenu">
+                    
+                        <a href="https://kurianinc.medium.com/" class="nav-link nav-link-submenu " target="_blank">
+                            <span class="nav-link-label">
+                                Kurian DevOps Blog
+                            </span>
+                        </a>
+                    
+                    </li>
+
+                
+
+                    <li class="nav-item-submenu">
+                    
+                        <a href="https://aws.amazon.com/marketplace/search/" class="nav-link nav-link-submenu " target="_blank">
+                            <span class="nav-link-label">
+                                AWS Marketplace Listing
+                            </span>
+                        </a>
+                    
+                    </li>
+
+                
+
+                    <li class="nav-item-submenu">
+                    
+                        <a href="https://www.facebook.com/kurianinc/" class="nav-link nav-link-submenu " target="_blank">
+                            <span class="nav-link-label">
+                                Facebook page
+                            </span>
+                        </a>
+                    
+                    </li>
+
+                
+                </ul>
                 
             </li>
         
@@ -525,8 +668,8 @@
   left: 0.5rem;
   bottom: 1.5rem;
   padding: 0.25em;
-  background-color: var(--button-bg);
-  /* color: var(--button-label); */
+  background-color: var(--button-primary-bg);
+  /* color: var(--button-primary-label); */
   font-size: 0.875rem;
 }
 /* html.dark .dev-only .info-layout {
