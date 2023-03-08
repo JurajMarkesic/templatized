@@ -8,15 +8,20 @@ homepage_intro:
         - style: outline
           label: Contact
           link: contact
+
 homepage_about:
     items:
         - style: primary
           label: Go to About page
           link: about
+
 homepage_work:
-    label: See all of our work
-    link: work
-    label_list_item: Learn more
+    items:
+        - style: primary
+          label: See all of our work
+          link: work
+          label_list_item: Learn more
+          
 homepage_products:
     label: See all of our products
     link: products

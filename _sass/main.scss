@@ -171,10 +171,10 @@ html, body, .body-content, .page-content {
             background-color: currentColor;
             pointer-events: none;
 
-            @media (max-width: 991px) {
+            @include media-breakpoint-down(lg) {
                 background-color: var(--mobile-current-bg);
             }
-            @media (min-width: 992px) {
+            @include media-breakpoint-up(lg) {
                 background-color: var(--desktop-current-bg);
             }
         }

@@ -2,7 +2,6 @@
 ---
 
 // Bootstrap
-@import "bootstrap-variables";
 @import "bootstrap-5.0.2/scss/bootstrap-grid"; // using only grid
 
 // the project uses a simplified version of ITCSS methodology
@@ -20,5 +19,6 @@
 @import "sections/general";
 @import "sections/intro";
 @import "sections/about";
+@import "sections/work";
 
 @import "main";

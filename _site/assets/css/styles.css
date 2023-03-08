@@ -13,8 +13,8 @@
 .container-md,
 .container-sm {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 3rem);
-  padding-left: var(--bs-gutter-x, 3rem);
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
 }
@@ -45,7 +45,7 @@
   }
 }
 .row {
-  --bs-gutter-x: 6rem;
+  --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
@@ -4544,6 +4544,10 @@ button {
   margin-top: calc(var(--header-height) * -1);
 }
 
+.section-copy {
+  padding: 3em 0;
+}
+
 .section-label {
   margin: 0;
   font-size: 0.875em;
@@ -4553,7 +4557,12 @@ button {
 .section-title {
   margin: 0;
   line-height: 1.15;
-  font-size: 2.5em;
+  font-size: 1.75em;
+}
+@media (min-width: 992px) {
+  .section-title {
+    font-size: 2.5em;
+  }
 }
 
 .section-links {
@@ -4577,18 +4586,25 @@ button {
   padding: 3em 0 4em;
 }
 
-.intro-copy {
-  padding: 3em 0;
-}
-
 .intro-eyebrow {
   margin-top: 0;
   margin-bottom: 0.5em;
+  font-size: 0.875em;
+}
+@media (min-width: 992px) {
+  .intro-eyebrow {
+    font-size: 1em;
+  }
 }
 
 .intro-tagline {
   line-height: 1.25;
-  font-size: 1.375em;
+  font-size: 1.25em;
+}
+@media (min-width: 992px) {
+  .intro-tagline {
+    font-size: 1.375em;
+  }
 }
 
 .intro-description {
@@ -4597,6 +4613,14 @@ button {
 
 .section-about {
   padding: 3em 0 4em;
+}
+
+.section-work {
+  padding: 3em 0 4em;
+}
+
+.work-items-wrapper {
+  margin-top: 2em;
 }
 
 ::selection {
@@ -4747,7 +4771,7 @@ html, body, .body-content, .page-content {
   background-color: currentColor;
   pointer-events: none;
 }
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
   .nav-link.is-current .nav-link-label:before {
     background-color: var(--mobile-current-bg);
   }

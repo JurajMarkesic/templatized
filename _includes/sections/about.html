@@ -10,33 +10,29 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 order-lg-1">
-                <div class="about-content">
+                <div class="section-copy px-lg-5">
                     {% if item.section_label %}
-                    <div class="section-header">
-                        <p class="section-label">
-                            {{ item.section_label }}
-                        </p>
-                    </div>
+                    <p class="section-label">
+                        {{ item.section_label }}
+                    </p>
                     {% endif %}
-                    <div class="about-copy">
-                        <h2 class="section-title">{{ item.title }}</h2>
+                    <h2 class="section-title">{{ item.title }}</h2>
 
-                        {% if item.paragraph_1 %}<p>{{ item.paragraph_1 }}</p>{% endif %}
-                        {% if item.paragraph_2 %}<p>{{ item.paragraph_2 }}</p>{% endif %}
-                        {% if item.paragraph_3 %}<p>{{ item.paragraph_3 }}</p>{% endif %}
+                    {% if item.paragraph_1 %}<p>{{ item.paragraph_1 }}</p>{% endif %}
+                    {% if item.paragraph_2 %}<p>{{ item.paragraph_2 }}</p>{% endif %}
+                    {% if item.paragraph_3 %}<p>{{ item.paragraph_3 }}</p>{% endif %}
 
-                        {% assign buttons = site.data.buttons.homepage_about.items %}
-                        {%- if buttons -%}
-                        <div class="section-links">
-                            {%- for item in buttons -%}
-                            {% assign button_style = item.style %}
-                            <span class="section-links-item">
-                                <a class="button {% if item.style == 'primary' %}button-primary {% elsif item.style == 'outline' %}button-outline {% endif %}" href="{{ item.link | relative_url }}">{{ item.label | escape }}</a>
-                            </span>
-                            {%- endfor -%}
-                        </div>
-                        {%- endif -%}
+                    {% assign buttons = site.data.buttons.homepage_about.items %}
+                    {%- if buttons -%}
+                    <div class="section-links">
+                        {%- for item in buttons -%}
+                        {% assign button_style = item.style %}
+                        <span class="section-links-item">
+                            <a class="button {% if item.style == 'primary' %}button-primary {% elsif item.style == 'outline' %}button-outline {% endif %}" href="{{ item.link | relative_url }}">{{ item.label | escape }}</a>
+                        </span>
+                        {%- endfor -%}
                     </div>
+                    {%- endif -%}
                 </div>
             </div>
             <div class="col-lg-6">

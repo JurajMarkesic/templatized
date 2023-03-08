@@ -1,16 +1,22 @@
 .section-intro {
     padding: 3em 0 4em;
 }
-.intro-copy {
-    padding: 3em 0;
-}
 .intro-eyebrow {
     margin-top: 0;
     margin-bottom: 0.5em;
+    font-size: 0.875em;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 1em;
+    }
 }
 .intro-tagline {
     line-height: 1.25;
-    font-size: 1.375em;
+    font-size: 1.25em;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 1.375em;
+    }
 }
 .intro-description {
     margin-bottom: 0;

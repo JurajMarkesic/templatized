@@ -1,17 +1,26 @@
 {% assign work = site.data.section-work %}
 {% assign button = site.data.buttons.homepage_work %}
 {% assign limit = site.home.limit_works %}
-<section>
+<section class="section-work">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 offset-md-1 col-lg-4">
-                <h2>{{ work.title }}</h2>
-                {% if work.intro %}<p>{{ work.intro }}</p>{% endif %}
-                {% assign work_items = site.data.section-work.items | sort: 'weight' %}
-                {% if work_items %}
+        <div class="section-copy">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 col-xl-6 offset-xl-3">
+                    {% if work.section_label %}
+                    <p class="section-label">
+                        {{ work.section_label }}
+                    </p>
+                    {% endif %}
+                    <h2 class="section-title">{{ work.title }}</h2>
+                    {% if work.description %}<p>{{ work.description }}</p>{% endif %}
+                </div>
+            </div>
+            {% assign work_items = site.data.section-work.items | sort: 'weight' %}
+            {% if work_items %}
+            <div class="work-items-wrapper">
                 <ul>
-                  {% for item in work_items limit: limit %}
-                  <li>
+                    {% for item in work_items limit: limit %}
+                    <li>
                     {% if item.is_flagship %}<p>flagship</p>{% endif %}
                     <h3>{{ item.name }}</h3>
                     {% if item.description %}<p>{{ item.description }}</p>{% endif %}
@@ -19,12 +28,23 @@
                         {{ button.label_list_item }}
                         {% if item.is_external %}+++{% endif %}
                     </a>
-                  </li>
-                  {% endfor %}
+                    </li>
+                    {% endfor %}
                 </ul>
-                {% endif %}
-                <a href="{{ button.link | relative_url }}">{{ button.label | escape }}</a>
             </div>
+            {% endif %}
+
+            {% assign buttons = site.data.buttons.homepage_work.items %}
+            {%- if buttons -%}
+            <div class="section-links">
+                {%- for item in buttons -%}
+                {% assign button_style = item.style %}
+                <span class="section-links-item">
+                    <a class="button {% if item.style == 'primary' %}button-primary {% elsif item.style == 'outline' %}button-outline {% endif %}" href="{{ item.link | relative_url }}">{{ item.label | escape }}</a>
+                </span>
+                {%- endfor -%}
+            </div>
+            {%- endif -%}
         </div>
     </div>
 </section>
