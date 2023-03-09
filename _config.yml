@@ -22,7 +22,7 @@ collections:
   work:
     output: true
   team:
-    output: false
+    output: true
   products:
     output: true
 

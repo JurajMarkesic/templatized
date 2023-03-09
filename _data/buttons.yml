@@ -21,14 +21,17 @@ homepage_work:
           label: See all of our work
           link: work
           label_list_item: Read case study
+
+homepage_team:
+    items:
+        - style: primary
+          label: Meet the team
+          link: team
           
 homepage_products:
     label: See all of our products
     link: products
     label_list_item: Learn more
-homepage_team:
-    label: Meet the team
-    link: team
 homepage_posts:
     label: See all posts
     link: blog

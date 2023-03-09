@@ -44,31 +44,6 @@ html, body, .body-content, .page-content {
     margin-bottom: 4em;
 }
 
-.team-intro-button-wrap {
-    margin-bottom: 2em;
-}
-
-.work-items {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    row-gap: 1.5em;
-}
-
-.work-item-thumbnail {
-    width: 100%;
-}
-
-.work-card {
-    padding: 0.75em;
-    border-radius: 1.75em;
-    box-shadow: inset 0 0 0 0.125em var(--work-card-border-color);
-}
-
-.work-item-summary {
-}
-
 .page-body {
     margin-top: 3em;
     padding-bottom: 4em;

@@ -4,70 +4,68 @@
 {% assign limit = site.home.limit_works %}
 <section class="section-work">
     <div class="container">
-        <div class="section-copy">
-            <div class="row">
-                <div class="col-md-8 offset-md-2 col-xl-6 offset-xl-3">
-                    {% if work.section_label %}
-                    <p class="section-label">
-                        {{ work.section_label }}
-                    </p>
-                    {% endif %}
-                    <h2 class="section-title">{{ work.title }}</h2>
-                    {% if work.description %}<p>{{ work.description }}</p>{% endif %}
-                </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 col-xl-6 offset-xl-3">
+                {% if work.section_label %}
+                <p class="section-label">
+                    {{ work.section_label }}
+                </p>
+                {% endif %}
+                <h2 class="section-title">{{ work.title }}</h2>
+                {% if work.description %}<p>{{ work.description }}</p>{% endif %}
             </div>
-            {% if work_posts %}
-            <div class="work-items-wrapper">
-                <ul class="work-items">
-                    {% for item in work_posts limit: limit %}
-                    <li class="work-card">
-                        <div class="row">
-                            <div class="col-sm-4 col-lg-3">
-                                <div class="o-ratio o-ratio-5:4 media-rounded-small">
-                                    {% if item.thumbnail %}
-                                    <img draggable="false" alt="{{ item.name }}" src="{{ item.thumbnail | relative_url }}" />
-                                    {% endif %}
-                                </div>
-                            </div>
-                            <div class="col-sm-8 col-lg-9">
-                                <div class="work-item-summary">
-                                    {% if item.is_flagship %}<p>flagship</p>{% endif %}
-                                    <h3>
-                                        <a class="work-card-link"
-                                        {% if item.url_external %}
-                                            href="{{ item.url_external }}" target="_blank"
-                                        {% else %}
-                                            href="{{ item.url | relative_url }}"
-                                        {% endif %}
-                                        >
-                                            <span class="work-card-link-label">
-                                                {{ item.name }}
-                                            </span>
-                                            <span class="work-card-link-external">
-                                                {% if item.url_external %}+++{% endif %}
-                                            </span>
-                                        </a>
-                                    </h3>
-                                    {% if item.description %}<p>{{ item.description }}</p>{% endif %}
-                                </div>
+        </div>
+        {% if work_posts %}
+        <div class="work-items-wrapper">
+            <ul class="work-items">
+                {% for item in work_posts limit: limit %}
+                <li class="work-card">
+                    <div class="row">
+                        <div class="col-sm-4 col-lg-3">
+                            <div class="o-ratio o-ratio-5:4 media-rounded-small">
+                                {% if item.thumbnail %}
+                                <img draggable="false" alt="{{ item.name }}" src="{{ item.thumbnail | relative_url }}" />
+                                {% endif %}
                             </div>
                         </div>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-            {% endif %}
-
-            {%- if buttons -%}
-            <div class="section-links">
-                {%- for item in buttons -%}
-                {% assign button_style = item.style %}
-                <span class="section-links-item">
-                    <a class="button {% if item.style == 'primary' %}button-primary {% elsif item.style == 'outline' %}button-outline {% endif %}" href="{{ item.link | relative_url }}">{{ item.label | escape }}</a>
-                </span>
-                {%- endfor -%}
-            </div>
-            {%- endif -%}
+                        <div class="col-sm-8 col-lg-9">
+                            <div class="work-item-summary">
+                                {% if item.is_flagship %}<p>flagship</p>{% endif %}
+                                <h3>
+                                    <a class="work-card-link"
+                                    {% if item.url_external %}
+                                        href="{{ item.url_external }}" target="_blank"
+                                    {% else %}
+                                        href="{{ item.url | relative_url }}"
+                                    {% endif %}
+                                    >
+                                        <span class="work-card-link-label">
+                                            {{ item.name }}
+                                        </span>
+                                        <span class="work-card-link-external">
+                                            {% if item.url_external %}+++{% endif %}
+                                        </span>
+                                    </a>
+                                </h3>
+                                {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
+        {% endif %}
+
+        {%- if buttons -%}
+        <div class="section-links">
+            {%- for item in buttons -%}
+            {% assign button_style = item.style %}
+            <span class="section-links-item">
+                <a class="button {% if item.style == 'primary' %}button-primary {% elsif item.style == 'outline' %}button-outline {% endif %}" href="{{ item.link | relative_url }}">{{ item.label | escape }}</a>
+            </span>
+            {%- endfor -%}
+        </div>
+        {%- endif -%}
     </div>
 </section>

@@ -44,6 +44,7 @@ css:
     desktop_nav_submenu_hover_bg: '#89f6ec'
     desktop_nav_submenu_width: '16em'
   
+    work_section_bg: '#f3f3f3'
     work_card_border_color: '#0fc5b4'
     work_card_hover_bg: '#d0fbf7'
     

@@ -1,36 +1,70 @@
 {% assign team = site.data.section-team %}
 {% assign team_posts = site.team | sort: 'weight' %}
-{% assign button = site.data.buttons.homepage_team %}
+{% assign buttons = site.data.buttons.homepage_team.items %}
 {% assign limit = site.home.limit_team %}
 <section class="section-team">
     <div class="container">
-        <div class="section-copy">
-            <div class="row">
-                <div class="col-md-8 offset-md-2 col-xl-6 offset-xl-3">
-                    {% if team.section_label %}
-                    <p class="section-label">
-                        {{ team.section_label }}
-                    </p>
-                    {% endif %}
-                    <h2 class="section-title">{{ team.title }}</h2>
-                    {% if team.description %}<p>{{ team.description }}</p>{% endif %}
-                </div>
-            </div>
-            {% if team_posts %}
-            <div class="team-items-wrapper">
-                <ul class="team-items">
-                    {% for item in team_posts limit: limit %}
-                    <li class="team-card">
-                        {% if item.thumbnail %}<img alt="{{ item.title }}" src="{{ item.thumbnail | relative_url }}" />{% endif %}
-                        {% if item.is_prominent %}<p>prominent</p>{% endif %}
-                        <h3>{{ item.title }}</h3>
-                        {% if item.description %}<p>{{ item.description }}</p>{% endif %}
-                    </li>
-                    {% endfor %}
-                </ul>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 col-xl-6 offset-xl-3">
+                {% if team.section_label %}
+                <p class="section-label">
+                    {{ team.section_label }}
+                </p>
                 {% endif %}
-                <a href="{{ button.link | relative_url }}">{{ button.label | escape }}</a>
+                <h2 class="section-title">{{ team.title }}</h2>
+                {% if team.description %}<p>{{ team.description }}</p>{% endif %}
             </div>
         </div>
-    </div>
-</section>
+        {% if team_posts %}
+        <div class="team-items-wrapper">
+            <ul class="team-items">
+                {% for item in team_posts limit: limit %}
+                <li class="team-card">
+                    <div class="row">
+                        <div class="col-sm-4 col-lg-3">
+                            <div class="o-ratio media-rounded-small">
+                                {% if item.thumbnail %}
+                                <img draggable="false" alt="{{ item.name }}" src="{{ item.thumbnail | relative_url }}" />
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-lg-9">
+                            <div class="team-item-summary">
+                                {% if item.is_flagship %}<p>flagship</p>{% endif %}
+                                <h3>
+                                    <a class="team-card-link"
+                                    {% if item.url_external %}
+                                        href="{{ item.url_external }}" target="_blank"
+                                    {% else %}
+                                        href="{{ item.url | relative_url }}"
+                                    {% endif %}
+                                    >
+                                        <span class="team-card-link-label">
+                                            {{ item.name }}
+                                        </span>
+                                        <span class="team-card-link-external">
+                                            {% if item.url_external %}+++{% endif %}
+                                        </span>
+                                    </a>
+                                </h3>
+                                {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+
+            {%- if buttons -%}
+            <div class="section-links">
+                {%- for item in buttons -%}
+                {% assign button_style = item.style %}
+                <span class="section-links-item">
+                    <a class="button {% if item.style == 'primary' %}button-primary {% elsif item.style == 'outline' %}button-outline {% endif %}" href="{{ item.link | relative_url }}">{{ item.label | escape }}</a>
+                </span>
+                {%- endfor -%}
+            </div>
+            {%- endif -%}
+        </div>
+    </section>
