@@ -1,6 +1,7 @@
 ---
 date: 2023-01-01T10:00:00+10:00
 name: Alice Anderson
+post_title: Alice Anderson
 thumbnail: assets/images/team/member006.jpg
 description: Pellentesque sagittis fermentum augue, eu egestas leo augue.
 # permalink: /team/alice

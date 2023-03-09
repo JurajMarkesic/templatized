@@ -1,6 +1,7 @@
 ---
 date: 2023-01-01T10:00:00+10:00
 name: Sam Smith
+post_title: Sam Smith
 thumbnail: assets/images/team/member001.jpg
 description: Pellentesque sagittis fermentum augue, eu egestas leo augue.
 # permalink: /team/sam

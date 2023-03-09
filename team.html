@@ -1,5 +1,4 @@
 ---
-is_live: false
 title: Our team
 description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibulum nisi. Ut a velit ut erat venenatis euismod. Nulla dictum maximus luctus. Vestibulum et quam efficitur, auctor metus id, iaculis massa. Nulla facilisi. Donec sodales lacinia metus.
 # description: # toggle description text if needed
@@ -24,7 +23,6 @@ description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibu
                     <div class="team-item-summary">
                         {% if item.is_flagship %}<p>flagship</p>{% endif %}
                         <h3 class="team-item-title">
-                            {% if is_live %}
                             <a class="team-card-link"
                             {% if item.url_external %}
                                 href="{{ item.url_external }}" target="_blank"
@@ -41,11 +39,6 @@ description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibu
                                     {% endif %}
                                 </span>
                             </a>
-                            {% else %}
-                            <span class="team-card-link-label">
-                                {{ item.name }}
-                            </span>
-                            {% endif %}
                         </h3>
                         {% if item.description %}<p>{{ item.description }}</p>{% endif %}
                     </div>
