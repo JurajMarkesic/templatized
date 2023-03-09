@@ -1,7 +1,7 @@
 ---
 date: 2023-01-01T10:00:00+10:00
-list_name: Uno
-title: Uno title
+name: Uno
+post_title: Uno title
 thumbnail: assets/images/intro/landing-page-hero.jpg
 description: Condimentum neque sit amet id.
 permalink: /work/uno-custom

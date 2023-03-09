@@ -24,7 +24,7 @@
                         <div class="col-sm-4 col-lg-3">
                             <div class="o-ratio o-ratio-5:4 media-rounded-small">
                                 {% if item.thumbnail %}
-                                <img draggable="false" alt="{{ item.list_name }}" src="{{ item.thumbnail | relative_url }}" />
+                                <img draggable="false" alt="{{ item.name }}" src="{{ item.thumbnail | relative_url }}" />
                                 {% endif %}
                             </div>
                         </div>
@@ -40,7 +40,7 @@
                                     {% endif %}
                                     >
                                         <span class="work-card-link-label">
-                                            {{ item.list_name }}
+                                            {{ item.name }}
                                         </span>
                                         <span class="work-card-link-external">
                                             {% if item.url_external %}

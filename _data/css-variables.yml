@@ -51,6 +51,10 @@ css:
     team_section_bg: '#f3f3f3'
     team_card_border_color: '#0fc5b4'
     team_card_hover_bg: '#d0fbf7'
+  
+    products_section_bg: '#f3f3f3'
+    products_card_border_color: '#0fc5b4'
+    products_card_hover_bg: '#d0fbf7'
     
     transition_duration_slow: '0.9s'
     transition_duration_fast: '0.3s'

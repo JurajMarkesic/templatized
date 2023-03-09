@@ -1,7 +1,7 @@
 ---
 date: 2023-01-01T10:00:00+10:00
-list_name: Quattro
-title: Quattro title
+name: Quattro
+post_title: Quattro title
 thumbnail: assets/images/intro/landing-page-hero.jpg
 description: Praesent a quam nec erat commodo facilisis. Donec at mauris.
 # permalink: /work/quattro-custom

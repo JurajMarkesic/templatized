@@ -29,6 +29,11 @@ collections:
 defaults:
   - scope:
       path: ""
+      type: "products"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
       type: "work"
     values:
       layout: "post"

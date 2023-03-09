@@ -1,6 +1,7 @@
 ---
 date: 2023-01-01T10:00:00+10:00
 name: Docker
+post_title: Docker
 thumbnail: https://picsum.photos/240/240?v=1
 description: Vivamus imperdiet posuere ipsum in elementum. Vestibulum elementum tempor proin.
 # permalink: /products/docker # control url format here
