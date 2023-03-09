@@ -1,8 +1,12 @@
 ---
+title: Privacy policy
 ---
 
-Privacy policy
---------------
+# h1 heading
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolorem aspernatur nostrum, deleniti modi quae perspiciatis? Suscipit, eum eius similique laborum temporibus perspiciatis possimus aliquam labore hic quaerat, molestiae commodi amet itaque quam rem?
+
+## h2 heading
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolorem aspernatur nostrum, deleniti modi quae perspiciatis? Suscipit, eum eius similique laborum temporibus perspiciatis possimus aliquam labore hic quaerat, molestiae commodi amet itaque quam rem?
 

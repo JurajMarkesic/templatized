@@ -4658,6 +4658,24 @@ html, body, .body-content, .page-content {
   padding-top: var(--header-height);
 }
 
+.page-layout {
+  height: 100%;
+}
+
+.page-intro {
+  padding-top: 3em;
+  margin-bottom: 4em;
+}
+
+.team-intro-button-wrap {
+  margin-bottom: 2em;
+}
+
+.page-body {
+  margin-top: 3em;
+  padding-bottom: 4em;
+}
+
 .header {
   position: fixed;
   top: 0;

@@ -97,6 +97,11 @@ defaults:
     values:
       layout: "post"
   - scope:
+      path: "team"
+      type: "pages"
+    values:
+      layout: "team"
+  - scope:
       path: ""
       type: "pages"
     values:

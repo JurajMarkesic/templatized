@@ -14,24 +14,24 @@
     link: /contact.html
     weight: 20
   
-- name: Materials
-  weight: 25
-  submenu:
-  - name: All Materials
-    link: /all-materials.html
-    weight: 0
+# - name: Materials
+#   weight: 25
+#   submenu:
+#   - name: All Materials
+#     link: /all-materials.html
+#     weight: 0
     
-  - name: Metal
-    link: /metal.html
-    weight: 10
+#   - name: Metal
+#     link: /metal.html
+#     weight: 10
 
-  - name: Wood
-    link: /wood.html
-    weight: 20
+#   - name: Wood
+#     link: /wood.html
+#     weight: 20
     
-  - name: Plastic
-    link: /plastic.html
-    weight: 30
+#   - name: Plastic
+#     link: /plastic.html
+#     weight: 30
 
 - name: Products
   link: /products.html
@@ -57,30 +57,30 @@
       link: /aws-professional-services/public-cloud-machine-image/
       weight: 50
       
-- name: Blog
-  link: /blog.html
-  weight: 40
+# - name: Blog
+#   link: /blog.html
+#   weight: 40
     
-- name: Resources
-  # link: /resources.html # toggle comment to use dropdown
-  weight: 60
-  submenu:
-    - name: Github
-      link: https://github.com/kurianinc/ami-pub
-      is_external: true
-      weight: 10
+# - name: Resources
+#   # link: /resources.html # toggle comment to use dropdown
+#   weight: 60
+#   submenu:
+#     - name: Github
+#       link: https://github.com/kurianinc/ami-pub
+#       is_external: true
+#       weight: 10
       
-    - name: Kurian DevOps Blog
-      link: https://kurianinc.medium.com/
-      is_external: true
-      weight: 20
+#     - name: Kurian DevOps Blog
+#       link: https://kurianinc.medium.com/
+#       is_external: true
+#       weight: 20
       
-    - name: AWS Marketplace Listing
-      link: https://aws.amazon.com/marketplace/search/
-      is_external: true
-      weight: 30
+#     - name: AWS Marketplace Listing
+#       link: https://aws.amazon.com/marketplace/search/
+#       is_external: true
+#       weight: 30
       
-    - name: Facebook page
-      link: https://www.facebook.com/kurianinc/
-      is_external: true
-      weight: 40
+#     - name: Facebook page
+#       link: https://www.facebook.com/kurianinc/
+#       is_external: true
+#       weight: 40

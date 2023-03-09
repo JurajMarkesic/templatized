@@ -1,0 +1,19 @@
+---
+title: Our team
+---
+
+{% assign team = site.team | sort: 'weight' %}
+{% assign button = site.data.buttons.homepage_team %}
+
+{% if team %}
+    <ul>
+    {% for item in team %}
+        <li>
+            {% if item.thumbnail %}<img alt="{{ item.title }}" src="{{ item.thumbnail | relative_url }}" />{% endif %}
+            {% if item.is_prominent %}<p>prominent</p>{% endif %}
+            <h3>{{ item.title }}</h3>
+            {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+        </li>
+    {% endfor %}
+    </ul>
+{% endif %}

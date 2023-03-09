@@ -37,3 +37,9 @@ homepage_careers:
     label: See all
     link: careers
     label_list_item: Read more
+
+team_back_to_home:
+    items:
+        - style: outline
+          label: Back to homepage
+          link: /
