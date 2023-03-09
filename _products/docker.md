@@ -1,11 +1,11 @@
 ---
-title: Docker
 date: 2023-01-01T10:00:00+10:00
-thumbnail: https://picsum.photos/240/135?v=1
+name: Docker
+thumbnail: https://picsum.photos/240/240?v=1
 description: Vivamus imperdiet posuere ipsum in elementum. Vestibulum elementum tempor proin.
-permalink: products/docker # control url format here
+# permalink: /products/docker # control url format here
 # is_highlighted: true
-weight: 10
+weight: 40
 ---
 
 Docker

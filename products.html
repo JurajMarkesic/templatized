@@ -1,39 +1,39 @@
 ---
-title: Latest projects
+title: New products
 description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibulum nisi. Ut a velit ut erat venenatis euismod. Nulla dictum maximus luctus. Vestibulum et quam efficitur, auctor metus id, iaculis massa. Nulla facilisi. Donec sodales lacinia metus.
 # description: # toggle description text if needed
 ---
 
-{% assign work = site.work | sort: 'weight' %}
+{% assign products = site.products | sort: 'weight' %}
 
-{% if work %}
-<div class="work-items-wrapper">
-    <ul class="work-items">
-        {% for item in work %}
-        <li class="work-card">
+{% if products %}
+<div class="products-items-wrapper">
+    <ul class="products-items">
+        {% for item in products %}
+        <li class="products-card">
             <div class="row">
                 <div class="col-sm-4 col-lg-3">
                     <div class="o-ratio o-ratio-5:4 media-rounded-small">
                         {% if item.thumbnail %}
-                        <img draggable="false" alt="{{ item.list_name }}" src="{{ item.thumbnail | relative_url }}" />
+                        <img draggable="false" alt="{{ item.name }}" src="{{ item.thumbnail | relative_url }}" />
                         {% endif %}
                     </div>
                 </div>
                 <div class="col-sm-8 col-lg-9">
-                    <div class="work-item-summary">
+                    <div class="products-item-summary">
                         {% if item.is_flagship %}<p>flagship</p>{% endif %}
-                        <h3 class="work-item-title">
-                            <a class="work-card-link"
+                        <h3 class="products-item-title">
+                            <a class="products-card-link"
                             {% if item.url_external %}
                                 href="{{ item.url_external }}" target="_blank"
                             {% else %}
                                 href="{{ item.url | relative_url }}"
                             {% endif %}
                             >
-                                <span class="work-card-link-label">
-                                    {{ item.list_name }}
+                                <span class="products-card-link-label">
+                                    {{ item.name }}
                                 </span>
-                                <span class="work-card-link-external">
+                                <span class="products-card-link-external">
                                     {% if item.url_external %}
                                         {% include icons/external-link.svg %}
                                     {% endif %}

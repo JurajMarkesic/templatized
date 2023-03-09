@@ -1,7 +1,9 @@
 ---
 date: 2023-01-01T10:00:00+10:00
+name: Pedro Perez
 thumbnail: assets/images/team/member011.jpg
 description: Pellentesque sagittis fermentum augue, eu egestas leo augue.
+# permalink: /team/pedro
 # is_prominent: true
 weight: 110
 ---

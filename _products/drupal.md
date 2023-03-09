@@ -1,9 +1,9 @@
 ---
-title: Drupal
 date: 2023-01-01T10:00:00+10:00
-thumbnail: https://picsum.photos/240/135?v=2
+name: Drupal
+thumbnail: https://picsum.photos/240/240?v=2
 description: Pellentesque sagittis fermentum augue, eu egestas leo augue.
-permalink: products/drupal
+# permalink: /products/drupal
 # is_highlighted: true
 weight: 20
 ---

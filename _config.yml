@@ -11,7 +11,7 @@ brand_logo: true # if false text will be displayed
 brand_svg: true # if false a png will be used
 
 home:
-  limit_works: 6
+  limit_works: 3
   # limit_works: # toggle if not used
   limit_products: 3
   limit_team: 3
@@ -29,7 +29,12 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "products"
+      type: "work"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "team"
     values:
       layout: "post"
   - scope:
@@ -38,10 +43,20 @@ defaults:
     values:
       layout: "post"
   - scope:
+      path: "work"
+      type: "pages"
+    values:
+      layout: "list"
+  - scope:
+      path: "products"
+      type: "pages"
+    values:
+      layout: "list"
+  - scope:
       path: "team"
       type: "pages"
     values:
-      layout: "team"
+      layout: "list"
   - scope:
       path: ""
       type: "pages"

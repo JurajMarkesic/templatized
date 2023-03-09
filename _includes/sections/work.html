@@ -24,14 +24,14 @@
                         <div class="col-sm-4 col-lg-3">
                             <div class="o-ratio o-ratio-5:4 media-rounded-small">
                                 {% if item.thumbnail %}
-                                <img draggable="false" alt="{{ item.name }}" src="{{ item.thumbnail | relative_url }}" />
+                                <img draggable="false" alt="{{ item.list_name }}" src="{{ item.thumbnail | relative_url }}" />
                                 {% endif %}
                             </div>
                         </div>
                         <div class="col-sm-8 col-lg-9">
                             <div class="work-item-summary">
                                 {% if item.is_flagship %}<p>flagship</p>{% endif %}
-                                <h3>
+                                <h3 class="work-item-title">
                                     <a class="work-card-link"
                                     {% if item.url_external %}
                                         href="{{ item.url_external }}" target="_blank"
@@ -40,10 +40,12 @@
                                     {% endif %}
                                     >
                                         <span class="work-card-link-label">
-                                            {{ item.name }}
+                                            {{ item.list_name }}
                                         </span>
                                         <span class="work-card-link-external">
-                                            {% if item.url_external %}+++{% endif %}
+                                            {% if item.url_external %}
+                                                {% include icons/external-link.svg %}
+                                            {% endif %}
                                         </span>
                                     </a>
                                 </h3>
@@ -58,7 +60,7 @@
         {% endif %}
 
         {%- if buttons -%}
-        <div class="section-links">
+        <div class="section-links section-links-centered">
             {%- for item in buttons -%}
             {% assign button_style = item.style %}
             <span class="section-links-item">

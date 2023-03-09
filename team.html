@@ -1,18 +1,58 @@
 ---
+is_live: false
 title: Our team
+description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibulum nisi. Ut a velit ut erat venenatis euismod. Nulla dictum maximus luctus. Vestibulum et quam efficitur, auctor metus id, iaculis massa. Nulla facilisi. Donec sodales lacinia metus.
+# description: # toggle description text if needed
 ---
 
 {% assign team = site.team | sort: 'weight' %}
 
 {% if team %}
-    <ul>
-    {% for item in team %}
-        <li>
-            {% if item.thumbnail %}<img alt="{{ item.title }}" src="{{ item.thumbnail | relative_url }}" />{% endif %}
-            {% if item.is_prominent %}<p>prominent</p>{% endif %}
-            <h3>{{ item.title }}</h3>
-            {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+<div class="team-items-wrapper">
+    <ul class="team-items">
+        {% for item in team %}
+        <li class="team-card">
+            <div class="row">
+                <div class="col-sm-4 col-lg-3">
+                    <div class="o-ratio media-rounded-small">
+                        {% if item.thumbnail %}
+                        <img draggable="false" alt="{{ item.name }}" src="{{ item.thumbnail | relative_url }}" />
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="col-sm-8 col-lg-9">
+                    <div class="team-item-summary">
+                        {% if item.is_flagship %}<p>flagship</p>{% endif %}
+                        <h3 class="team-item-title">
+                            {% if is_live %}
+                            <a class="team-card-link"
+                            {% if item.url_external %}
+                                href="{{ item.url_external }}" target="_blank"
+                            {% else %}
+                                href="{{ item.url | relative_url }}"
+                            {% endif %}
+                            >
+                                <span class="team-card-link-label">
+                                    {{ item.name }}
+                                </span>
+                                <span class="team-card-link-external">
+                                    {% if item.url_external %}
+                                        {% include icons/external-link.svg %}
+                                    {% endif %}
+                                </span>
+                            </a>
+                            {% else %}
+                            <span class="team-card-link-label">
+                                {{ item.name }}
+                            </span>
+                            {% endif %}
+                        </h3>
+                        {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+                    </div>
+                </div>
+            </div>
         </li>
-    {% endfor %}
+        {% endfor %}
     </ul>
+</div>
 {% endif %}

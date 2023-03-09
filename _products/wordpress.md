@@ -1,11 +1,11 @@
 ---
-title: Wordpress
 date: 2023-01-01T10:00:00+10:00
-thumbnail: https://picsum.photos/240/135?v=4
+name: Wordpress
+thumbnail: https://picsum.photos/240/240?v=4
 description: Nunc vitae tincidunt dolor, sed ultricies est. Phasellus in pulvinar elit, eget convallis lacus. Integer ac tempus odio.
-permalink: products/wordpress
-is_highlighted: true
-weight: 40
+# permalink: /products/wordpress
+# is_highlighted: true
+weight: 10
 ---
 
 WordPress

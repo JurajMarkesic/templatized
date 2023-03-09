@@ -1,6 +1,7 @@
 ---
 date: 2023-01-01T10:00:00+10:00
-name: Google
+list_name: Google
+title: Google title
 thumbnail: assets/images/intro/landing-page-hero.jpg
 description: Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.
 # permalink: /work/google-custom

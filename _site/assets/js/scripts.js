@@ -11,28 +11,31 @@ var mobileDropdownToggleButtons = [...document.querySelectorAll(".js-mobile-acco
 var mobileDropdownPanels = [...document.querySelectorAll(".js-mobile-accordion-panel")]
 
 function handleClickMobileDropdownToggle(el) {
-    
-    var panel = el.target.nextElementSibling;
 
-    if (!panel.classList.contains('active')) {
-        panel.classList.add('active');
-        panel.style.height = 'auto';
+    if (window.innerWidth < 992) {
     
-        var height = panel.clientHeight + 'px';
-    
-        panel.style.height = '0px';
-    
-        setTimeout(function () {
-            panel.style.height = height;
-        }, 0);
-    } else {
-        panel.style.height = '0px';
-    
-        panel.addEventListener('transitionend', function () {
-            panel.classList.remove('active');
-        }, {
-            once: true
-        });
+        var panel = el.target.nextElementSibling;
+        if (!panel.classList.contains('active')) {
+            panel.classList.add('active');
+            panel.style.height = 'auto';
+        
+            var height = panel.clientHeight + 'px';
+        
+            panel.style.height = '0px';
+        
+            setTimeout(function () {
+                panel.style.height = height;
+            }, 0);
+        } else {
+            panel.style.height = '0px';
+        
+            panel.addEventListener('transitionend', function () {
+                panel.classList.remove('active');
+            }, {
+                once: true
+            });
+        }
+        
     }
 }
 

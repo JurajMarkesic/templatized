@@ -1,7 +1,9 @@
 ---
 date: 2023-01-01T10:00:00+10:00
+name: Dr. Derek Davis
 thumbnail: assets/images/team/member007.jpg
 description: Pellentesque sagittis fermentum augue, eu egestas leo augue.
+# permalink: /team/claire
 # is_prominent: true
 weight: 70
 ---

@@ -31,7 +31,7 @@
                         <div class="col-sm-8 col-lg-9">
                             <div class="team-item-summary">
                                 {% if item.is_flagship %}<p>flagship</p>{% endif %}
-                                <h3>
+                                <h3 class="team-item-title">
                                     <a class="team-card-link"
                                     {% if item.url_external %}
                                         href="{{ item.url_external }}" target="_blank"
@@ -43,7 +43,9 @@
                                             {{ item.name }}
                                         </span>
                                         <span class="team-card-link-external">
-                                            {% if item.url_external %}+++{% endif %}
+                                            {% if item.url_external %}
+                                                {% include icons/external-link.svg %}
+                                            {% endif %}
                                         </span>
                                     </a>
                                 </h3>
@@ -57,7 +59,7 @@
             {% endif %}
 
             {%- if buttons -%}
-            <div class="section-links">
+            <div class="section-links section-links-centered">
                 {%- for item in buttons -%}
                 {% assign button_style = item.style %}
                 <span class="section-links-item">

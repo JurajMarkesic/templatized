@@ -1,6 +1,7 @@
 ---
 date: 2023-01-01T10:00:00+10:00
-name: Due
+list_name: Due
+title: Duo title
 thumbnail: assets/images/intro/landing-page-hero.jpg
 description: Pellentesque rhoncus sapien vel erat mattis, id tincidunt diam porttitor. Duis vestibulum.
 # permalink: /work/due-custom

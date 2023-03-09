@@ -1,6 +1,7 @@
 ---
 date: 2023-01-01T10:00:00+10:00
-name: Tre
+list_name: Tre
+title: Tre title
 thumbnail: assets/images/intro/landing-page-hero.jpg
 description: Vestibulum euismod felis vitae vestibulum iaculis. Suspendisse vitae metus.
 # permalink: /work/tre-custom

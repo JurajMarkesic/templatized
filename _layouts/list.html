@@ -4,22 +4,24 @@ layout: default
 
 <div class="page-content">
     <main class="page-layout">
-        {% if page.title %}
         <section class="page-intro">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
+                        {% if page.title %}
                         <h1 class="section-title">{{ page.title }}</h1>
-                        <p>{{ page.date | date_to_string }}</p>
+                        {% endif %}
+                        {% if page.description %}
+                        <p class="section-description">{{ page.description }}</p>
+                        {% endif %}
                     </div>
                 </div>
             </div>
         </section>
-        {% endif %}
         <section class="page-body">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-10 offset-lg-1">
                         {{ content }}
                     </div>
                 </div>

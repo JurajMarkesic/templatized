@@ -1,7 +1,9 @@
 ---
 date: 2023-01-01T10:00:00+10:00
+name: Miguel Martinez
 thumbnail: assets/images/team/member003.jpg
 description: Pellentesque sagittis fermentum augue, eu egestas leo augue.
+# permalink: /team/miguel
 # is_prominent: true
 weight: 30
 ---
