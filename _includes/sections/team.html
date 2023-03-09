@@ -1,20 +1,32 @@
-{% assign team = site.team | sort: 'weight' %}
+{% assign team = site.data.section-team %}
+{% assign team_posts = site.team | sort: 'weight' %}
 {% assign button = site.data.buttons.homepage_team %}
 {% assign limit = site.home.limit_team %}
-<section>
+<section class="section-team">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 offset-md-1 col-lg-4">
-                {% if team %}
-                <ul>
-                  {% for item in team limit: limit %}
-                  <li>
-                    {% if item.thumbnail %}<img alt="{{ item.title }}" src="{{ item.thumbnail | relative_url }}" />{% endif %}
-                    {% if item.is_prominent %}<p>prominent</p>{% endif %}
-                    <h3>{{ item.title }}</h3>
-                    {% if item.description %}<p>{{ item.description }}</p>{% endif %}
-                  </li>
-                  {% endfor %}
+        <div class="section-copy">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 col-xl-6 offset-xl-3">
+                    {% if team.section_label %}
+                    <p class="section-label">
+                        {{ team.section_label }}
+                    </p>
+                    {% endif %}
+                    <h2 class="section-title">{{ team.title }}</h2>
+                    {% if team.description %}<p>{{ team.description }}</p>{% endif %}
+                </div>
+            </div>
+            {% if team_posts %}
+            <div class="team-items-wrapper">
+                <ul class="team-items">
+                    {% for item in team_posts limit: limit %}
+                    <li class="team-card">
+                        {% if item.thumbnail %}<img alt="{{ item.title }}" src="{{ item.thumbnail | relative_url }}" />{% endif %}
+                        {% if item.is_prominent %}<p>prominent</p>{% endif %}
+                        <h3>{{ item.title }}</h3>
+                        {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+                    </li>
+                    {% endfor %}
                 </ul>
                 {% endif %}
                 <a href="{{ button.link | relative_url }}">{{ button.label | escape }}</a>

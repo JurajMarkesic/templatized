@@ -37,58 +37,61 @@
   
   <style> 
   :root {
-    --selection-bg: {{ site.css.selection_bg }};
-    --selection-text: {{ site.css.selection_text }};
+    --selection-bg: {{ site.data.css-variables.css.selection_bg }};
+    --selection-text: {{ site.data.css-variables.css.selection_text }};
 
-    --font-family-base: "{{ site.css.font_base }}", sans-serif;
-    --font-family-heading: "{{ site.css.font_heading }}", serif;
+    --font-family-base: "{{ site.data.css-variables.css.font_base }}", sans-serif;
+    --font-family-heading: "{{ site.data.css-variables.css.font_heading }}", serif;
 
-    --theme-paper: {{ site.css.theme_paper }};
-    --theme-ink: {{ site.css.theme_ink }};
-    --theme-dark-paper: {{ site.css.theme_dark_paper }};
-    --theme-dark-ink: {{ site.css.theme_dark_ink }};
+    --theme-paper: {{ site.data.css-variables.css.theme_paper }};
+    --theme-ink: {{ site.data.css-variables.css.theme_ink }};
+    --theme-dark-paper: {{ site.data.css-variables.css.theme_dark_paper }};
+    --theme-dark-ink: {{ site.data.css-variables.css.theme_dark_ink }};
 
-    --button-basic-bg: {{ site.css.button_basic_bg }};
-    --button-basic-hover-bg: {{ site.css.button_basic_hover_bg }};
+    --button-basic-bg: {{ site.data.css-variables.css.button_basic_bg }};
+    --button-basic-hover-bg: {{ site.data.css-variables.css.button_basic_hover_bg }};
     
-    --button-primary-bg: {{ site.css.button_primary_bg }};
-    --button-primary-hover-bg: {{ site.css.button_primary_hover_bg }};
-    --button-primary-label: {{ site.css.button_primary_label }};
+    --button-primary-bg: {{ site.data.css-variables.css.button_primary_bg }};
+    --button-primary-hover-bg: {{ site.data.css-variables.css.button_primary_hover_bg }};
+    --button-primary-label: {{ site.data.css-variables.css.button_primary_label }};
 
-    --button-outline-color: {{ site.css.button_outline_color }};
-    --button-outline-hover-bg: {{ site.css.button_outline_hover_bg }};
-    --button-outline-hover-color: {{ site.css.button_outline_hover_color }};
+    --button-outline-color: {{ site.data.css-variables.css.button_outline_color }};
+    --button-outline-hover-bg: {{ site.data.css-variables.css.button_outline_hover_bg }};
+    --button-outline-hover-color: {{ site.data.css-variables.css.button_outline_hover_color }};
     
-    --header-height: {{ site.css.header_height }};
-    --header-bg: {{ site.css.header_bg }};
-    --header-color: {{ site.css.header_color }};
-    --header-brand-link-height: {{ site.css.header_brand_link_height }};
+    --header-height: {{ site.data.css-variables.css.header_height }};
+    --header-bg: {{ site.data.css-variables.css.header_bg }};
+    --header-color: {{ site.data.css-variables.css.header_color }};
+    --header-brand-link-height: {{ site.data.css-variables.css.header_brand_link_height }};
 
-    --footer-padding-top: {{ site.css.footer_padding_top }};
-    --footer-padding-bottom: {{ site.css.footer_padding_bottom }};
-    --footer-bg: {{ site.css.footer_bg }};
-    --footer-brand-link-height: {{ site.css.footer_brand_link_height }};
-    --footer-socials-size: {{ site.css.footer_socials_size }};
-    --footer-socials-space-between-items: {{ site.css.footer_socials_space_between_items }};
+    --footer-padding-top: {{ site.data.css-variables.css.footer_padding_top }};
+    --footer-padding-bottom: {{ site.data.css-variables.css.footer_padding_bottom }};
+    --footer-bg: {{ site.data.css-variables.css.footer_bg }};
+    --footer-brand-link-height: {{ site.data.css-variables.css.footer_brand_link_height }};
+    --footer-socials-size: {{ site.data.css-variables.css.footer_socials_size }};
+    --footer-socials-space-between-items: {{ site.data.css-variables.css.footer_socials_space_between_items }};
 
-    --mobile-nav-bg: {{ site.css.mobile_nav_bg }};
-    --mobile-nav-color: {{ site.css.mobile_nav_color }};
-    --mobile-current-bg: {{ site.css.mobile_current_bg }};
-    --mobile-submenu-bg: {{ site.css.mobile_submenu_bg }};
+    --mobile-nav-bg: {{ site.data.css-variables.css.mobile_nav_bg }};
+    --mobile-nav-color: {{ site.data.css-variables.css.mobile_nav_color }};
+    --mobile-current-bg: {{ site.data.css-variables.css.mobile_current_bg }};
+    --mobile-submenu-bg: {{ site.data.css-variables.css.mobile_submenu_bg }};
 
-    --desktop-current-bg: {{ site.css.desktop_current_bg }};
-    --desktop-nav-color: {{ site.css.desktop_nav_color }};
-    --desktop-nav-text-size: {{ site.css.desktop_nav_text_size }};
-    --desktop-nav-space-between-items: {{ site.css.desktop_nav_space_between_items }};
-    --desktop-nav-link-hover-bg: {{ site.css.desktop_nav_link_hover_bg }};
+    --desktop-current-bg: {{ site.data.css-variables.css.desktop_current_bg }};
+    --desktop-nav-color: {{ site.data.css-variables.css.desktop_nav_color }};
+    --desktop-nav-text-size: {{ site.data.css-variables.css.desktop_nav_text_size }};
+    --desktop-nav-space-between-items: {{ site.data.css-variables.css.desktop_nav_space_between_items }};
+    --desktop-nav-link-hover-bg: {{ site.data.css-variables.css.desktop_nav_link_hover_bg }};
 
-    --desktop-nav-submenu-bg: {{ site.css.desktop_nav_submenu_bg }};
-    --desktop-nav-submenu-hover-bg: {{ site.css.desktop_nav_submenu_hover_bg }};
-    --desktop-nav-submenu-width: {{ site.css.desktop_nav_submenu_width }};
+    --desktop-nav-submenu-bg: {{ site.data.css-variables.css.desktop_nav_submenu_bg }};
+    --desktop-nav-submenu-hover-bg: {{ site.data.css-variables.css.desktop_nav_submenu_hover_bg }};
+    --desktop-nav-submenu-width: {{ site.data.css-variables.css.desktop_nav_submenu_width }};
 
-    --transition-duration-slow: {{ site.css.transition_duration_slow }};
-    --transition-duration-fast: {{ site.css.transition_duration_fast }};
-    --easing: {{ site.css.easing }};
+    --work-card-border-color: {{ site.data.css-variables.css.work_card_border_color }};
+    --work-card-hover-bg: {{ site.data.css-variables.css.work_card_hover_bg }};
+
+    --transition-duration-slow: {{ site.data.css-variables.css.transition_duration_slow }};
+    --transition-duration-fast: {{ site.data.css-variables.css.transition_duration_fast }};
+    --easing: {{ site.data.css-variables.css.easing }};
   }
   </style>
 </head>

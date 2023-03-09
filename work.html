@@ -1,0 +1,24 @@
+---
+section_label: Work
+title: Latest projects
+description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibulum nisi. Ut a velit ut erat venenatis euismod. Nulla dictum maximus luctus. Vestibulum et quam efficitur, auctor metus id, iaculis massa. Nulla facilisi. Donec sodales lacinia metus.
+# description: # toggle description text if needed
+---
+
+{% assign work = site.work | sort: 'weight' %}
+
+{% if work %}
+    <ul>
+    {% for item in work %}
+        <li>
+            {% if item.thumbnail %}<img alt="{{ item.title }}" src="{{ item.thumbnail | relative_url }}" />{% endif %}
+            {% if item.is_prominent %}<p>prominent</p>{% endif %}
+            <h3>{{ item.title }}</h3>
+            {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+        </li>
+    {% endfor %}
+    </ul>
+{% endif %}
+
+
+

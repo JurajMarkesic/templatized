@@ -20,7 +20,7 @@ homepage_work:
         - style: primary
           label: See all of our work
           link: work
-          label_list_item: Learn more
+          label_list_item: Read case study
           
 homepage_products:
     label: See all of our products

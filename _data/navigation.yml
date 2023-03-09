@@ -37,24 +37,24 @@
   link: /products.html
   weight: 30
   submenu:
-    - name: AWS Professional Services
-      link: /aws-professional-services/
+    - name: Product 1
+      link: /product-1/
       weight: 10
       
-    - name: Content Management Hosting
-      link: /aws-professional-services/content-management-hosting/
+    - name: Product 2
+      link: /product-2/
       weight: 20
       
-    - name: SmallBiz on the Cloud
-      link: /aws-professional-services/smallbiz-on-the-cloud/
+    - name: Product 3
+      link: /product-3/
       weight: 30
       
-    - name: CI/CD Pipeline Cloud Resources
-      link: /aws-professional-services/ci-cd-pipeline-cloud-resources/
+    - name: Product 4
+      link: /product-4/
       weight: 40
       
-    - name: Public Cloud Machine Image
-      link: /aws-professional-services/public-cloud-machine-image/
+    - name: Product 5
+      link: /product-5/
       weight: 50
       
 # - name: Blog

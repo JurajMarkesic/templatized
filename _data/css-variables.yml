@@ -1,0 +1,60 @@
+css:
+    selection_bg: '#0fc5b4'
+    selection_text: '#d0fbf7'
+  
+    theme_paper: 'white'
+    theme_ink: 'black'
+    theme_dark_paper: 'black'
+    theme_dark_ink: 'white'
+  
+    button_basic_bg: 'white'
+    button_basic_hover_bg: '#d9fcf9'
+  
+    button_primary_bg: '#0fc5b4'
+    button_primary_hover_bg: '#0f99b4'
+    button_primary_label: 'white'
+  
+    button_outline_color: '#0fc5b4'
+    button_outline_hover_bg: 'white'
+    button_outline_hover_color: '#0f99b4'
+  
+    header_height: '4em'
+    header_bg: '#0fc5b4'
+    header_color: 'white'
+    header_brand_link_height: 36px
+  
+    footer_padding_top: '2.5em'
+    footer_padding_bottom: '0.5em'
+    footer_bg: '#d0fbf7'
+    footer_brand_link_height: 28px
+    footer_socials_size: 1.5em
+    footer_socials_space_between_items: 0.5em
+  
+    mobile_nav_bg: '#12edd9'
+    mobile_nav_color: 'black'
+    mobile_current_bg: 'white'
+    mobile_submenu_bg: '#89f6ec'
+  
+    desktop_current_bg: 'white'
+    desktop_nav_color: 'black'
+    desktop_nav_space_between_items: '1.5em'
+    desktop_nav_text_size: '1.125em'
+    desktop_nav_link_hover_bg: '#12edd9'
+    desktop_nav_submenu_bg: '#12edd9'
+    desktop_nav_submenu_hover_bg: '#89f6ec'
+    desktop_nav_submenu_width: '16em'
+  
+    work_card_border_color: '#0fc5b4'
+    work_card_hover_bg: '#d0fbf7'
+    
+    transition_duration_slow: '0.9s'
+    transition_duration_fast: '0.3s'
+    easing: 'cubic-bezier(.4,0,0,1)'
+  
+    # using github's free font Mona Sans - https://github.com/github/mona-sans
+    font_base: Mona Sans Regular
+    # using fontshare's free font Zodiak - https://www.fontshare.com/fonts/zodiak
+    # font_heading: Zodiak-Black
+    # using fontshare's free font Literata - https://www.fontshare.com/fonts/literata
+    font_heading: Literata-Bold
+    
