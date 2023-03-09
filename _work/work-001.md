@@ -6,7 +6,6 @@ thumbnail: assets/images/intro/landing-page-hero.jpg
 description: Condimentum neque sit amet id.
 permalink: /work/uno-custom
 # url_external: https://example.com/
-is_flagship: true
 weight: 10
 ---
 

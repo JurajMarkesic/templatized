@@ -5,7 +5,6 @@ post_title: Gitlab CE
 thumbnail: https://picsum.photos/240/240?v=3
 description: Pellentesque sodales sit amet purus ut posuere. In maximus augue et nisl varius commodo vel eu nisi.
 # permalink: /products/gitlab-ce
-# is_highlighted: true
 weight: 30
 ---
 

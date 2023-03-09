@@ -6,7 +6,6 @@ thumbnail: assets/images/intro/landing-page-hero.jpg
 description: Praesent a quam nec erat commodo facilisis. Donec at mauris.
 # permalink: /work/quattro-custom
 # url_external: https://example.com/
-# is_flagship: true
 weight: 40
 ---
 

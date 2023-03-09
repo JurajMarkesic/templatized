@@ -5,7 +5,6 @@ post_title: Docker
 thumbnail: https://picsum.photos/240/240?v=1
 description: Vivamus imperdiet posuere ipsum in elementum. Vestibulum elementum tempor proin.
 # permalink: /products/docker # control url format here
-# is_highlighted: true
 weight: 40
 ---
 

@@ -1,15 +1,15 @@
 ---
 date: 2023-01-01T10:00:00+10:00
-name: Google
-post_title: Google title
+name: Amazon
+post_title: Amazon title
 thumbnail: assets/images/intro/landing-page-hero.jpg
 description: Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.
-# permalink: /work/google-custom
-url_external: https://google.com/
-weight: 50
+# permalink: /work/amazon-custom
+url_external: https://amazon.com/
+weight: 60
 ---
 
-# Product title Google
+# Product title Amazon
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 

@@ -6,7 +6,6 @@ thumbnail: assets/images/intro/landing-page-hero.jpg
 description: Vestibulum euismod felis vitae vestibulum iaculis. Suspendisse vitae metus.
 # permalink: /work/tre-custom
 # url_external: https://example.com/
-# is_flagship: true
 weight: 30
 ---
 

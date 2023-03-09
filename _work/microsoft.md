@@ -1,15 +1,15 @@
 ---
 date: 2023-01-01T10:00:00+10:00
-name: Google
-post_title: Google title
+name: Microsoft
+post_title: Microsoft title
 thumbnail: assets/images/intro/landing-page-hero.jpg
 description: Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.
-# permalink: /work/google-custom
-url_external: https://google.com/
-weight: 50
+# permalink: /work/microsoft-custom
+url_external: https://microsoft.com/
+weight: 60
 ---
 
-# Product title Google
+# Product title Microsoft
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 

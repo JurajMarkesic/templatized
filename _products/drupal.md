@@ -5,7 +5,6 @@ post_title: Drupal
 thumbnail: https://picsum.photos/240/240?v=2
 description: Pellentesque sagittis fermentum augue, eu egestas leo augue.
 # permalink: /products/drupal
-# is_highlighted: true
 weight: 20
 ---
 

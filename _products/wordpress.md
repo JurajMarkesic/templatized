@@ -5,7 +5,6 @@ post_title: Wordpress
 thumbnail: https://picsum.photos/240/240?v=4
 description: Nunc vitae tincidunt dolor, sed ultricies est. Phasellus in pulvinar elit, eget convallis lacus. Integer ac tempus odio.
 # permalink: /products/wordpress
-# is_highlighted: true
 weight: 10
 ---
 
