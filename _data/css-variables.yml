@@ -7,10 +7,10 @@ css:
     theme_color_meta_name: '#0fc5b4'
 
     theme_color_main: '#0fc5b4'
-    
+    theme_dark_color_main: '#021614'
+
     paper: 'white'
     ink: 'black'
-    dark_color_main: '##021614'
     dark_paper: 'black'
     dark_ink: 'white'
   
