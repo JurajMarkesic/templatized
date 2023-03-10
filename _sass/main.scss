@@ -11,12 +11,6 @@ html {
     scroll-behavior: smooth;
 }
 
-html.dark {
-    color-scheme: dark;
-    background-color: var(--dark-paper);
-    color: var(--dark-ink);
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-heading);
 }
@@ -235,6 +229,7 @@ html, body, .body-content, .page-content {
     }
     .nav-main-trigger {
         position: relative;
+        width: var(--mobile-nav-trigger-width);
     
         & > * {
             pointer-events: none;
@@ -283,7 +278,7 @@ html, body, .body-content, .page-content {
         flex-flow: column;
     }
     .nav-link {
-        padding: 0.25em 1em;
+        padding: 0.75em 0.5em;
         display: flex;
         justify-content: center;
         align-items: center;

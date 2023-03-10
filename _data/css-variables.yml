@@ -7,12 +7,9 @@ css:
     theme_color_meta_name: '#0fc5b4'
 
     theme_color_main: '#0fc5b4'
-    theme_dark_color_main: '#021614'
 
     paper: 'white'
     ink: 'black'
-    dark_paper: 'black'
-    dark_ink: 'white'
   
     button_basic_bg: 'white'
     button_basic_hover_bg: '#d9fcf9'
@@ -24,19 +21,20 @@ css:
     button_outline_color: '#0fc5b4'
     button_outline_hover_bg: 'white'
     button_outline_hover_color: '#0f99b4'
-  
+
     header_height: '4em'
     header_bg: '#0fc5b4'
     header_color: 'white'
     header_brand_link_height: 36px
   
-    footer_padding_top: '2.5em'
-    footer_padding_bottom: '0.5em'
+    footer_padding_top: 2.5em
+    footer_padding_bottom: 0.5em
     footer_bg: '#d0fbf7'
     footer_brand_link_height: 28px
     footer_socials_size: 1.5em
     footer_socials_space_between_items: 0.5em
-  
+    
+    mobile_nav_trigger_width: 2em
     mobile_nav_bg: '#12edd9'
     mobile_nav_color: 'black'
     mobile_current_bg: 'white'

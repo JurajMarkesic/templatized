@@ -1,15 +1,3 @@
-
-<script>
-  try {
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark')
-      document.querySelector('meta[name="theme-color"]').setAttribute('content', '{{ site.data.css-variables.css.theme_dark_color_main }}')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-  } catch (_) {}
-</script>
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,12 +34,9 @@
     --theme-color-meta-mask: {{ site.data.css-variables.css.theme_color_meta_mask }};
 
     --theme-color-main: {{ site.data.css-variables.css.theme_color_main }};
-    --theme-dark-color-main: {{ site.data.css-variables.css.theme_dark_color_main }};
     
     --paper: {{ site.data.css-variables.css.paper }};
     --ink: {{ site.data.css-variables.css.ink }};
-    --dark-paper: {{ site.data.css-variables.css.dark_paper }};
-    --dark-ink: {{ site.data.css-variables.css.dark_ink }};
 
     --button-basic-bg: {{ site.data.css-variables.css.button_basic_bg }};
     --button-basic-hover-bg: {{ site.data.css-variables.css.button_basic_hover_bg }};
@@ -76,6 +61,7 @@
     --footer-socials-size: {{ site.data.css-variables.css.footer_socials_size }};
     --footer-socials-space-between-items: {{ site.data.css-variables.css.footer_socials_space_between_items }};
 
+    --mobile-nav-trigger-width: {{ site.data.css-variables.css.mobile_nav_trigger_width }};
     --mobile-nav-bg: {{ site.data.css-variables.css.mobile_nav_bg }};
     --mobile-nav-color: {{ site.data.css-variables.css.mobile_nav_color }};
     --mobile-current-bg: {{ site.data.css-variables.css.mobile_current_bg }};

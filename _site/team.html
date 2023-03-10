@@ -1,18 +1,6 @@
 <!doctype html><!-- layout: list -->
 <html lang="en">
-  
-<script>
-  try {
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark')
-      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#021614')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-  } catch (_) {}
-</script>
-
-<head>
+  <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,12 +52,9 @@
     --theme-color-meta-mask: #0fc5b4;
 
     --theme-color-main: #0fc5b4;
-    --theme-dark-color-main: #021614;
     
     --paper: white;
     --ink: black;
-    --dark-paper: black;
-    --dark-ink: white;
 
     --button-basic-bg: white;
     --button-basic-hover-bg: #d9fcf9;
@@ -94,6 +79,7 @@
     --footer-socials-size: 1.5em;
     --footer-socials-space-between-items: 0.5em;
 
+    --mobile-nav-trigger-width: 2em;
     --mobile-nav-bg: #12edd9;
     --mobile-nav-color: black;
     --mobile-current-bg: white;
@@ -291,8 +277,8 @@
     </nav>
 </div>
       <button class="nav-main-trigger js-nav-main-trigger" aria-label="Mobile Menu">
-        <span class="nav-main-trigger-icon-menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></span>
-        <span class="nav-main-trigger-icon-close"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
+        <span class="nav-main-trigger-icon-menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></span>
+        <span class="nav-main-trigger-icon-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
       </button>
     </div>
   </div>
@@ -788,9 +774,6 @@
   /* color: var(--button-primary-label); */
   font-size: 0.875rem;
 }
-/* html.dark .dev-only .info-layout {
-  background-color: var(--ink);
-} */
 </style>
 
       
