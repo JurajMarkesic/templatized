@@ -44,7 +44,7 @@
     try {
       if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark')
-        document.querySelector('meta[name="theme-color"]').setAttribute('content', '')
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0fc5b4')
       } else {
         document.documentElement.classList.remove('dark')
       }
@@ -62,6 +62,7 @@
     --theme-color-meta-name: #0fc5b4;
     --theme-color-meta-tile: #0fc5b4;
     --theme-color-meta-mask: #0fc5b4;
+
     --theme-color-main: #0fc5b4;
     --theme-dark-color-main: ;
     
