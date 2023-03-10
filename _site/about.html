@@ -33,12 +33,21 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
 <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
-<link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#da532c">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+<link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#0fc5b4">
+<meta name="msapplication-TileColor" content="#0fc5b4">
+<meta name="theme-color" content=" }}">
 
 
-  
+  <script>
+    try {
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    } catch (_) {}
+  </script>
   
   <style> 
   :root {
@@ -48,10 +57,16 @@
     --font-family-base: "Mona Sans Regular", sans-serif;
     --font-family-heading: "Literata-Bold", serif;
 
-    --theme-paper: white;
-    --theme-ink: black;
-    --theme-dark-paper: black;
-    --theme-dark-ink: white;
+    --theme-color-meta-name: #0fc5b4;
+    --theme-color-meta-tile: #0fc5b4;
+    --theme-color-meta-mask: #0fc5b4;
+    --theme-color-main: #0fc5b4;
+    --theme-dark-color-main: ;
+    
+    --paper: white;
+    --ink: black;
+    --dark-paper: black;
+    --dark-ink: white;
 
     --button-basic-bg: white;
     --button-basic-hover-bg: #d9fcf9;
@@ -416,7 +431,7 @@
   font-size: 0.875rem;
 }
 /* html.dark .dev-only .info-layout {
-  background-color: var(--theme-ink);
+  background-color: var(--ink);
 } */
 </style>
 

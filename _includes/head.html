@@ -22,18 +22,16 @@
 
   {% include custom-head.html %}
 
-  {% comment %}
   <script>
     try {
       if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark')
-        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#020202')
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '{{ site.data.css-variables.css.theme_dark_paper }}')
       } else {
         document.documentElement.classList.remove('dark')
       }
     } catch (_) {}
   </script>
-  {% endcomment %}
   
   <style> 
   :root {
@@ -43,10 +41,16 @@
     --font-family-base: "{{ site.data.css-variables.css.font_base }}", sans-serif;
     --font-family-heading: "{{ site.data.css-variables.css.font_heading }}", serif;
 
-    --theme-paper: {{ site.data.css-variables.css.theme_paper }};
-    --theme-ink: {{ site.data.css-variables.css.theme_ink }};
-    --theme-dark-paper: {{ site.data.css-variables.css.theme_dark_paper }};
-    --theme-dark-ink: {{ site.data.css-variables.css.theme_dark_ink }};
+    --theme-color-meta-name: {{ site.data.css-variables.css.theme_color_meta_name }};
+    --theme-color-meta-tile: {{ site.data.css-variables.css.theme_color_meta_tile }};
+    --theme-color-meta-mask: {{ site.data.css-variables.css.theme_color_meta_mask }};
+    --theme-color-main: {{ site.data.css-variables.css.theme_color_main }};
+    --theme-dark-color-main: {{ site.data.css-variables.css.theme_dark_color_main }};
+    
+    --paper: {{ site.data.css-variables.css.paper }};
+    --ink: {{ site.data.css-variables.css.ink }};
+    --dark-paper: {{ site.data.css-variables.css.dark_paper }};
+    --dark-ink: {{ site.data.css-variables.css.dark_ink }};
 
     --button-basic-bg: {{ site.data.css-variables.css.button_basic_bg }};
     --button-basic-hover-bg: {{ site.data.css-variables.css.button_basic_hover_bg }};

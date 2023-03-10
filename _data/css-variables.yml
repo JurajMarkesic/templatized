@@ -1,11 +1,18 @@
 css:
     selection_bg: '#0fc5b4'
     selection_text: '#d0fbf7'
-  
-    theme_paper: 'white'
-    theme_ink: 'black'
-    theme_dark_paper: 'black'
-    theme_dark_ink: 'white'
+
+    theme_color_meta_mask: '#0fc5b4'
+    theme_color_meta_tile: '#0fc5b4'
+    theme_color_meta_name: '#0fc5b4'
+
+    theme_color_main: '#0fc5b4'
+    
+    paper: 'white'
+    ink: 'black'
+    dark_color_main: '##021614'
+    dark_paper: 'black'
+    dark_ink: 'white'
   
     button_basic_bg: 'white'
     button_basic_hover_bg: '#d9fcf9'
