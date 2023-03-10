@@ -4,12 +4,14 @@ description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibu
 # description: # toggle description text if needed
 ---
 
-{% assign team = site.team | sort: 'weight' %}
+{% if site.team %}
+    {% assign team_posts = site.team | sort: 'weight' %}
+{% endif %}
 
 {% if team %}
 <div class="team-items-wrapper">
     <ul class="team-items">
-        {% for item in team %}
+        {% for item in team_posts %}
         <li class="team-card">
             <div class="row">
                 <div class="col-sm-4 col-lg-3">
@@ -47,4 +49,6 @@ description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibu
         {% endfor %}
     </ul>
 </div>
+{% else %}
+<p>No team members posts displayed</p>
 {% endif %}

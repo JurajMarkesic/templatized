@@ -1,5 +1,7 @@
 {% assign work = site.data.section-work %}
-{% assign work_posts = site.work | sort: 'weight' %}
+{% if site.work %}
+    {% assign work_posts = site.work | sort: 'weight' %}
+{% endif %}
 {% assign buttons = site.data.buttons.homepage_work.items %}
 {% assign limit = site.home.limit_works %}
 <section class="section-work">
@@ -56,6 +58,9 @@
                 {% endfor %}
             </ul>
         </div>
+        
+        {% else %}
+        <p>No work posts displayed</p>
         {% endif %}
 
         {%- if buttons -%}

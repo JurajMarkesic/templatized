@@ -1,5 +1,7 @@
 {% assign products = site.data.section-products %}
-{% assign products_posts = site.products | sort: 'weight' %}
+{% if site.products %}
+    {% assign products_posts = site.products | sort: 'weight' %}
+{% endif %}
 {% assign buttons = site.data.buttons.homepage_products.items %}
 {% assign limit = site.home.limit_products %}
 <section class="section-products">
@@ -56,6 +58,8 @@
                 {% endfor %}
             </ul>
         </div>
+        {% else %}
+        <p>No products posts displayed</p>
         {% endif %}
 
         {%- if buttons -%}

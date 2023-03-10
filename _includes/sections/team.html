@@ -1,5 +1,7 @@
 {% assign team = site.data.section-team %}
-{% assign team_posts = site.team | sort: 'weight' %}
+{% if site.team %}
+    {% assign team_posts = site.team | sort: 'weight' %}
+{% endif %}
 {% assign buttons = site.data.buttons.homepage_team.items %}
 {% assign limit = site.home.limit_team %}
 <section class="section-team">
@@ -55,17 +57,20 @@
                 </li>
                 {% endfor %}
             </ul>
-            {% endif %}
-
-            {%- if buttons -%}
-            <div class="section-links section-links-centered">
-                {%- for item in buttons -%}
-                {% assign button_style = item.style %}
-                <span class="section-links-item">
-                    <a class="button {% if item.style == 'primary' %}button-primary {% elsif item.style == 'outline' %}button-outline {% endif %}" href="{{ item.link | relative_url }}">{{ item.label | escape }}</a>
-                </span>
-                {%- endfor -%}
-            </div>
-            {%- endif -%}
         </div>
-    </section>
+        {% else %}
+        <p>No team members posts displayed</p>
+        {% endif %}
+
+        {%- if buttons -%}
+        <div class="section-links section-links-centered">
+            {%- for item in buttons -%}
+            {% assign button_style = item.style %}
+            <span class="section-links-item">
+                <a class="button {% if item.style == 'primary' %}button-primary {% elsif item.style == 'outline' %}button-outline {% endif %}" href="{{ item.link | relative_url }}">{{ item.label | escape }}</a>
+            </span>
+            {%- endfor -%}
+        </div>
+        {%- endif -%}
+    </div>
+</section>

@@ -1,15 +1,17 @@
 ---
-title: Latest projects
+title: Our projects
 description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibulum nisi. Ut a velit ut erat venenatis euismod. Nulla dictum maximus luctus. Vestibulum et quam efficitur, auctor metus id, iaculis massa. Nulla facilisi. Donec sodales lacinia metus.
 # description: # toggle description text if needed
 ---
 
-{% assign work = site.work | sort: 'weight' %}
+{% if site.work %}
+    {% assign work_posts = site.work | sort: 'weight' %}
+{% endif %}
 
 {% if work %}
 <div class="work-items-wrapper">
     <ul class="work-items">
-        {% for item in work %}
+        {% for item in work_posts %}
         <li class="work-card">
             <div class="row">
                 <div class="col-sm-4 col-lg-3">
@@ -47,4 +49,6 @@ description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibu
         {% endfor %}
     </ul>
 </div>
+{% else %}
+<p>No work posts displayed</p>
 {% endif %}

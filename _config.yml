@@ -19,6 +19,8 @@ home:
   limit_careers: 3
 
 collections:
+  # work:
+  #   output: true # has to be commented out like this for some reason
   work:
     output: true
   team:
