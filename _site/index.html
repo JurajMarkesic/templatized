@@ -1,6 +1,17 @@
 <!doctype html><!-- layout: home -->
 <html lang="en">
   
+<script>
+  try {
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#021614')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  } catch (_) {}
+</script>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,17 +48,6 @@
 <meta name="msapplication-TileColor" content="#0fc5b4">
 <meta name="theme-color" content="#0fc5b4">
 
-
-  <script>
-    try {
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark')
-        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#021614')
-      } else {
-        document.documentElement.classList.remove('dark')
-      }
-    } catch (_) {}
-  </script>
   
   <style> 
   :root {
