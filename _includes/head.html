@@ -22,18 +22,16 @@
 
   {% include custom-head.html %}
 
-  {% comment %}
   <script>
     try {
       if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark')
-        document.querySelector('meta[name="theme-color"]').setAttribute('content', '{{ site.data.css-variables.css.theme_color_main }}')
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '{{ site.data.css-variables.css.theme_dark_color_main }}')
       } else {
         document.documentElement.classList.remove('dark')
       }
     } catch (_) {}
   </script>
-  {% endcomment %}
   
   <style> 
   :root {
