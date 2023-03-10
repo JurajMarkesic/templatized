@@ -1,0 +1,38 @@
+.sr-only {
+    clip: rect(0,0,0,0);
+    border: 0;
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+a[href="#main-content"] {
+    transform: translateX(-100%);
+    transition: transform var(--transition-duration-fast) var(--easing);
+}
+a[href="#main-content"]:focus {
+    clip: auto;
+    outline: thin dotted currentColor;
+    background-color: white;
+    color: black;
+    border: none;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: none;
+    z-index: 99999;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (-webkit-min-device-pixel-ratio: 0), screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+    a[href="#main-content"]:focus {
+        outline-style: auto !important;
+        outline-width: medium !important;
+    }
+}
+

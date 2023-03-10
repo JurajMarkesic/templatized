@@ -3,6 +3,8 @@
 
 # lang: hr # overrides default en
 
+a11y_skip: Skip to main content
+
 company_name: "YOUR_BRAND_NAME"
 copyright_label: "All right reserved"
 

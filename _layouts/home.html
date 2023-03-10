@@ -4,6 +4,7 @@ layout: default
 
 <div class="page-content">
     <main>
+        <div {% if site.a11y_skip %}id="main-content"{% endif %}></div>
         {% include {{ page.intro }} %}
         {% include {{ page.about }} %}
         {% if page.work %}{% include {{ page.work }} %}{% endif %}

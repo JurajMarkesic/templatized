@@ -8,7 +8,7 @@ description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibu
     {% assign team_posts = site.team | sort: 'weight' %}
 {% endif %}
 
-{% if team %}
+{% if team_posts %}
 <div class="team-items-wrapper">
     <ul class="team-items">
         {% for item in team_posts %}
