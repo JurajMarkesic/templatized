@@ -13,8 +13,15 @@ var mobileDropdownPanels = [...document.querySelectorAll(".js-mobile-accordion-p
 function handleClickMobileDropdownToggle(el) {
 
     if (window.innerWidth < 992) {
-    
-        var panel = el.target.nextElementSibling;
+
+        if (el.target.classList.contains('is-open')) {
+            el.target.classList.remove("is-open");
+        } else {
+            el.target.classList.add("is-open");
+        }
+
+        var panel = el.target.nextElementSibling.firstElementChild;
+
         if (!panel.classList.contains('active')) {
             panel.classList.add('active');
             panel.style.height = 'auto';
@@ -41,13 +48,12 @@ function handleClickMobileDropdownToggle(el) {
 
 function destroyHeights() {
     mobileDropdownToggleButtons.forEach((item) => {
-        var panel = item.nextElementSibling;
-        if (panel.classList.contains('active')) {
-            panel.classList.remove('active')
-            setTimeout(function () {
-                panel.style.height = 'auto';
-            }, 0);
-        }
+        console.log("iteeeeeem");
+        item.classList.remove("is-open");
+        item.nextElementSibling.firstElementChild.classList.remove('active')
+        setTimeout(function () {
+            item.nextElementSibling.firstElementChild.style.height = 'auto';
+        }, 20);
     })
 }
 

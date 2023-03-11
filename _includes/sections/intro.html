@@ -19,9 +19,8 @@
                     <div class="section-links">
                         {%- for item in buttons -%}
                         {% assign button_style = item.style %}
-                        {% assign button_target = item.target %}
                         <span class="section-links-item">
-                            <a class="button {% if button_style == 'primary' %}button-primary {% elsif button_style == 'outline' %}button-outline {% endif %}" href="{%- if button_target -%}#{{ item.target }}{%- else -%}{{ item.link | relative_url }}{%- endif -%}">{{ item.label | escape }}</a>
+                            <a class="button {% if item.style == 'primary' %}button-primary {% elsif item.style == 'outline' %}button-outline {% endif %}" href="{{ item.link | relative_url }}">{{ item.label | escape }}</a>
                         </span>
                         {%- endfor -%}
                     </div>

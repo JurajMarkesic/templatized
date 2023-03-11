@@ -15,7 +15,7 @@ brand_svg: true # if false a png will be used
 home:
   limit_works: 3
   # limit_works: # toggle if not used
-  limit_products: 3
+  limit_products: 4
   limit_team: 3
   limit_posts: 3
   limit_careers: 3
@@ -25,9 +25,9 @@ collections:
   #   output: true # has to be commented out like this for some reason
   work:
     output: true
-  team:
-    output: true
   products:
+    output: true
+  team:
     output: true
 
 defaults:
@@ -56,6 +56,11 @@ defaults:
       type: "pages"
     values:
       layout: "list"
+  - scope:
+      path: "about"
+      type: "pages"
+    values:
+      layout: "about"
   - scope:
       path: "products"
       type: "pages"

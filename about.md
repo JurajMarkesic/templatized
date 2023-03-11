@@ -1,5 +1,13 @@
 ---
-title: About
+title: About us
+
+sections:
+    intro:    sections/about/intro.html
+    work:     sections/work.html
+    products: sections/products.html
+    team:     sections/team.html
+    posts:    sections/posts.html
+    careers:  sections/careers.html
 ---
 
 # EXAMPLE COPY! - REPLACE WITH YOURS

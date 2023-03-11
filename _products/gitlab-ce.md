@@ -2,7 +2,7 @@
 date: 2023-01-01T10:00:00+10:00
 name: Gitlab CE
 post_title: Gitlab CE
-thumbnail: https://picsum.photos/240/240?v=3
+thumbnail: https://picsum.photos/300/400?v=3
 description: Pellentesque sodales sit amet purus ut posuere. In maximus augue et nisl varius commodo vel eu nisi.
 # permalink: /products/gitlab-ce
 weight: 30

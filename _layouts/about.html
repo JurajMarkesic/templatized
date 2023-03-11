@@ -14,12 +14,12 @@ layout: default
             {% if page.sections.careers %}{% include {{ page.sections.careers }} %}{% endif %}
         {% else %}
 
-            {% if site.company_name %}
+            {% if page.title %}
             <section class="page-intro">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h1 class="section-title">{{ site.company_name }}</h1>
+                            <h1 class="section-title">{{ page.title }}</h1>
                         </div>
                     </div>
                 </div>

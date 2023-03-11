@@ -1,4 +1,6 @@
-{% assign menu = site.data.navigation | sort: 'weight' %}
+{% if site.data.navigation %}
+    {% assign menu = site.data.navigation | sort: 'weight' %}
+{% endif %}
 <div class="nav-main-wrapper">
     <nav class="nav-main">
         <ul class="nav-main-list-reset nav-main-list">
@@ -13,21 +15,23 @@
                 </button>
 
                 {% assign submenu = item.submenu | sort: 'weight' %}
-                <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
-                {% for item in submenu %}
+                <div class="nav-list-submenu-wrap">
+                    <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
+                    {% for item in submenu %}
 
-                    <li class="nav-item-submenu">
-                    {% if item.link %}
-                        <a href="{{ item.link | relative_url }}" class="nav-link nav-link-submenu {% if page.url == item.link %}is-current{% endif %}" {% if item.is_external %}target="_blank"{% endif %}>
-                            <span class="nav-link-label">
-                                {{ item.name }}
-                            </span>
-                        </a>
-                    {% endif %}
-                    </li>
+                        <li class="nav-item-submenu">
+                        {% if item.link %}
+                            <a href="{{ item.link | relative_url }}" class="nav-link nav-link-submenu {% if page.url == item.link %}is-current{% endif %}" {% if item.is_external %}target="_blank"{% endif %}>
+                                <span class="nav-link-label">
+                                    {{ item.name }}
+                                </span>
+                            </a>
+                        {% endif %}
+                        </li>
 
-                {% endfor %}
-                </ul>
+                    {% endfor %}
+                    </ul>
+                </div>
                 {% else %}
                 <a href="{{ item.link | relative_url }}" class="nav-link {% if page.url == item.link %}is-current{% endif %}" {% if item.is_external %}target="_blank"{% endif %}>
                     <span class="nav-link-label">

@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% assign button = site.data.buttons.global.work %}
+
 <div class="page-content">
     <main class="page-layout">
         {% if page.title %}
@@ -26,5 +28,17 @@ layout: default
                 </div>
             </div>
         </section>
+
+        {%- if button -%}
+        <div class="section-links section-links-centered">
+            {%- for item in button -%}
+            {% assign button_style = item.style %}
+            <span class="section-links-item">
+                <a class="button {% if item.style == 'primary' %}button-primary {% elsif item.style == 'outline' %}button-outline {% endif %}" href="{{ item.link | relative_url }}">{{ item.label | escape }}</a>
+            </span>
+            {%- endfor -%}
+        </div>
+        {%- endif -%}
+        
     </main>
 </div>

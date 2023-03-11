@@ -56,7 +56,7 @@
     --paper: white;
     --ink: black;
 
-    --button-basic-bg: white;
+    --button-basic-bg: transparent;
     --button-basic-hover-bg: #d9fcf9;
     
     --button-primary-bg: #0fc5b4;
@@ -74,7 +74,7 @@
 
     --footer-padding-top: 2.5em;
     --footer-padding-bottom: 0.5em;
-    --footer-bg: #d0fbf7;
+    --footer-bg: #0fc5b4;
     --footer-brand-link-height: 28px;
     --footer-socials-size: 1.5em;
     --footer-socials-space-between-items: 0.5em;
@@ -95,17 +95,15 @@
     --desktop-nav-submenu-hover-bg: #89f6ec;
     --desktop-nav-submenu-width: 16em;
 
-    --work-section-bg: #f3f3f3;
-    --work-card-border-color: #0fc5b4;
-    --work-card-hover-bg: #d0fbf7;
+    --intro-section-bg: cornsilk;
+    --work-section-bg: lavender;
+    --team-section-bg: lavender;
+    --products-section-bg: cornsilk;
+    --posts-section-bg: cornsilk;
+    --careers-section-bg: lavender;
 
-    --team-section-bg: #f3f3f3;
-    --team-card-border-color: #0fc5b4;
-    --team-card-hover-bg: #d0fbf7;
-
-    --products-section-bg: #f3f3f3;
-    --products-card-border-color: #0fc5b4;
-    --products-card-hover-bg: #d0fbf7;
+    --list-card-border-color: #0fc5b4;
+    --list-card-hover-bg: #d0fbf7;
 
     --transition-duration-slow: 0.9s;
     --transition-duration-fast: 0.3s;
@@ -167,33 +165,47 @@
                 </button>
 
                 
-                <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
-                
-
-                    <li class="nav-item-submenu">
+                <div class="nav-list-submenu-wrap">
+                    <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
                     
-                        <a href="/team.html" class="nav-link nav-link-submenu " >
-                            <span class="nav-link-label">
-                                Team
-                            </span>
-                        </a>
-                    
-                    </li>
 
-                
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/about.html" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    About us
+                                </span>
+                            </a>
+                        
+                        </li>
 
-                    <li class="nav-item-submenu">
                     
-                        <a href="/contact.html" class="nav-link nav-link-submenu " >
-                            <span class="nav-link-label">
-                                Contact
-                            </span>
-                        </a>
-                    
-                    </li>
 
-                
-                </ul>
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/team.html" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    Team
+                                </span>
+                            </a>
+                        
+                        </li>
+
+                    
+
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/contact.html" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    Contact
+                                </span>
+                            </a>
+                        
+                        </li>
+
+                    
+                    </ul>
+                </div>
                 
             </li>
         
@@ -207,69 +219,71 @@
                 </button>
 
                 
-                <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
-                
-
-                    <li class="nav-item-submenu">
+                <div class="nav-list-submenu-wrap">
+                    <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
                     
-                        <a href="/product-1/" class="nav-link nav-link-submenu " >
-                            <span class="nav-link-label">
-                                Product 1
-                            </span>
-                        </a>
-                    
-                    </li>
 
-                
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/product-1/" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    Product 1
+                                </span>
+                            </a>
+                        
+                        </li>
 
-                    <li class="nav-item-submenu">
                     
-                        <a href="/product-2/" class="nav-link nav-link-submenu " >
-                            <span class="nav-link-label">
-                                Product 2
-                            </span>
-                        </a>
-                    
-                    </li>
 
-                
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/product-2/" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    Product 2
+                                </span>
+                            </a>
+                        
+                        </li>
 
-                    <li class="nav-item-submenu">
                     
-                        <a href="/product-3/" class="nav-link nav-link-submenu " >
-                            <span class="nav-link-label">
-                                Product 3
-                            </span>
-                        </a>
-                    
-                    </li>
 
-                
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/product-3/" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    Product 3
+                                </span>
+                            </a>
+                        
+                        </li>
 
-                    <li class="nav-item-submenu">
                     
-                        <a href="/product-4/" class="nav-link nav-link-submenu " >
-                            <span class="nav-link-label">
-                                Product 4
-                            </span>
-                        </a>
-                    
-                    </li>
 
-                
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/product-4/" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    Product 4
+                                </span>
+                            </a>
+                        
+                        </li>
 
-                    <li class="nav-item-submenu">
                     
-                        <a href="/product-5/" class="nav-link nav-link-submenu " >
-                            <span class="nav-link-label">
-                                Product 5
-                            </span>
-                        </a>
-                    
-                    </li>
 
-                
-                </ul>
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/product-5/" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    Product 5
+                                </span>
+                            </a>
+                        
+                        </li>
+
+                    
+                    </ul>
+                </div>
                 
             </li>
         
@@ -303,242 +317,275 @@
         <div id="main-content"></div>
         <section class="page-body">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1">
-                        
+                
 
 
-<div class="work-items-wrapper">
-    <ul class="work-items">
-        
-        <li class="work-card">
-            <div class="row">
-                <div class="col-sm-4 col-lg-3">
-                    <div class="o-ratio o-ratio-5:4 media-rounded-small">
-                        
-                        <img draggable="false" alt="Uno" src="/assets/images/intro/landing-page-hero.jpg" />
-                        
-                    </div>
-                </div>
-                <div class="col-sm-8 col-lg-9">
-                    <div class="work-item-summary">
-                        <h3 class="work-item-title">
-                            <a class="work-card-link"
-                            
-                                href="/work/uno-custom"
-                            
-                            >
-                                <span class="work-card-link-label">
-                                    Uno
-                                </span>
-                                <span class="work-card-link-external">
+
+
+<div class="list-items-wrapper">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+            <ul class="list-items">
+                
+                <li class="list-card">
+                    <div class="row">
+                        <div class="col-sm-4 col-lg-3">
+                            <div class="media-rounded-small o-ratio 
+                                
+                                o-ratio-5:4
+                                
+                            ">
+                                
+                                <img draggable="false" alt="Uno" src="/assets/images/intro/landing-page-hero.jpg" />
+                                
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-lg-9">
+                            <div class="list-item-summary">
+                                <h3 class="list-item-title">
+                                    <a class="list-card-link"
                                     
-                                </span>
-                            </a>
-                        </h3>
-                        <p>Condimentum neque sit amet id.</p>
-                    </div>
-                </div>
-            </div>
-        </li>
-        
-        <li class="work-card">
-            <div class="row">
-                <div class="col-sm-4 col-lg-3">
-                    <div class="o-ratio o-ratio-5:4 media-rounded-small">
-                        
-                        <img draggable="false" alt="Due" src="/assets/images/intro/landing-page-hero.jpg" />
-                        
-                    </div>
-                </div>
-                <div class="col-sm-8 col-lg-9">
-                    <div class="work-item-summary">
-                        <h3 class="work-item-title">
-                            <a class="work-card-link"
-                            
-                                href="/work/work-002.html"
-                            
-                            >
-                                <span class="work-card-link-label">
-                                    Due
-                                </span>
-                                <span class="work-card-link-external">
+                                        href="/work/uno-custom"
                                     
-                                </span>
-                            </a>
-                        </h3>
-                        <p>Pellentesque rhoncus sapien vel erat mattis, id tincidunt diam porttitor. Duis vestibulum.</p>
+                                    >
+                                        <span class="list-card-link-label">
+                                            Uno
+                                        </span>
+                                        <span class="list-card-link-external">
+                                            
+                                        </span>
+                                    </a>
+                                </h3>
+                                <p>Condimentum neque sit amet id.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </li>
-        
-        <li class="work-card">
-            <div class="row">
-                <div class="col-sm-4 col-lg-3">
-                    <div class="o-ratio o-ratio-5:4 media-rounded-small">
-                        
-                        <img draggable="false" alt="Tre" src="/assets/images/intro/landing-page-hero.jpg" />
-                        
-                    </div>
-                </div>
-                <div class="col-sm-8 col-lg-9">
-                    <div class="work-item-summary">
-                        <h3 class="work-item-title">
-                            <a class="work-card-link"
-                            
-                                href="/work/work-003.html"
-                            
-                            >
-                                <span class="work-card-link-label">
-                                    Tre
-                                </span>
-                                <span class="work-card-link-external">
+                </li>
+                
+                <li class="list-card">
+                    <div class="row">
+                        <div class="col-sm-4 col-lg-3">
+                            <div class="media-rounded-small o-ratio 
+                                
+                                o-ratio-5:4
+                                
+                            ">
+                                
+                                <img draggable="false" alt="Due" src="/assets/images/intro/landing-page-hero.jpg" />
+                                
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-lg-9">
+                            <div class="list-item-summary">
+                                <h3 class="list-item-title">
+                                    <a class="list-card-link"
                                     
-                                </span>
-                            </a>
-                        </h3>
-                        <p>Vestibulum euismod felis vitae vestibulum iaculis. Suspendisse vitae metus.</p>
-                    </div>
-                </div>
-            </div>
-        </li>
-        
-        <li class="work-card">
-            <div class="row">
-                <div class="col-sm-4 col-lg-3">
-                    <div class="o-ratio o-ratio-5:4 media-rounded-small">
-                        
-                        <img draggable="false" alt="Quattro" src="/assets/images/intro/landing-page-hero.jpg" />
-                        
-                    </div>
-                </div>
-                <div class="col-sm-8 col-lg-9">
-                    <div class="work-item-summary">
-                        <h3 class="work-item-title">
-                            <a class="work-card-link"
-                            
-                                href="/work/work-004.html"
-                            
-                            >
-                                <span class="work-card-link-label">
-                                    Quattro
-                                </span>
-                                <span class="work-card-link-external">
+                                        href="/work/work-002.html"
                                     
-                                </span>
-                            </a>
-                        </h3>
-                        <p>Praesent a quam nec erat commodo facilisis. Donec at mauris.</p>
+                                    >
+                                        <span class="list-card-link-label">
+                                            Due
+                                        </span>
+                                        <span class="list-card-link-external">
+                                            
+                                        </span>
+                                    </a>
+                                </h3>
+                                <p>Pellentesque rhoncus sapien vel erat mattis, id tincidunt diam porttitor. Duis vestibulum.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </li>
-        
-        <li class="work-card">
-            <div class="row">
-                <div class="col-sm-4 col-lg-3">
-                    <div class="o-ratio o-ratio-5:4 media-rounded-small">
-                        
-                        <img draggable="false" alt="Google" src="/assets/images/intro/landing-page-hero.jpg" />
-                        
-                    </div>
-                </div>
-                <div class="col-sm-8 col-lg-9">
-                    <div class="work-item-summary">
-                        <h3 class="work-item-title">
-                            <a class="work-card-link"
-                            
-                                href="https://google.com/" target="_blank"
-                            
-                            >
-                                <span class="work-card-link-label">
-                                    Google
-                                </span>
-                                <span class="work-card-link-external">
+                </li>
+                
+                <li class="list-card">
+                    <div class="row">
+                        <div class="col-sm-4 col-lg-3">
+                            <div class="media-rounded-small o-ratio 
+                                
+                                o-ratio-5:4
+                                
+                            ">
+                                
+                                <img draggable="false" alt="Tre" src="/assets/images/intro/landing-page-hero.jpg" />
+                                
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-lg-9">
+                            <div class="list-item-summary">
+                                <h3 class="list-item-title">
+                                    <a class="list-card-link"
                                     
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                        href="/work/work-003.html"
                                     
-                                </span>
-                            </a>
-                        </h3>
-                        <p>Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.</p>
+                                    >
+                                        <span class="list-card-link-label">
+                                            Tre
+                                        </span>
+                                        <span class="list-card-link-external">
+                                            
+                                        </span>
+                                    </a>
+                                </h3>
+                                <p>Vestibulum euismod felis vitae vestibulum iaculis. Suspendisse vitae metus.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </li>
-        
-        <li class="work-card">
-            <div class="row">
-                <div class="col-sm-4 col-lg-3">
-                    <div class="o-ratio o-ratio-5:4 media-rounded-small">
-                        
-                        <img draggable="false" alt="Microsoft" src="/assets/images/intro/landing-page-hero.jpg" />
-                        
-                    </div>
-                </div>
-                <div class="col-sm-8 col-lg-9">
-                    <div class="work-item-summary">
-                        <h3 class="work-item-title">
-                            <a class="work-card-link"
-                            
-                                href="https://microsoft.com/" target="_blank"
-                            
-                            >
-                                <span class="work-card-link-label">
-                                    Microsoft
-                                </span>
-                                <span class="work-card-link-external">
+                </li>
+                
+                <li class="list-card">
+                    <div class="row">
+                        <div class="col-sm-4 col-lg-3">
+                            <div class="media-rounded-small o-ratio 
+                                
+                                o-ratio-5:4
+                                
+                            ">
+                                
+                                <img draggable="false" alt="Quattro" src="/assets/images/intro/landing-page-hero.jpg" />
+                                
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-lg-9">
+                            <div class="list-item-summary">
+                                <h3 class="list-item-title">
+                                    <a class="list-card-link"
                                     
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                        href="/work/work-004.html"
                                     
-                                </span>
-                            </a>
-                        </h3>
-                        <p>Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.</p>
+                                    >
+                                        <span class="list-card-link-label">
+                                            Quattro
+                                        </span>
+                                        <span class="list-card-link-external">
+                                            
+                                        </span>
+                                    </a>
+                                </h3>
+                                <p>Praesent a quam nec erat commodo facilisis. Donec at mauris.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </li>
-        
-        <li class="work-card">
-            <div class="row">
-                <div class="col-sm-4 col-lg-3">
-                    <div class="o-ratio o-ratio-5:4 media-rounded-small">
-                        
-                        <img draggable="false" alt="Amazon" src="/assets/images/intro/landing-page-hero.jpg" />
-                        
-                    </div>
-                </div>
-                <div class="col-sm-8 col-lg-9">
-                    <div class="work-item-summary">
-                        <h3 class="work-item-title">
-                            <a class="work-card-link"
-                            
-                                href="https://amazon.com/" target="_blank"
-                            
-                            >
-                                <span class="work-card-link-label">
-                                    Amazon
-                                </span>
-                                <span class="work-card-link-external">
+                </li>
+                
+                <li class="list-card">
+                    <div class="row">
+                        <div class="col-sm-4 col-lg-3">
+                            <div class="media-rounded-small o-ratio 
+                                
+                                o-ratio-5:4
+                                
+                            ">
+                                
+                                <img draggable="false" alt="Google" src="/assets/images/intro/landing-page-hero.jpg" />
+                                
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-lg-9">
+                            <div class="list-item-summary">
+                                <h3 class="list-item-title">
+                                    <a class="list-card-link"
                                     
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                        href="https://google.com/" target="_blank"
                                     
-                                </span>
-                            </a>
-                        </h3>
-                        <p>Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.</p>
+                                    >
+                                        <span class="list-card-link-label">
+                                            Google
+                                        </span>
+                                        <span class="list-card-link-external">
+                                            
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                            
+                                        </span>
+                                    </a>
+                                </h3>
+                                <p>Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </li>
-        
-    </ul>
+                </li>
+                
+                <li class="list-card">
+                    <div class="row">
+                        <div class="col-sm-4 col-lg-3">
+                            <div class="media-rounded-small o-ratio 
+                                
+                                o-ratio-5:4
+                                
+                            ">
+                                
+                                <img draggable="false" alt="Microsoft" src="/assets/images/intro/landing-page-hero.jpg" />
+                                
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-lg-9">
+                            <div class="list-item-summary">
+                                <h3 class="list-item-title">
+                                    <a class="list-card-link"
+                                    
+                                        href="https://microsoft.com/" target="_blank"
+                                    
+                                    >
+                                        <span class="list-card-link-label">
+                                            Microsoft
+                                        </span>
+                                        <span class="list-card-link-external">
+                                            
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                            
+                                        </span>
+                                    </a>
+                                </h3>
+                                <p>Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="list-card">
+                    <div class="row">
+                        <div class="col-sm-4 col-lg-3">
+                            <div class="media-rounded-small o-ratio 
+                                
+                                o-ratio-5:4
+                                
+                            ">
+                                
+                                <img draggable="false" alt="Amazon" src="/assets/images/intro/landing-page-hero.jpg" />
+                                
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-lg-9">
+                            <div class="list-item-summary">
+                                <h3 class="list-item-title">
+                                    <a class="list-card-link"
+                                    
+                                        href="https://amazon.com/" target="_blank"
+                                    
+                                    >
+                                        <span class="list-card-link-label">
+                                            Amazon
+                                        </span>
+                                        <span class="list-card-link-external">
+                                            
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                            
+                                        </span>
+                                    </a>
+                                </h3>
+                                <p>Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
 </div>
-
-                    </div>
-                </div>
+<div class="section-links section-links-centered">
+    <span class="section-links-item">
+        <a class="button button-outline " href="/contact">Contact</a>
+    </span></div>
             </div>
         </section>
     </main>
@@ -566,13 +613,16 @@
 </div>
 
       </div>
-
-      <div class="footer-end">
+      
+      <div class="footer-nav-legal">
         <div class="nav-legal">
     
         <a href="/privacy-policy.html" >Privacy policy</a>
     
 </div>
+      </div>
+
+      <div class="footer-end">
         <div class="footer-copyright">
           <div class="footer-brand">
             <a href="/" rel="author" class="company-name brand-link">

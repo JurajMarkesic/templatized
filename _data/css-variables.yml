@@ -11,7 +11,7 @@ css:
     paper: 'white'
     ink: 'black'
   
-    button_basic_bg: 'white'
+    button_basic_bg: 'transparent'
     button_basic_hover_bg: '#d9fcf9'
   
     button_primary_bg: '#0fc5b4'
@@ -29,7 +29,7 @@ css:
   
     footer_padding_top: 2.5em
     footer_padding_bottom: 0.5em
-    footer_bg: '#d0fbf7'
+    footer_bg: '#0fc5b4'
     footer_brand_link_height: 28px
     footer_socials_size: 1.5em
     footer_socials_space_between_items: 0.5em
@@ -49,17 +49,15 @@ css:
     desktop_nav_submenu_hover_bg: '#89f6ec'
     desktop_nav_submenu_width: '16em'
   
-    work_section_bg: '#f3f3f3'
-    work_card_border_color: '#0fc5b4'
-    work_card_hover_bg: '#d0fbf7'
-  
-    team_section_bg: '#f3f3f3'
-    team_card_border_color: '#0fc5b4'
-    team_card_hover_bg: '#d0fbf7'
-  
-    products_section_bg: '#f3f3f3'
-    products_card_border_color: '#0fc5b4'
-    products_card_hover_bg: '#d0fbf7'
+    intro_section_bg: 'cornsilk'
+    work_section_bg: 'lavender'
+    products_section_bg: 'cornsilk'
+    team_section_bg: 'lavender'
+    posts_section_bg: 'cornsilk'
+    careers_section_bg: 'lavender'
+
+    list_card_border_color: '#0fc5b4'
+    list_card_hover_bg: '#d0fbf7'
     
     transition_duration_slow: '0.9s'
     transition_duration_fast: '0.3s'

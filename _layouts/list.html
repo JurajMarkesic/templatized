@@ -21,11 +21,7 @@ layout: default
         <div {% if site.a11y_skip %}id="main-content"{% endif %}></div>
         <section class="page-body">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1">
-                        {{ content }}
-                    </div>
-                </div>
+                {{ content }}
             </div>
         </section>
     </main>

@@ -54,7 +54,7 @@
     --paper: white;
     --ink: black;
 
-    --button-basic-bg: white;
+    --button-basic-bg: transparent;
     --button-basic-hover-bg: #d9fcf9;
     
     --button-primary-bg: #0fc5b4;
@@ -72,7 +72,7 @@
 
     --footer-padding-top: 2.5em;
     --footer-padding-bottom: 0.5em;
-    --footer-bg: #d0fbf7;
+    --footer-bg: #0fc5b4;
     --footer-brand-link-height: 28px;
     --footer-socials-size: 1.5em;
     --footer-socials-space-between-items: 0.5em;
@@ -93,17 +93,15 @@
     --desktop-nav-submenu-hover-bg: #89f6ec;
     --desktop-nav-submenu-width: 16em;
 
-    --work-section-bg: #f3f3f3;
-    --work-card-border-color: #0fc5b4;
-    --work-card-hover-bg: #d0fbf7;
+    --intro-section-bg: cornsilk;
+    --work-section-bg: lavender;
+    --team-section-bg: lavender;
+    --products-section-bg: cornsilk;
+    --posts-section-bg: cornsilk;
+    --careers-section-bg: lavender;
 
-    --team-section-bg: #f3f3f3;
-    --team-card-border-color: #0fc5b4;
-    --team-card-hover-bg: #d0fbf7;
-
-    --products-section-bg: #f3f3f3;
-    --products-card-border-color: #0fc5b4;
-    --products-card-hover-bg: #d0fbf7;
+    --list-card-border-color: #0fc5b4;
+    --list-card-hover-bg: #d0fbf7;
 
     --transition-duration-slow: 0.9s;
     --transition-duration-fast: 0.3s;
@@ -165,33 +163,47 @@
                 </button>
 
                 
-                <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
-                
-
-                    <li class="nav-item-submenu">
+                <div class="nav-list-submenu-wrap">
+                    <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
                     
-                        <a href="/team.html" class="nav-link nav-link-submenu " >
-                            <span class="nav-link-label">
-                                Team
-                            </span>
-                        </a>
-                    
-                    </li>
 
-                
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/about.html" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    About us
+                                </span>
+                            </a>
+                        
+                        </li>
 
-                    <li class="nav-item-submenu">
                     
-                        <a href="/contact.html" class="nav-link nav-link-submenu " >
-                            <span class="nav-link-label">
-                                Contact
-                            </span>
-                        </a>
-                    
-                    </li>
 
-                
-                </ul>
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/team.html" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    Team
+                                </span>
+                            </a>
+                        
+                        </li>
+
+                    
+
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/contact.html" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    Contact
+                                </span>
+                            </a>
+                        
+                        </li>
+
+                    
+                    </ul>
+                </div>
                 
             </li>
         
@@ -205,69 +217,71 @@
                 </button>
 
                 
-                <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
-                
-
-                    <li class="nav-item-submenu">
+                <div class="nav-list-submenu-wrap">
+                    <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
                     
-                        <a href="/product-1/" class="nav-link nav-link-submenu " >
-                            <span class="nav-link-label">
-                                Product 1
-                            </span>
-                        </a>
-                    
-                    </li>
 
-                
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/product-1/" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    Product 1
+                                </span>
+                            </a>
+                        
+                        </li>
 
-                    <li class="nav-item-submenu">
                     
-                        <a href="/product-2/" class="nav-link nav-link-submenu " >
-                            <span class="nav-link-label">
-                                Product 2
-                            </span>
-                        </a>
-                    
-                    </li>
 
-                
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/product-2/" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    Product 2
+                                </span>
+                            </a>
+                        
+                        </li>
 
-                    <li class="nav-item-submenu">
                     
-                        <a href="/product-3/" class="nav-link nav-link-submenu " >
-                            <span class="nav-link-label">
-                                Product 3
-                            </span>
-                        </a>
-                    
-                    </li>
 
-                
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/product-3/" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    Product 3
+                                </span>
+                            </a>
+                        
+                        </li>
 
-                    <li class="nav-item-submenu">
                     
-                        <a href="/product-4/" class="nav-link nav-link-submenu " >
-                            <span class="nav-link-label">
-                                Product 4
-                            </span>
-                        </a>
-                    
-                    </li>
 
-                
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/product-4/" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    Product 4
+                                </span>
+                            </a>
+                        
+                        </li>
 
-                    <li class="nav-item-submenu">
                     
-                        <a href="/product-5/" class="nav-link nav-link-submenu " >
-                            <span class="nav-link-label">
-                                Product 5
-                            </span>
-                        </a>
-                    
-                    </li>
 
-                
-                </ul>
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/product-5/" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    Product 5
+                                </span>
+                            </a>
+                        
+                        </li>
+
+                    
+                    </ul>
+                </div>
                 
             </li>
         
@@ -357,13 +371,16 @@
 </div>
 
       </div>
-
-      <div class="footer-end">
+      
+      <div class="footer-nav-legal">
         <div class="nav-legal">
     
         <a href="/privacy-policy.html" class="current">Privacy policy</a>
     
 </div>
+      </div>
+
+      <div class="footer-end">
         <div class="footer-copyright">
           <div class="footer-brand">
             <a href="/" rel="author" class="company-name brand-link">

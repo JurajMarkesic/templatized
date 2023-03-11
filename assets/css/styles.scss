@@ -15,13 +15,21 @@
 @import "objects/ratio";
 
 @import "components/fonts"; // Uncomment this line to self host font
+@import "components/header";
+@import "components/nav-main";
+@import "components/footer";
 @import "components/buttons";
 
 @import "sections/general";
 @import "sections/intro";
-@import "sections/about";
 @import "sections/work";
 @import "sections/products";
 @import "sections/team";
+@import "sections/posts";
+@import "sections/careers";
+
+@import "sections/about-intro";
+
+@import "sections/list";
 
 @import "main";

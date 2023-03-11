@@ -4,51 +4,76 @@ description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibu
 # description: # toggle description text if needed
 ---
 
+{% assign work = site.data.section-work %}
 {% if site.work %}
     {% assign work_posts = site.work | sort: 'weight' %}
 {% endif %}
+{% assign button = site.data.buttons.global.contact %}
 
 {% if work_posts %}
-<div class="work-items-wrapper">
-    <ul class="work-items">
-        {% for item in work_posts %}
-        <li class="work-card">
-            <div class="row">
-                <div class="col-sm-4 col-lg-3">
-                    <div class="o-ratio o-ratio-5:4 media-rounded-small">
-                        {% if item.thumbnail %}
-                        <img draggable="false" alt="{{ item.name }}" src="{{ item.thumbnail | relative_url }}" />
-                        {% endif %}
-                    </div>
-                </div>
-                <div class="col-sm-8 col-lg-9">
-                    <div class="work-item-summary">
-                        <h3 class="work-item-title">
-                            <a class="work-card-link"
-                            {% if item.url_external %}
-                                href="{{ item.url_external }}" target="_blank"
-                            {% else %}
-                                href="{{ item.url | relative_url }}"
-                            {% endif %}
-                            >
-                                <span class="work-card-link-label">
-                                    {{ item.name }}
-                                </span>
-                                <span class="work-card-link-external">
+<div class="list-items-wrapper">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+            <ul class="list-items">
+                {% for item in work_posts limit: limit %}
+                <li class="list-card">
+                    <div class="row">
+                        <div class="col-sm-4 col-lg-3">
+                            <div class="media-rounded-small o-ratio 
+                                {% if work.images_ratio == '5:4' %}
+                                o-ratio-5:4
+                                {% elsif work.images_ratio == '5:3' %}
+                                o-ratio-5:3
+                                {% elsif work.images_ratio == '3:4' %}
+                                o-ratio-3:4
+                                {% endif %}
+                            ">
+                                {% if item.thumbnail %}
+                                <img draggable="false" alt="{{ item.name }}" src="{{ item.thumbnail | relative_url }}" />
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-lg-9">
+                            <div class="list-item-summary">
+                                <h3 class="list-item-title">
+                                    <a class="list-card-link"
                                     {% if item.url_external %}
-                                        {% include icons/external-link.svg %}
+                                        href="{{ item.url_external }}" target="_blank"
+                                    {% else %}
+                                        href="{{ item.url | relative_url }}"
                                     {% endif %}
-                                </span>
-                            </a>
-                        </h3>
-                        {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+                                    >
+                                        <span class="list-card-link-label">
+                                            {{ item.name }}
+                                        </span>
+                                        <span class="list-card-link-external">
+                                            {% if item.url_external %}
+                                                {% include icons/external-link.svg %}
+                                            {% endif %}
+                                        </span>
+                                    </a>
+                                </h3>
+                                {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </li>
-        {% endfor %}
-    </ul>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 </div>
 {% else %}
 <p>No work posts displayed</p>
 {% endif %}
+
+{%- if button -%}
+<div class="section-links section-links-centered">
+    {%- for item in button -%}
+    {% assign button_style = item.style %}
+    <span class="section-links-item">
+        <a class="button {% if item.style == 'primary' %}button-primary {% elsif item.style == 'outline' %}button-outline {% endif %}" href="{{ item.link | relative_url }}">{{ item.label | escape }}</a>
+    </span>
+    {%- endfor -%}
+</div>
+{%- endif -%}

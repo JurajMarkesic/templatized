@@ -4,19 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title></title>
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Home</title>
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Home" />
 <meta property="og:locale" content="en_US" />
 <link rel="canonical" href="http://localhost:4000/" />
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Home" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","headline":"Home","url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -54,7 +51,7 @@
     --paper: white;
     --ink: black;
 
-    --button-basic-bg: white;
+    --button-basic-bg: transparent;
     --button-basic-hover-bg: #d9fcf9;
     
     --button-primary-bg: #0fc5b4;
@@ -72,7 +69,7 @@
 
     --footer-padding-top: 2.5em;
     --footer-padding-bottom: 0.5em;
-    --footer-bg: #d0fbf7;
+    --footer-bg: #0fc5b4;
     --footer-brand-link-height: 28px;
     --footer-socials-size: 1.5em;
     --footer-socials-space-between-items: 0.5em;
@@ -93,17 +90,15 @@
     --desktop-nav-submenu-hover-bg: #89f6ec;
     --desktop-nav-submenu-width: 16em;
 
-    --work-section-bg: #f3f3f3;
-    --work-card-border-color: #0fc5b4;
-    --work-card-hover-bg: #d0fbf7;
+    --intro-section-bg: cornsilk;
+    --work-section-bg: lavender;
+    --team-section-bg: lavender;
+    --products-section-bg: cornsilk;
+    --posts-section-bg: cornsilk;
+    --careers-section-bg: lavender;
 
-    --team-section-bg: #f3f3f3;
-    --team-card-border-color: #0fc5b4;
-    --team-card-hover-bg: #d0fbf7;
-
-    --products-section-bg: #f3f3f3;
-    --products-card-border-color: #0fc5b4;
-    --products-card-hover-bg: #d0fbf7;
+    --list-card-border-color: #0fc5b4;
+    --list-card-hover-bg: #d0fbf7;
 
     --transition-duration-slow: 0.9s;
     --transition-duration-fast: 0.3s;
@@ -165,33 +160,47 @@
                 </button>
 
                 
-                <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
-                
-
-                    <li class="nav-item-submenu">
+                <div class="nav-list-submenu-wrap">
+                    <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
                     
-                        <a href="/team.html" class="nav-link nav-link-submenu " >
-                            <span class="nav-link-label">
-                                Team
-                            </span>
-                        </a>
-                    
-                    </li>
 
-                
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/about.html" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    About us
+                                </span>
+                            </a>
+                        
+                        </li>
 
-                    <li class="nav-item-submenu">
                     
-                        <a href="/contact.html" class="nav-link nav-link-submenu " >
-                            <span class="nav-link-label">
-                                Contact
-                            </span>
-                        </a>
-                    
-                    </li>
 
-                
-                </ul>
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/team.html" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    Team
+                                </span>
+                            </a>
+                        
+                        </li>
+
+                    
+
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/contact.html" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    Contact
+                                </span>
+                            </a>
+                        
+                        </li>
+
+                    
+                    </ul>
+                </div>
                 
             </li>
         
@@ -205,69 +214,71 @@
                 </button>
 
                 
-                <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
-                
-
-                    <li class="nav-item-submenu">
+                <div class="nav-list-submenu-wrap">
+                    <ul class="nav-main-list-reset nav-list-submenu js-mobile-accordion-panel">
                     
-                        <a href="/product-1/" class="nav-link nav-link-submenu " >
-                            <span class="nav-link-label">
-                                Product 1
-                            </span>
-                        </a>
-                    
-                    </li>
 
-                
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/product-1/" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    Product 1
+                                </span>
+                            </a>
+                        
+                        </li>
 
-                    <li class="nav-item-submenu">
                     
-                        <a href="/product-2/" class="nav-link nav-link-submenu " >
-                            <span class="nav-link-label">
-                                Product 2
-                            </span>
-                        </a>
-                    
-                    </li>
 
-                
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/product-2/" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    Product 2
+                                </span>
+                            </a>
+                        
+                        </li>
 
-                    <li class="nav-item-submenu">
                     
-                        <a href="/product-3/" class="nav-link nav-link-submenu " >
-                            <span class="nav-link-label">
-                                Product 3
-                            </span>
-                        </a>
-                    
-                    </li>
 
-                
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/product-3/" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    Product 3
+                                </span>
+                            </a>
+                        
+                        </li>
 
-                    <li class="nav-item-submenu">
                     
-                        <a href="/product-4/" class="nav-link nav-link-submenu " >
-                            <span class="nav-link-label">
-                                Product 4
-                            </span>
-                        </a>
-                    
-                    </li>
 
-                
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/product-4/" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    Product 4
+                                </span>
+                            </a>
+                        
+                        </li>
 
-                    <li class="nav-item-submenu">
                     
-                        <a href="/product-5/" class="nav-link nav-link-submenu " >
-                            <span class="nav-link-label">
-                                Product 5
-                            </span>
-                        </a>
-                    
-                    </li>
 
-                
-                </ul>
+                        <li class="nav-item-submenu">
+                        
+                            <a href="/product-5/" class="nav-link nav-link-submenu " >
+                                <span class="nav-link-label">
+                                    Product 5
+                                </span>
+                            </a>
+                        
+                        </li>
+
+                    
+                    </ul>
+                </div>
                 
             </li>
         
@@ -283,9 +294,10 @@
 </header>
 
         <div class="page-content">
-    <main>
-        <div id="main-content"></div>
+    <main class="page-layout">
         
+            <div class="a11y-aligner" id="main-content"></div>
+            
 <section class="section-intro">
     <div class="container">
         <div class="row align-items-center">
@@ -302,11 +314,9 @@
                     <p class="intro-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie rhoncus vulputate. Nam volutpat, libero eget egestas vulputate, ex eros laoreet orci.</p>
                     
                     <div class="section-links">
-                        
                         <span class="section-links-item">
-                            <a class="button button-primary " href="#target-section-about">Discover more</a>
+                            <a class="button button-primary " href="/about">Discover more</a>
                         </span>
-                        
                         <span class="section-links-item">
                             <a class="button button-outline " href="/contact">Contact</a>
                         </span></div></div>
@@ -321,44 +331,7 @@
         </div>
     </div>
 </section>
-        
-<section class="section-about">
-    <div class="section-id-aligner"
-        
-        id="target-section-about"
-        ></div>
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 order-lg-1">
-                <div class="section-copy pb-5 px-lg-5">
-                    
-                    <p class="section-label">
-                        About us
-                    </p>
-                    
-                    <h2 class="section-title">Our mission/vision</h2>
-
-                    <p>Sed ante lacus, feugiat a laoreet sed, commodo vel tortor. Quisque eget metus sit amet arcu convallis iaculis nec ac ex.</p>
-                    <p>Donec ante felis, malesuada sit amet dapibus egestas, pulvinar vel augue. Aliquam semper accumsan dolor, sit amet malesuada diam maximus eu.</p>
-                    <p>Fusce dictum, leo mattis rutrum volutpat, velit ante blandit nisi est.</p>
-
-                    <div class="section-links">
-                        <span class="section-links-item">
-                            <a class="button button-primary " href="/about">Go to About page</a>
-                        </span></div></div>
-            </div>
-            <div class="col-lg-6">
-                <div class="o-ratio o-ratio-5:4 media-rounded">
-                    
-                    <img draggable="false" alt="Our mission/vision" src="/assets/images/intro/landing-page-hero.jpg" />
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-        
+            
 
 
 
@@ -376,103 +349,119 @@
             </div>
         </div>
         
-        <div class="work-items-wrapper">
-            <ul class="work-items">
-                
-                <li class="work-card">
-                    <div class="row">
-                        <div class="col-sm-4 col-lg-3">
-                            <div class="o-ratio o-ratio-5:4 media-rounded-small">
-                                
-                                <img draggable="false" alt="Uno" src="/assets/images/intro/landing-page-hero.jpg" />
-                                
-                            </div>
-                        </div>
-                        <div class="col-sm-8 col-lg-9">
-                            <div class="work-item-summary">
-                                <h3 class="work-item-title">
-                                    <a class="work-card-link"
-                                    
-                                        href="/work/uno-custom"
-                                    
-                                    >
-                                        <span class="work-card-link-label">
-                                            Uno
-                                        </span>
-                                        <span class="work-card-link-external">
+        <div class="list-items-wrapper">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 ">
+                    <ul class="list-items is-cols-3 ">
+                        
+                        <li class="list-card is-variable">
+                            <div class="row">
+                                <div class="col-sm-4 col-lg-12 ">
+                                    <div class="media-rounded-small o-ratio 
+                                        
+                                        o-ratio-5:4
+                                        
+                                    ">
+                                        
+                                        <img draggable="false" alt="Uno" src="/assets/images/intro/landing-page-hero.jpg" />
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 col-lg-12 ">
+                                    <div class="list-item-summary">
+                                        <h3 class="list-item-title">
+                                            <a class="list-card-link"
                                             
-                                        </span>
-                                    </a>
-                                </h3>
-                                <p>Condimentum neque sit amet id.</p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                
-                <li class="work-card">
-                    <div class="row">
-                        <div class="col-sm-4 col-lg-3">
-                            <div class="o-ratio o-ratio-5:4 media-rounded-small">
-                                
-                                <img draggable="false" alt="Due" src="/assets/images/intro/landing-page-hero.jpg" />
-                                
-                            </div>
-                        </div>
-                        <div class="col-sm-8 col-lg-9">
-                            <div class="work-item-summary">
-                                <h3 class="work-item-title">
-                                    <a class="work-card-link"
-                                    
-                                        href="/work/work-002.html"
-                                    
-                                    >
-                                        <span class="work-card-link-label">
-                                            Due
-                                        </span>
-                                        <span class="work-card-link-external">
+                                                href="/work/uno-custom"
                                             
-                                        </span>
-                                    </a>
-                                </h3>
-                                <p>Pellentesque rhoncus sapien vel erat mattis, id tincidunt diam porttitor. Duis vestibulum.</p>
+                                            >
+                                                <span class="list-card-link-label">
+                                                    Uno
+                                                </span>
+                                                <span class="list-card-link-external">
+                                                    
+                                                </span>
+                                            </a>
+                                        </h3>
+                                        <p>Condimentum neque sit amet id.</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </li>
-                
-                <li class="work-card">
-                    <div class="row">
-                        <div class="col-sm-4 col-lg-3">
-                            <div class="o-ratio o-ratio-5:4 media-rounded-small">
-                                
-                                <img draggable="false" alt="Tre" src="/assets/images/intro/landing-page-hero.jpg" />
-                                
-                            </div>
-                        </div>
-                        <div class="col-sm-8 col-lg-9">
-                            <div class="work-item-summary">
-                                <h3 class="work-item-title">
-                                    <a class="work-card-link"
-                                    
-                                        href="/work/work-003.html"
-                                    
-                                    >
-                                        <span class="work-card-link-label">
-                                            Tre
-                                        </span>
-                                        <span class="work-card-link-external">
+                        </li>
+                        
+                        <li class="list-card is-variable">
+                            <div class="row">
+                                <div class="col-sm-4 col-lg-12 ">
+                                    <div class="media-rounded-small o-ratio 
+                                        
+                                        o-ratio-5:4
+                                        
+                                    ">
+                                        
+                                        <img draggable="false" alt="Due" src="/assets/images/intro/landing-page-hero.jpg" />
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 col-lg-12 ">
+                                    <div class="list-item-summary">
+                                        <h3 class="list-item-title">
+                                            <a class="list-card-link"
                                             
-                                        </span>
-                                    </a>
-                                </h3>
-                                <p>Vestibulum euismod felis vitae vestibulum iaculis. Suspendisse vitae metus.</p>
+                                                href="/work/work-002.html"
+                                            
+                                            >
+                                                <span class="list-card-link-label">
+                                                    Due
+                                                </span>
+                                                <span class="list-card-link-external">
+                                                    
+                                                </span>
+                                            </a>
+                                        </h3>
+                                        <p>Pellentesque rhoncus sapien vel erat mattis, id tincidunt diam porttitor. Duis vestibulum.</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </li>
-                
-            </ul>
+                        </li>
+                        
+                        <li class="list-card is-variable">
+                            <div class="row">
+                                <div class="col-sm-4 col-lg-12 ">
+                                    <div class="media-rounded-small o-ratio 
+                                        
+                                        o-ratio-5:4
+                                        
+                                    ">
+                                        
+                                        <img draggable="false" alt="Tre" src="/assets/images/intro/landing-page-hero.jpg" />
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 col-lg-12 ">
+                                    <div class="list-item-summary">
+                                        <h3 class="list-item-title">
+                                            <a class="list-card-link"
+                                            
+                                                href="/work/work-003.html"
+                                            
+                                            >
+                                                <span class="list-card-link-label">
+                                                    Tre
+                                                </span>
+                                                <span class="list-card-link-external">
+                                                    
+                                                </span>
+                                            </a>
+                                        </h3>
+                                        <p>Vestibulum euismod felis vitae vestibulum iaculis. Suspendisse vitae metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
         </div>
         
         <div class="section-links section-links-centered">
@@ -480,7 +469,7 @@
                 <a class="button button-primary " href="/work">See all of our work</a>
             </span></div></div>
 </section>
-        
+            
 
 
 
@@ -498,110 +487,162 @@
             </div>
         </div>
         
-        <div class="products-items-wrapper">
-            <ul class="products-items">
-                
-                <li class="products-card">
-                    <div class="row">
-                        <div class="col-sm-4 col-lg-3">
-                            <div class="o-ratio media-rounded-small">
-                                
-                                <img draggable="false" alt="Wordpress" src="https://picsum.photos/240/240?v=4" />
-                                
-                            </div>
-                        </div>
-                        <div class="col-sm-8 col-lg-9">
-                            <div class="products-item-summary">
-                                <h3 class="products-item-title">
-                                    <a class="products-card-link"
-                                    
-                                        href="/products/wordpress.html"
-                                    
-                                    >
-                                        <span class="products-card-link-label">
-                                            Wordpress
-                                        </span>
-                                        <span class="products-card-link-external">
+        <div class="list-items-wrapper">
+            <div class="row">
+                <div class="col-12 ">
+                    <ul class="list-items is-cols-4">
+                        
+                        <li class="list-card is-variable">
+                            <div class="row">
+                                <div class="col-sm-4 col-lg-12 ">
+                                    <div class="media-rounded-small o-ratio 
+                                        
+                                        o-ratio-3:4
+                                        
+                                    ">
+                                        
+                                        <img draggable="false" alt="Wordpress" src="https://picsum.photos/300/400?v=4" />
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 col-lg-12 ">
+                                    <div class="list-item-summary">
+                                        <h3 class="list-item-title">
+                                            <a class="list-card-link"
                                             
-                                        </span>
-                                    </a>
-                                </h3>
-                                <p>Nunc vitae tincidunt dolor, sed ultricies est. Phasellus in pulvinar elit, eget convallis lacus. Integer ac tempus odio.</p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                
-                <li class="products-card">
-                    <div class="row">
-                        <div class="col-sm-4 col-lg-3">
-                            <div class="o-ratio media-rounded-small">
-                                
-                                <img draggable="false" alt="Drupal" src="https://picsum.photos/240/240?v=2" />
-                                
-                            </div>
-                        </div>
-                        <div class="col-sm-8 col-lg-9">
-                            <div class="products-item-summary">
-                                <h3 class="products-item-title">
-                                    <a class="products-card-link"
-                                    
-                                        href="/products/drupal.html"
-                                    
-                                    >
-                                        <span class="products-card-link-label">
-                                            Drupal
-                                        </span>
-                                        <span class="products-card-link-external">
+                                                href="/products/wordpress.html"
                                             
-                                        </span>
-                                    </a>
-                                </h3>
-                                <p>Pellentesque sagittis fermentum augue, eu egestas leo augue.</p>
+                                            >
+                                                <span class="list-card-link-label">
+                                                    Wordpress
+                                                </span>
+                                                <span class="list-card-link-external">
+                                                    
+                                                </span>
+                                            </a>
+                                        </h3>
+                                        <p>Nunc vitae tincidunt dolor, sed ultricies est. Phasellus in pulvinar elit, eget convallis lacus. Integer ac tempus odio.</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </li>
-                
-                <li class="products-card">
-                    <div class="row">
-                        <div class="col-sm-4 col-lg-3">
-                            <div class="o-ratio media-rounded-small">
-                                
-                                <img draggable="false" alt="Gitlab CE" src="https://picsum.photos/240/240?v=3" />
-                                
-                            </div>
-                        </div>
-                        <div class="col-sm-8 col-lg-9">
-                            <div class="products-item-summary">
-                                <h3 class="products-item-title">
-                                    <a class="products-card-link"
-                                    
-                                        href="/products/gitlab-ce.html"
-                                    
-                                    >
-                                        <span class="products-card-link-label">
-                                            Gitlab CE
-                                        </span>
-                                        <span class="products-card-link-external">
+                        </li>
+                        
+                        <li class="list-card is-variable">
+                            <div class="row">
+                                <div class="col-sm-4 col-lg-12 ">
+                                    <div class="media-rounded-small o-ratio 
+                                        
+                                        o-ratio-3:4
+                                        
+                                    ">
+                                        
+                                        <img draggable="false" alt="Drupal" src="https://picsum.photos/300/400?v=2" />
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 col-lg-12 ">
+                                    <div class="list-item-summary">
+                                        <h3 class="list-item-title">
+                                            <a class="list-card-link"
                                             
-                                        </span>
-                                    </a>
-                                </h3>
-                                <p>Pellentesque sodales sit amet purus ut posuere. In maximus augue et nisl varius commodo vel eu nisi.</p>
+                                                href="/products/drupal.html"
+                                            
+                                            >
+                                                <span class="list-card-link-label">
+                                                    Drupal
+                                                </span>
+                                                <span class="list-card-link-external">
+                                                    
+                                                </span>
+                                            </a>
+                                        </h3>
+                                        <p>Pellentesque sagittis fermentum augue, eu egestas leo augue.</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </li>
-                
-            </ul>
+                        </li>
+                        
+                        <li class="list-card is-variable">
+                            <div class="row">
+                                <div class="col-sm-4 col-lg-12 ">
+                                    <div class="media-rounded-small o-ratio 
+                                        
+                                        o-ratio-3:4
+                                        
+                                    ">
+                                        
+                                        <img draggable="false" alt="Gitlab CE" src="https://picsum.photos/300/400?v=3" />
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 col-lg-12 ">
+                                    <div class="list-item-summary">
+                                        <h3 class="list-item-title">
+                                            <a class="list-card-link"
+                                            
+                                                href="/products/gitlab-ce.html"
+                                            
+                                            >
+                                                <span class="list-card-link-label">
+                                                    Gitlab CE
+                                                </span>
+                                                <span class="list-card-link-external">
+                                                    
+                                                </span>
+                                            </a>
+                                        </h3>
+                                        <p>Pellentesque sodales sit amet purus ut posuere. In maximus augue et nisl varius commodo vel eu nisi.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="list-card is-variable">
+                            <div class="row">
+                                <div class="col-sm-4 col-lg-12 ">
+                                    <div class="media-rounded-small o-ratio 
+                                        
+                                        o-ratio-3:4
+                                        
+                                    ">
+                                        
+                                        <img draggable="false" alt="Docker" src="https://picsum.photos/300/400?v=1" />
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 col-lg-12 ">
+                                    <div class="list-item-summary">
+                                        <h3 class="list-item-title">
+                                            <a class="list-card-link"
+                                            
+                                                href="/products/docker.html"
+                                            
+                                            >
+                                                <span class="list-card-link-label">
+                                                    Docker
+                                                </span>
+                                                <span class="list-card-link-external">
+                                                    
+                                                </span>
+                                            </a>
+                                        </h3>
+                                        <p>Vivamus imperdiet posuere ipsum in elementum. Vestibulum elementum tempor proin.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
         </div>
+
         <div class="section-links section-links-centered">
             <span class="section-links-item">
                 <a class="button button-primary " href="/products">See our products</a>
             </span></div></div>
 </section>
-        
+            
 
 
 
@@ -619,10 +660,10 @@
             </div>
         </div>
         
-        <div class="team-items-wrapper">
-            <ul class="team-items">
+        <div class="list-items-wrapper">
+            <ul class="list-items">
                 
-                <li class="team-card">
+                <li class="list-card">
                     <div class="row">
                         <div class="col-sm-4 col-lg-3">
                             <div class="o-ratio media-rounded-small">
@@ -632,17 +673,17 @@
                             </div>
                         </div>
                         <div class="col-sm-8 col-lg-9">
-                            <div class="team-item-summary">
-                                <h3 class="team-item-title">
-                                    <a class="team-card-link"
+                            <div class="list-item-summary">
+                                <h3 class="list-item-title">
+                                    <a class="list-card-link"
                                     
                                         href="/team/sam-smith.html"
                                     
                                     >
-                                        <span class="team-card-link-label">
+                                        <span class="list-card-link-label">
                                             Sam Smith
                                         </span>
-                                        <span class="team-card-link-external">
+                                        <span class="list-card-link-external">
                                             
                                         </span>
                                     </a>
@@ -653,7 +694,7 @@
                     </div>
                 </li>
                 
-                <li class="team-card">
+                <li class="list-card">
                     <div class="row">
                         <div class="col-sm-4 col-lg-3">
                             <div class="o-ratio media-rounded-small">
@@ -663,17 +704,17 @@
                             </div>
                         </div>
                         <div class="col-sm-8 col-lg-9">
-                            <div class="team-item-summary">
-                                <h3 class="team-item-title">
-                                    <a class="team-card-link"
+                            <div class="list-item-summary">
+                                <h3 class="list-item-title">
+                                    <a class="list-card-link"
                                     
                                         href="/team/jane-johnson.html"
                                     
                                     >
-                                        <span class="team-card-link-label">
+                                        <span class="list-card-link-label">
                                             Jane Johnson
                                         </span>
-                                        <span class="team-card-link-external">
+                                        <span class="list-card-link-external">
                                             
                                         </span>
                                     </a>
@@ -684,7 +725,7 @@
                     </div>
                 </li>
                 
-                <li class="team-card">
+                <li class="list-card">
                     <div class="row">
                         <div class="col-sm-4 col-lg-3">
                             <div class="o-ratio media-rounded-small">
@@ -694,17 +735,17 @@
                             </div>
                         </div>
                         <div class="col-sm-8 col-lg-9">
-                            <div class="team-item-summary">
-                                <h3 class="team-item-title">
-                                    <a class="team-card-link"
+                            <div class="list-item-summary">
+                                <h3 class="list-item-title">
+                                    <a class="list-card-link"
                                     
                                         href="/team/miguel-martinez.html"
                                     
                                     >
-                                        <span class="team-card-link-label">
+                                        <span class="list-card-link-label">
                                             Miguel Martinez
                                         </span>
-                                        <span class="team-card-link-external">
+                                        <span class="list-card-link-external">
                                             
                                         </span>
                                     </a>
@@ -722,7 +763,75 @@
                 <a class="button button-primary " href="/team">Meet the team</a>
             </span></div></div>
 </section>
-        
+            
+
+
+<section class="section-posts">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-1 col-lg-4">
+                
+                <ul>
+                  
+                  <li>
+                    
+                    
+                    
+                    <h3>Happy New Year 2023</h3>
+                    <p>Vivamus imperdiet posuere ipsum in elementum. Vestibulum elementum tempor proin.</p>
+                    <img alt="Happy New Year 2023" src="https://picsum.photos/240/135?v=3" />
+                    <a href="/2023/01/01/happy-new-year-2023.html">Read more</a>
+                  </li>
+                  
+                  <li>
+                    <p></p>
+                    <img alt="Our WordCamp US 2022 Roundup" src="/assets/images/logo/brand-logo.svg" />
+                    <p>highlighted</p>
+                    <h3>Our WordCamp US 2022 Roundup</h3>
+                    <p>Vivamus imperdiet posuere ipsum in elementum. Vestibulum elementum tempor proin.</p>
+                    <img alt="Our WordCamp US 2022 Roundup" src="https://picsum.photos/240/135?v=4" />
+                    <a href="/community/2022/09/21/xwp-post.html">Read more</a>
+                  </li>
+                  
+                </ul>
+                
+                <a href="/blog">See all posts</a>
+            </div>
+        </div>
+    </div>
+</section>
+            
+
+
+<section class="section-careers">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-1 col-lg-4">
+                
+                <ul>
+                  
+                  <li>
+                    <h3>Full Stack Software Engineer</h3>
+                    <a href="https://talentlyft.com/" target="_blank">Read more</a>
+                  </li>
+                  
+                  <li>
+                    <h3>Privacy Data Analyst</h3>
+                    <a href="https://talentlyft.com/" target="_blank">Read more</a>
+                  </li>
+                  
+                  <li>
+                    <h3>iOS Software Engineer</h3>
+                    <a href="https://talentlyft.com/" target="_blank">Read more</a>
+                  </li>
+                  
+                </ul>
+                
+                <a href="/careers">See all</a>
+            </div>
+        </div>
+    </div>
+</section>
         
     </main>
 </div>
@@ -748,13 +857,16 @@
 </div>
 
       </div>
-
-      <div class="footer-end">
+      
+      <div class="footer-nav-legal">
         <div class="nav-legal">
     
         <a href="/privacy-policy.html" >Privacy policy</a>
     
 </div>
+      </div>
+
+      <div class="footer-end">
         <div class="footer-copyright">
           <div class="footer-brand">
             <a href="/" rel="author" class="company-name brand-link">

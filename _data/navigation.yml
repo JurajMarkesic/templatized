@@ -6,13 +6,17 @@
   link: /about.html # link will be ignored if submenu exists
   weight: 20
   submenu:
+  - name: About us
+    link: /about.html # use link to page in submenu if the [about] page exist
+    weight: 10
+
   - name: Team
     link: /team.html
-    weight: 10
+    weight: 20
 
   - name: Contact
     link: /contact.html
-    weight: 20
+    weight: 30
   
 # - name: Materials
 #   weight: 25

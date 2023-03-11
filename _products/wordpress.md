@@ -2,7 +2,7 @@
 date: 2023-01-01T10:00:00+10:00
 name: Wordpress
 post_title: Wordpress
-thumbnail: https://picsum.photos/240/240?v=4
+thumbnail: https://picsum.photos/300/400?v=4
 description: Nunc vitae tincidunt dolor, sed ultricies est. Phasellus in pulvinar elit, eget convallis lacus. Integer ac tempus odio.
 # permalink: /products/wordpress
 weight: 10

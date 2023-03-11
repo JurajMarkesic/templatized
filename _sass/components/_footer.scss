@@ -1,0 +1,33 @@
+.footer {
+    background-color: var(--footer-bg);
+    padding-top: var(--footer-padding-top);
+    padding-bottom: var(--footer-padding-bottom);
+}
+
+.footer-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-socials {
+    font-size: var(--footer-socials-size);
+    display: flex;
+    justify-content: center;
+}
+
+.footer-end {
+    font-size: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.footer-copyright {
+    display: flex;
+    align-items: center;
+}
+
+.footer-brand {
+    margin-right: 1em;
+}

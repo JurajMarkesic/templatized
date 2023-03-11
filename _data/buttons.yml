@@ -2,18 +2,10 @@ homepage_intro:
     items:
         - style: primary
           label: Discover more
-        #   link: example
-          target: target-section-about
-          # target: # toggle intro CTA button here
+          link: about
         - style: outline
           label: Contact
           link: contact
-
-homepage_about:
-    items:
-        - style: primary
-          label: Go to About page
-          link: about
 
 homepage_work:
     items:
@@ -44,8 +36,30 @@ homepage_careers:
     link: careers
     label_list_item: Read more
 
-team_back_to_home:
+about_intro:
     items:
+        - style: primary
+          label: Go to About page
+          link: about
+
+global:
+    work:
         - style: outline
-          label: Back to homepage
-          link: /
+          label: Back to work page
+          link: work
+    team:
+        - style: outline
+          label: Back to team page
+          link: team
+    products:
+        - style: outline
+          label: Back to products page
+          link: products
+    blog:
+        - style: outline
+          label: Back to blog
+          link: blog
+    contact:
+        - style: outline
+          label: Contact
+          link: contact
