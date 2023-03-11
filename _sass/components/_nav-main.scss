@@ -37,8 +37,11 @@
 
 @media (max-width: 991px) {
     html.lock-scroll {
-        // overflow: hidden;
         position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
     .nav-main-wrapper {
         position: fixed;
