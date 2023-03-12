@@ -52,7 +52,7 @@ css:
     button_outline_hover_bg: '#fff6e4'
     button_outline_hover_color: '#d4caff'
   
-    section_intro_bg: purple
+    section_intro_bg: 'purple'
     section_work_bg: '#f1d9fe'
     section_products_bg: '#fff6e4'
     section_team_bg: '#g1d9fe'
