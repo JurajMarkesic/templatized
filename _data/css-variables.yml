@@ -1,10 +1,10 @@
 css:
-    selection_bg: '#826ee7'
+    selection_bg: '#a26ee7'
     selection_text: '#fff6e4'
 
-    theme_color_meta_mask: '#fff6e4'
+    theme_color_meta_mask: '#dff6e4'
     theme_color_meta_tile: '#fff6e4'
-    theme_color_meta_name: '#fff6e4'
+    theme_color_meta_name: '#eff6e4'
     theme_color_main: '#fff6e4'
 
     paper: '#fff6e4'
@@ -25,13 +25,13 @@ css:
     footer_socials_short_icon_size: '1.25em'
     
     mobile_nav_trigger_width: '2em'
-    mobile_nav_bg: '#e1d9fe'
-    mobile_nav_color: '#826ee7'
+    mobile_nav_bg: '#d1d9fe'
+    mobile_nav_color: '#426ee7'
     mobile_current_bg: '#f1b742'
     mobile_submenu_bg: '#d4caff'
   
-    desktop_current_bg: '#f1b742'
-    desktop_nav_color: '#826ee7'
+    desktop_current_bg: '#c1b742'
+    desktop_nav_color: '#126ee7'
     desktop_nav_distance_from_edge: '0.5em'
     desktop_nav_space_between_items: '1.5em'
     desktop_nav_text_size_factor: '130%'
@@ -52,10 +52,10 @@ css:
     button_outline_hover_bg: '#fff6e4'
     button_outline_hover_color: '#d4caff'
   
-    section_intro_bg: '#fff6e4'
-    section_work_bg: '#e1d9fe'
+    section_intro_bg: '#eff6e4'
+    section_work_bg: '#f1d9fe'
     section_products_bg: '#fff6e4'
-    section_team_bg: '#e1d9fe'
+    section_team_bg: '#g1d9fe'
     section_posts_bg: '#fff6e4'
     section_careers_bg: '#e1d9fe'
     section_about_intro_bg: '#fff6e4'
