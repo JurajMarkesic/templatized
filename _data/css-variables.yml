@@ -32,6 +32,7 @@ css:
   
     desktop_current_bg: '#f1b742'
     desktop_nav_color: '#826ee7'
+    desktop_nav_distance_from_edge: '0.5em'
     desktop_nav_space_between_items: '1.5em'
     desktop_nav_text_size_factor: '130%'
     desktop_nav_submenu_text_size_factor: '85%' # % of the nav text size

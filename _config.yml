@@ -55,26 +55,32 @@ defaults:
   -
     scope:
       path: "work"
+      type: "pages"
     values:
       layout: "list"
   - scope:
       path: "products"
+      type: "pages"
     values:
       layout: "list"
   - scope:
       path: "team"
+      type: "pages"
     values:
       layout: "list"
   - scope:
       path: "blog"
+      type: "pages"
     values:
       layout: "list"
   - scope:
       path: "careers"
+      type: "pages"
     values:
       layout: "list"
   - scope:
       path: "about"
+      type: "pages"
     values:
       layout: "about"
   -

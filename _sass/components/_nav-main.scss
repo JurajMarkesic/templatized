@@ -192,6 +192,7 @@
     .nav-main {
         font-size: var(--desktop-nav-text-size-factor);
         color: var(--desktop-nav-color);
+        padding: var(--desktop-nav-distance-from-edge) 0;
     }
     .nav-main-trigger {
         display: none;
@@ -204,7 +205,7 @@
         align-items: center;
         padding: 0 var(--desktop-nav-space-between-items);
         border-radius: 0.75em;
-        
+
         &:hover {
             background-color: var(--desktop-nav-link-hover-bg);
         }
