@@ -31,27 +31,17 @@ collections:
     output: true
 
 defaults:
-  - scope:
-      path: ""
-      type: "work"
-    values:
-      layout: "work-post"
-  - scope:
-      path: ""
-      type: "products"
-    values:
-      layout: "products-post"
-  - scope:
-      path: ""
-      type: "team"
-    values:
-      layout: "team-member"
   -
     scope:
       path: ""
-      type: "posts"
     values:
-      layout: "post"
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
   -
     scope:
       path: "work"
@@ -79,21 +69,32 @@ defaults:
     values:
       layout: "list"
   - scope:
-      path: "templatized/about"
+      path: "about"
       type: "pages"
     values:
       layout: "about"
   -
     scope:
       path: ""
-      type: "pages"
+      type: "posts"
     values:
-      layout: "page"
+      layout: "post"
   -
     scope:
       path: ""
+      type: "work"
     values:
-      layout: "default"
+      layout: "work-post"
+  - scope:
+      path: ""
+      type: "products"
+    values:
+      layout: "products-post"
+  - scope:
+      path: ""
+      type: "team"
+    values:
+      layout: "team-member"
 
 plugins:
   - jekyll-feed
