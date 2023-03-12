@@ -65,27 +65,3 @@
 #   link: /blog.html
 #   weight: 40
     
-- name: Resources
-  # link: /resources.html
-  weight: 60
-  submenu:
-    - name: Github
-      link: https://github.com/kurianinc/ami-pub
-      weight: 10
-      
-    - name: Kurian DevOps Blog
-      link: https://kurianinc.medium.com/
-      weight: 20
-      
-    - name: AWS Marketplace Listing
-      link: https://aws.amazon.com/marketplace/search/
-      weight: 30
-      
-    - name: Facebook page
-      link: https://www.facebook.com/kurianinc/
-      weight: 40
-
-- name: Contact
-  link: /contact.html
-  is_button: true
-  weight: 1000
