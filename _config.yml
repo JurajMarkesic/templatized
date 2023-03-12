@@ -79,7 +79,7 @@ defaults:
     values:
       layout: "list"
   - scope:
-      path: "about"
+      path: "templatized/about"
       type: "pages"
     values:
       layout: "about"
