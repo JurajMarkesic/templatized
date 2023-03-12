@@ -14,9 +14,9 @@
                     {% if item.description %}
                     <p class="intro-description">{{ item.description }}</p>
                     {% endif %}
-                    {% assign buttons = site.data.buttons.homepage_intro.items %}
+                    {% assign buttons = site.data.buttons.homepage_intro %}
                     {%- if buttons -%}
-                    <div class="section-links">
+                    <div class="section-buttons">
                         {%- for item in buttons -%}
                         {% assign button_style = item.style %}
                         <a class="button {% if item.style == 'primary' %}button-primary {% elsif item.style == 'outline' %}button-outline {% endif %}" href="{{ item.link | relative_url }}" {% if item.link contains "http" %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ item.label | escape }}</a>

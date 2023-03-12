@@ -23,6 +23,11 @@
 
 .section-links {
     margin-top: 2em;
+    text-align: center;
+}
+
+.section-buttons {
+    margin-top: 2em;
     display: grid;
     gap: 0.5em;
     grid-template-columns: repeat(2, 1fr);

@@ -1,68 +1,51 @@
 homepage_intro:
-    items:
-        - style: primary
-          label: Discover more
-          link: about
-        - style: primary
-          label: Book now
-          link: https://app.nexhealth.com/appt/swish-oral-care
-        - style: outline
-          label: Contact
-          link: contact
-
+    - style: outline
+      label: Discover more
+      link: about
+    - style: primary
+      label: Book now
+      link: https://app.nexhealth.com/appt/swish-oral-care
+    - style: 
+      label: Contact
+      link: contact
 homepage_work:
-    items:
-        - style: primary
-          label: See all of our work
-          link: work
-          label_list_item: Read case study
-
+    - style: primary
+      label: See all of our work
+      link: work
 homepage_products:
-    items:
-        - style: primary
-          label: See our products
-          link: products
-          label_list_item: Learn more
-
+    - style: primary
+      label: See our products
+      link: products
 homepage_team:
-    items:
-        - style: primary
-          label: Meet the team
-          link: team
-          
+    - style: primary
+      label: Meet the team
+      link: team
 homepage_posts:
-    label: See all posts
-    link: blog
-    label_list_item: Read more
+    - style: primary
+      label: See all posts
+      link: blog
 homepage_careers:
-    label: See all
-    link: careers
-    label_list_item: Read more
-
+    - style: primary
+      label: See all jobs
+      link: careers
 about_intro:
-    items:
-        - style: primary
-          label: Contact
-          link: contact
+    - style: primary
+      label: Contact
+      link: contact
 
-global:
-    work:
-        - style: outline
-          label: Back to work page
-          link: work
-    team:
-        - style: outline
-          label: Back to team page
-          link: team
-    products:
-        - style: outline
-          label: Back to products page
-          link: products
-    blog:
-        - style: outline
-          label: Back to blog
-          link: blog
-    contact:
-        - style: outline
-          label: Contact
-          link: contact
+work:
+    - style: primary
+      label: Back to work page
+      link: work
+products:
+    - style: primary
+      label: Back to products page
+      link: products
+team_member:
+    - style: primary
+      label: Back to team page
+      link: team
+blog_post:
+    - style: primary
+      label: Back to blog posts
+      link: blog

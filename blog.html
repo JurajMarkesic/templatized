@@ -1,24 +1,32 @@
 ---
-title: Our team
+title: Our blog
 description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibulum nisi. Ut a velit ut erat venenatis euismod. Nulla dictum maximus luctus. Vestibulum et quam efficitur, auctor metus id, iaculis massa. Nulla facilisi. Donec sodales lacinia metus.
 # description: # toggle description text if needed
 ---
 
-{% assign team = site.data.section-team %}
-{% if site.team %}
-    {% assign team_posts = site.team | sort: 'weight' %}
+{% assign posts = site.data.section-posts %}
+{% if site.posts %}
+    {% assign blog_posts = site.posts %}
 {% endif %}
 
-{% if team_posts %}
+{% if blog_posts %}
 <div class="list-items-wrapper">
     <div class="row">
         <div class="col-lg-10 offset-lg-1">
             <ul class="list-items">
-                {% for item in team_posts %}
+                {% for item in blog_posts %}
                 <li class="list-card">
                     <div class="row">
                         <div class="col-sm-4 col-lg-3">
-                            <div class="o-ratio media-rounded-small">
+                            <div class="media-rounded-small o-ratio 
+                                {% if posts.images_ratio == '5:4' %}
+                                o-ratio-5:4
+                                {% elsif posts.images_ratio == '5:3' %}
+                                o-ratio-5:3
+                                {% elsif posts.images_ratio == '3:4' %}
+                                o-ratio-3:4
+                                {% endif %}
+                            ">
                                 {% if item.thumbnail %}
                                 <img draggable="false" alt="{{ item.name }}" src="{{ item.thumbnail | relative_url }}" />
                                 {% endif %}
@@ -44,7 +52,12 @@ description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibu
                                         </span>
                                     </a>
                                 </h3>
-                                {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+                                {% if item.date %}
+                                  <p class="list-item-date">{{ item.date | date_to_string: "ordinal", "US" }}</p>
+                                {% endif %}
+                                {% if item.description %}
+                                  <p class="list-item-description">{{ item.description }}</p>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
@@ -55,5 +68,5 @@ description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibu
     </div>
 </div>
 {% else %}
-<p>{{ site.data.page-list.team.no-items }}</p>
+<p>{{ site.data.page-list.posts.no-items }}</p>
 {% endif %}

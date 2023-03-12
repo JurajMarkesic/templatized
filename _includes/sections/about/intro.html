@@ -15,14 +15,12 @@
                     {% if item.paragraph_2 %}<p>{{ item.paragraph_2 }}</p>{% endif %}
                     {% if item.paragraph_3 %}<p>{{ item.paragraph_3 }}</p>{% endif %}
 
-                    {% assign buttons = site.data.buttons.about_intro.items %}
+                    {% assign buttons = site.data.buttons.about_intro %}
                     {%- if buttons -%}
-                    <div class="section-links">
+                    <div class="section-buttons">
                         {%- for item in buttons -%}
                         {% assign button_style = item.style %}
-                        <span class="section-links-item">
-                            <a class="button {% if item.style == 'primary' %}button-primary {% elsif item.style == 'outline' %}button-outline {% endif %}" href="{{ item.link | relative_url }}">{{ item.label | escape }}</a>
-                        </span>
+                        <a class="button {% if item.style == 'primary' %}button-primary {% elsif item.style == 'outline' %}button-outline {% endif %}" href="{{ item.link | relative_url }}">{{ item.label | escape }}</a>
                         {%- endfor -%}
                     </div>
                     {%- endif -%}

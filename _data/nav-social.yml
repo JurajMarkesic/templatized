@@ -13,7 +13,7 @@
 # use_icon takes priority over use_short, meaning if you set both to true use_icon will be used
 
 settings:
-  # use_icon: true
+  use_icon: true
   # use_short: true
   
 items:

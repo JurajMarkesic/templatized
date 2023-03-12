@@ -4561,7 +4561,7 @@ a[href="#main-content"]:focus {
   left: 0;
   width: 100%;
   background-color: var(--header-bg);
-  color: var(--header-color);
+  color: var(--header-text-color);
   z-index: 1000;
 }
 
@@ -4928,11 +4928,13 @@ button {
 .button {
   background-color: var(--button-basic-bg);
   display: inline-flex;
+  justify-content: center;
   padding: 0.75em 1.5em;
   border-radius: 9999em;
   text-decoration: none;
   white-space: nowrap;
   overflow: hidden;
+  transition: background-color var(--transition-duration-fastest) var(--easing), color var(--transition-duration-fastest) var(--easing);
 }
 .button:focus, .button:hover {
   background-color: var(--button-basic-hover-bg);
@@ -4983,6 +4985,11 @@ button {
 
 .section-links {
   margin-top: 2em;
+  text-align: center;
+}
+
+.section-buttons {
+  margin-top: 2em;
   display: grid;
   gap: 0.5em;
   grid-template-columns: repeat(2, 1fr);
@@ -4991,6 +4998,7 @@ button {
 .section-intro {
   padding: 3em 0 4em;
   background-color: var(--section-intro-bg);
+  color: var(--section-intro-text-color);
 }
 
 .intro-eyebrow {
@@ -5021,51 +5029,54 @@ button {
 .section-work {
   padding: 3em 0 4em;
   background-color: var(--section-work-bg);
+  color: var(--section-work-text-color);
 }
 
 .section-products {
   padding: 3em 0 4em;
   background-color: var(--section-products-bg);
+  color: var(--section-products-text-color);
 }
 
 .section-team {
   padding: 3em 0 4em;
   background-color: var(--section-team-bg);
+  color: var(--section-team-text-color);
 }
 
 .section-posts {
   padding: 3em 0 4em;
   background-color: var(--section-posts-bg);
+  color: var(--section-posts-text-color);
 }
 
 .section-careers {
   padding: 3em 0 4em;
   background-color: var(--section-careers-bg);
+  color: var(--section-careers-text-color);
 }
 
 .section-about-intro {
   padding: 3em 0 4em;
   background-color: var(--section-about-intro-bg);
+  color: var(--section-about-intro-text-color);
 }
 
 .list-items-wrapper {
   margin-top: 2em;
 }
 
-.list-card {
+.list-item {
   position: relative;
   padding: 0.75em;
-  border-radius: 1.75em;
   z-index: 0;
 }
 
-.list-card-link {
+.list-item-link {
   text-decoration: none;
   position: static;
-  display: inline-flex;
-  align-items: center;
 }
-.list-card-link:before {
+.list-item-link:before {
   content: "";
   position: absolute;
   top: 0;
@@ -5075,10 +5086,10 @@ button {
   background: transparent;
   white-space: nowrap;
   overflow: hidden;
-  border-radius: 1.25em;
+  border-radius: 0.5em;
   z-index: 1;
 }
-.list-card-link:after {
+.list-item-link:after {
   content: "";
   position: absolute;
   top: 0;
@@ -5088,11 +5099,26 @@ button {
   box-shadow: inset 0 0 0 0.125em var(--list-card-border-color);
   background-color: var(--list-card-hover-bg);
   opacity: 0;
-  border-radius: 1.25em;
+  border-radius: 0.5em;
   z-index: -1;
+  transition: opacity var(--transition-duration-fastest) var(--easing);
 }
-.list-card-link:hover:after, .list-card-link:focus:after {
+.list-item-link:hover:after, .list-item-link:focus:after {
   opacity: 1;
+}
+
+.list-card {
+  position: relative;
+  padding: 0.75em;
+  border-radius: 1.75em;
+  z-index: 0;
+}
+
+.list-card-link:before {
+  border-radius: 1.25em;
+}
+.list-card-link:after {
+  border-radius: 1.25em;
 }
 
 .list-items {
@@ -5137,8 +5163,10 @@ button {
   width: 100%;
 }
 
-.list-item-summary {
-  margin-top: 1em;
+@media (max-width: 575.98px) {
+  .list-item-summary {
+    margin-top: 1em;
+  }
 }
 @media (max-width: 575.98px) {
   .list-card.is-variable .list-item-summary {
@@ -5162,13 +5190,23 @@ button {
 }
 
 .list-card-link-external {
-  display: flex;
-  margin-left: 0.75em;
+  margin-left: 0.25em;
+  display: inline-block;
+  vertical-align: top;
 }
 .list-card-link-external > svg {
   display: flex;
   width: 1em;
   height: 1em;
+}
+
+.list-item-date {
+  font-family: monospace;
+}
+
+.list-item-description {
+  line-height: 1.75;
+  margin: 1.5em 0 2.5em;
 }
 
 ::selection {
@@ -5227,6 +5265,7 @@ html, body, .body-content, .page-content {
   display: flex;
 }
 .brand-link > svg {
+  fill: currentColor;
   pointer-events: none;
 }
 .header-brand .brand-link {

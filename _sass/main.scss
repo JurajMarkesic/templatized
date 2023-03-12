@@ -58,6 +58,7 @@ html, body, .body-content, .page-content {
     display: flex;
 
     & > svg {
+        fill: currentColor;
         pointer-events: none;
     }
 

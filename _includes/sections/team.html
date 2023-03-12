@@ -2,7 +2,7 @@
 {% if site.team %}
     {% assign team_posts = site.team | sort: 'weight' %}
 {% endif %}
-{% assign buttons = site.data.buttons.homepage_team.items %}
+{% assign buttons = site.data.buttons.homepage_team %}
 {% assign limit = site.home.limit_team %}
 <section class="section-team">
     <div class="container">
@@ -20,7 +20,7 @@
         {% if team_posts %}
         <div class="list-items-wrapper">
             <div class="row">
-                <div class="{% if team.layout_columns_2 %}col-lg-10 offset-lg-1 {% elsif team.layout_columns_3 %}col-lg-10 offset-lg-1 {% elsif team.layout_columns_4 %}col-12 {% else %}col-lg-6 offset-lg-3{% endif %}">
+                <div class="{% if team.layout_columns_2 %}col-lg-8 offset-lg-2 {% elsif team.layout_columns_3 %}col-lg-10 offset-lg-1 {% elsif team.layout_columns_4 %}col-12 {% else %}col-lg-6 offset-lg-3{% endif %}">
                     <ul class="list-items {% if team.layout_columns_2 %}is-cols-2 {% elsif team.layout_columns_3 %}is-cols-3 {% elsif team.layout_columns_4 %}is-cols-4{% endif %}">
                         {% for item in team_posts limit: limit %}
                         <li class="list-card {% if team.card_variable %}is-variable{% endif %}">
@@ -43,7 +43,7 @@
                                 <div class="{% if team.card_variable %}col-sm-8 col-lg-12 {% else %}col-12{% endif %}">
                                     <div class="list-item-summary">
                                         <h3 class="list-item-title">
-                                            <a class="list-card-link"
+                                            <a class="list-item-link list-card-link"
                                             {% if item.link contains "http" %}
                                                 href="{{ item.link }}" target="_blank"
                                             {% else %}
@@ -72,16 +72,14 @@
         </div>
         
         {% else %}
-        <p>No team members posts displayed</p>
+        <p>{{ site.data.page-list.team.no-items }}</p>
         {% endif %}
 
         {%- if buttons -%}
-        <div class="section-links section-links-centered">
+        <div class="section-links">
             {%- for item in buttons -%}
             {% assign button_style = item.style %}
-            <span class="section-links-item">
-                <a class="button {% if item.style == 'primary' %}button-primary {% elsif item.style == 'outline' %}button-outline {% endif %}" href="{{ item.link | relative_url }}">{{ item.label | escape }}</a>
-            </span>
+            <a class="button {% if item.style == 'primary' %}button-primary {% elsif item.style == 'outline' %}button-outline {% endif %}" href="{{ item.link | relative_url }}">{{ item.label | escape }}</a>
             {%- endfor -%}
         </div>
         {%- endif -%}

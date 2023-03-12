@@ -8,14 +8,13 @@ description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibu
 {% if site.work %}
     {% assign work_posts = site.work | sort: 'weight' %}
 {% endif %}
-{% assign button = site.data.buttons.global.contact %}
 
 {% if work_posts %}
 <div class="list-items-wrapper">
     <div class="row">
         <div class="col-lg-10 offset-lg-1">
             <ul class="list-items">
-                {% for item in work_posts limit: limit %}
+                {% for item in work_posts %}
                 <li class="list-card">
                     <div class="row">
                         <div class="col-sm-4 col-lg-3">
@@ -36,7 +35,7 @@ description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibu
                         <div class="col-sm-8 col-lg-9">
                             <div class="list-item-summary">
                                 <h3 class="list-item-title">
-                                    <a class="list-card-link"
+                                    <a class="list-item-link list-card-link"
                                     {% if item.link contains "http" %}
                                         href="{{ item.link }}" target="_blank"
                                     {% else %}

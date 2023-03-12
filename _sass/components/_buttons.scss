@@ -16,11 +16,13 @@ button {
 .button {
     background-color: var(--button-basic-bg);
     display: inline-flex;
+    justify-content: center;
     padding: 0.75em 1.5em;
     border-radius: 9999em;
     text-decoration: none;
     white-space: nowrap;
     overflow: hidden;
+    transition: background-color var(--transition-duration-fastest) var(--easing), color var(--transition-duration-fastest) var(--easing);
 
     &:focus,
     &:hover {

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign button = site.data.buttons.global.work %}
+{% assign buttons = site.data.buttons.blog_post %}
 
 <div class="page-content">
     <main class="page-layout">
@@ -29,13 +29,11 @@ layout: default
             </div>
         </section>
 
-        {%- if button -%}
-        <div class="section-links section-links-centered">
-            {%- for item in button -%}
+        {%- if buttons -%}
+        <div class="section-links">
+            {%- for item in buttons -%}
             {% assign button_style = item.style %}
-            <span class="section-links-item">
-                <a class="button {% if item.style == 'primary' %}button-primary {% elsif item.style == 'outline' %}button-outline {% endif %}" href="{{ item.link | relative_url }}">{{ item.label | escape }}</a>
-            </span>
+            <a class="button {% if item.style == 'primary' %}button-primary {% elsif item.style == 'outline' %}button-outline {% endif %}" href="{{ item.link | relative_url }}">{{ item.label | escape }}</a>
             {%- endfor -%}
         </div>
         {%- endif -%}

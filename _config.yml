@@ -16,8 +16,8 @@ home:
   limit_works: 3
   # limit_works: # toggle if not used
   limit_products: 4
-  limit_team: 3
-  limit_posts: 3
+  limit_team: 4
+  limit_posts: 5
   limit_careers: 3
 
 collections:
@@ -33,19 +33,19 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "products"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
       type: "work"
     values:
-      layout: "post"
+      layout: "work-post"
+  - scope:
+      path: ""
+      type: "products"
+    values:
+      layout: "products-post"
   - scope:
       path: ""
       type: "team"
     values:
-      layout: "post"
+      layout: "team-member"
   - scope:
       path: ""
       type: "posts"
@@ -57,11 +57,6 @@ defaults:
     values:
       layout: "list"
   - scope:
-      path: "about"
-      type: "pages"
-    values:
-      layout: "about"
-  - scope:
       path: "products"
       type: "pages"
     values:
@@ -71,6 +66,21 @@ defaults:
       type: "pages"
     values:
       layout: "list"
+  - scope:
+      path: "blog"
+      type: "pages"
+    values:
+      layout: "list"
+  - scope:
+      path: "careers"
+      type: "pages"
+    values:
+      layout: "list"
+  - scope:
+      path: "about"
+      type: "pages"
+    values:
+      layout: "about"
   - scope:
       path: ""
       type: "pages"

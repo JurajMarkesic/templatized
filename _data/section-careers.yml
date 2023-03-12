@@ -1,17 +1,24 @@
+section_label: Job opportunities
 title: Careers
+description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibulum nisi. Ut a velit ut erat venenatis euismod. Nulla dictum maximus luctus. Vestibulum et quam efficitur, auctor metus id, iaculis massa. Nulla facilisi. Donec sodales lacinia metus.
 
 items:
-  - title: Full Stack Software Engineer
-    url: https://talentlyft.com/ # example - add your url to the job post
+  - name: Full Stack Software Engineer
+    link: https://talentlyft.com/ # example - add your link to the job post
+    weight: 10
 
-  - title: Privacy Data Analyst
-    url: https://talentlyft.com/ # example - add your url to the job post
+  - name: Privacy Data Analyst
+    link: https://talentlyft.com/ # example - add your link to the job post
+    weight: 20
 
-  - title: iOS Software Engineer
-    url: https://talentlyft.com/ # example - add your url to the job post
+  - name: iOS Software Engineer
+    link: https://talentlyft.com/ # example - add your link to the job post
+    weight: 30
 
-  - title: Strategic Insurance Program Manager
-    url: https://talentlyft.com/ # example - add your url to the job post
+  - name: Strategic Insurance Program Manager
+    link: https://talentlyft.com/ # example - add your link to the job post
+    weight: 40
 
-  - title: Art Director
-    url: https://talentlyft.com/ # example - add your url to the job post
+  - name: Art Director
+    link: https://talentlyft.com/ # example - add your link to the job post
+    weight: 50
