@@ -46,47 +46,45 @@ defaults:
       type: "team"
     values:
       layout: "team-member"
-  - scope:
+  -
+    scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
-  - scope:
+  -
+    scope:
       path: "work"
-      type: "pages"
     values:
       layout: "list"
   - scope:
       path: "products"
-      type: "pages"
     values:
       layout: "list"
   - scope:
       path: "team"
-      type: "pages"
     values:
       layout: "list"
   - scope:
       path: "blog"
-      type: "pages"
     values:
       layout: "list"
   - scope:
       path: "careers"
-      type: "pages"
     values:
       layout: "list"
   - scope:
       path: "about"
-      type: "pages"
     values:
       layout: "about"
-  - scope:
+  -
+    scope:
       path: ""
       type: "pages"
     values:
       layout: "page"
-  - scope:
+  -
+    scope:
       path: ""
     values:
       layout: "default"

@@ -1,7 +1,9 @@
 
 <div class="footer-brand-link">
     <div class="copyright">
-        <span>&copy; <span id="js-copyright-year"></span>
+        
+        <span>&copy; {{ site.time | date: '%Y'}}</span>
+
         {% if site.copyright_label %}
         <span>{{ site.copyright_label }}</span>
         {% endif %}

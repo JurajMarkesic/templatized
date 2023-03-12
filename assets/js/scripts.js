@@ -61,5 +61,3 @@ mobileDropdownToggleButtons.forEach((item) => {
 })
 
 window.addEventListener("resize", destroyHeights);
-
-document.getElementById("js-copyright-year").innerHTML = new Date().getFullYear();
