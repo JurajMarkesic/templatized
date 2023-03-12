@@ -5,7 +5,7 @@ post_title: Bob Brown
 thumbnail: assets/images/team/member010.jpg
 description: Pellentesque sagittis fermentum augue, eu egestas leo augue.
 # permalink: /team/bob
-# is_prominent: true
+# link: https://example.com/
 weight: 100
 ---
 

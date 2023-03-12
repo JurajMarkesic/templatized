@@ -5,7 +5,7 @@ post_title: Alice Anderson
 thumbnail: assets/images/team/member006.jpg
 description: Pellentesque sagittis fermentum augue, eu egestas leo augue.
 # permalink: /team/alice
-# is_prominent: true
+# link: https://example.com/
 weight: 60
 ---
 

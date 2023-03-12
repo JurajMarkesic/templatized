@@ -5,7 +5,7 @@ post_title: Duo title
 thumbnail: assets/images/intro/landing-page-hero.jpg
 description: Pellentesque rhoncus sapien vel erat mattis, id tincidunt diam porttitor. Duis vestibulum.
 # permalink: /work/due-custom
-# url_external: https://example.com/
+# link: https://example.com/
 weight: 20
 ---
 

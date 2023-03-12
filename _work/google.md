@@ -5,7 +5,7 @@ post_title: Google title
 thumbnail: assets/images/intro/landing-page-hero.jpg
 description: Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.
 # permalink: /work/google-custom
-url_external: https://google.com/
+link: https://google.com/
 weight: 50
 ---
 

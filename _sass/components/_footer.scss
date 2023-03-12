@@ -5,21 +5,98 @@
 }
 
 .footer-layout {
+    font-size: var(--footer-socials-text-size);
     display: flex;
     flex-direction: column;
 }
 
 .footer-socials {
-    font-size: var(--footer-socials-size);
     display: flex;
     justify-content: center;
 }
 
-.footer-end {
-    font-size: 75%;
+.nav-social {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.nav-social-link {
+    display: flex;
+    margin: var(--footer-socials-space-between-items);
+
+    & > svg {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    &.uses_short {
+        text-decoration: none;
+        position: relative;
+        z-index: 0;
+        width: 1.5em;
+        justify-content: center;
+    
+        &:before {
+            content: "";
+            background-color: var(--footer-socials-short-text-bg);
+            width: 150%;
+            height: 150%;
+            border-radius: 9999em;
+            z-index: -1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity var(--transition-duration-fastest) var(--easing);
+        }
+    
+        &:hover:before,
+        &:focus:before {
+            opacity: 1;
+        }
+    }
+
+    &.uses_icon {
+        position: relative;
+        z-index: 0;
+        width: 1.5em;
+        width: var(--footer-socials-short-icon-size);
+    
+        &:before {
+            content: "";
+            background-color: var(--footer-socials-short-text-bg);
+            width: 150%;
+            height: 150%;
+            border-radius: 9999em;
+            z-index: -1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity var(--transition-duration-fastest) var(--easing);
+        }
+    
+        &:hover:before,
+        &:focus:before {
+            opacity: 1;
+        }
+    }
+}
+
+.footer-nav-legal {
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
+    margin-top: 2em;
+}
+
+.footer-end {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
     margin-top: 2em;
 }
 

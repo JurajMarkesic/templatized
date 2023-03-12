@@ -4,7 +4,8 @@ name: Wordpress
 post_title: Wordpress
 thumbnail: https://picsum.photos/300/400?v=4
 description: Nunc vitae tincidunt dolor, sed ultricies est. Phasellus in pulvinar elit, eget convallis lacus. Integer ac tempus odio.
-# permalink: /products/wordpress
+# permalink: /products/wordpress-custom # permalink is ignored if link is enabled
+link: https://wordpress.com/
 weight: 10
 ---
 

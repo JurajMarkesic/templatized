@@ -4625,11 +4625,13 @@ a[href="#main-content"]:focus {
     z-index: -1;
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
     transition: opacity var(--transition-duration-fast) var(--easing);
   }
   html.nav-main-open .nav-main-wrapper {
     opacity: 1;
     pointer-events: auto;
+    visibility: visible;
   }
   .nav-main {
     background-color: var(--mobile-nav-bg);
@@ -4688,7 +4690,7 @@ a[href="#main-content"]:focus {
     width: 100%;
   }
   .nav-link {
-    padding: 0.75em 0.5em;
+    padding: 0.875em 0.5em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -4730,10 +4732,6 @@ a[href="#main-content"]:focus {
   .nav-list-submenu:not(.active) {
     display: none;
   }
-  .nav-link-submenu {
-    padding: 0.5em;
-    font-size: 1.125em;
-  }
 }
 @media (min-width: 992px) {
   .nav-main-wrapper,
@@ -4752,7 +4750,7 @@ a[href="#main-content"]:focus {
     justify-content: flex-end;
   }
   .nav-main {
-    font-size: var(--desktop-nav-text-size);
+    font-size: var(--desktop-nav-text-size-factor);
     color: var(--desktop-nav-color);
   }
   .nav-main-trigger {
@@ -4787,10 +4785,11 @@ a[href="#main-content"]:focus {
     top: 100%;
     right: 0;
     min-width: var(--desktop-nav-submenu-width);
+    border-radius: 0.75em;
     opacity: 0;
     pointer-events: none;
-    border-radius: 0.75em;
     overflow: hidden;
+    visibility: hidden;
     padding: 0.5em 0 0.75em;
     transition-delay: var(--transition-duration-fast);
     transition: opacity var(--transition-duration-fast) var(--easing);
@@ -4798,9 +4797,11 @@ a[href="#main-content"]:focus {
   .nav-link:hover + .nav-list-submenu-wrap, .nav-list-submenu-wrap:hover {
     opacity: 1;
     pointer-events: auto;
+    visibility: visible;
   }
   .nav-link-submenu {
     padding: 0.75em 1em;
+    font-size: var(--desktop-nav-submenu-text-size-factor);
   }
   .nav-link-submenu:hover {
     background-color: var(--desktop-nav-submenu-hover-bg);
@@ -4813,21 +4814,90 @@ a[href="#main-content"]:focus {
 }
 
 .footer-layout {
+  font-size: var(--footer-socials-text-size);
   display: flex;
   flex-direction: column;
 }
 
 .footer-socials {
-  font-size: var(--footer-socials-size);
   display: flex;
   justify-content: center;
 }
 
-.footer-end {
-  font-size: 75%;
+.nav-social {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-social-link {
+  display: flex;
+  margin: var(--footer-socials-space-between-items);
+}
+.nav-social-link > svg {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.nav-social-link.uses_short {
+  text-decoration: none;
+  position: relative;
+  z-index: 0;
+  width: 1.5em;
+  justify-content: center;
+}
+.nav-social-link.uses_short:before {
+  content: "";
+  background-color: var(--footer-socials-short-text-bg);
+  width: 150%;
+  height: 150%;
+  border-radius: 9999em;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity var(--transition-duration-fastest) var(--easing);
+}
+.nav-social-link.uses_short:hover:before, .nav-social-link.uses_short:focus:before {
+  opacity: 1;
+}
+.nav-social-link.uses_icon {
+  position: relative;
+  z-index: 0;
+  width: 1.5em;
+  width: var(--footer-socials-short-icon-size);
+}
+.nav-social-link.uses_icon:before {
+  content: "";
+  background-color: var(--footer-socials-short-text-bg);
+  width: 150%;
+  height: 150%;
+  border-radius: 9999em;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity var(--transition-duration-fastest) var(--easing);
+}
+.nav-social-link.uses_icon:hover:before, .nav-social-link.uses_icon:focus:before {
+  opacity: 1;
+}
+
+.footer-nav-legal {
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
+  margin-top: 2em;
+}
+
+.footer-end {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
   margin-top: 2em;
 }
 
@@ -4861,6 +4931,8 @@ button {
   padding: 0.75em 1.5em;
   border-radius: 9999em;
   text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .button:focus, .button:hover {
   background-color: var(--button-basic-hover-bg);
@@ -4911,28 +4983,14 @@ button {
 
 .section-links {
   margin-top: 2em;
-}
-
-.section-links-centered {
-  text-align: center;
-}
-
-.section-links > .section-links-item {
-  margin-right: -0.5em;
-  margin-bottom: -0.5em;
-  padding-right: 0.5em;
-  padding-bottom: 0.5em;
-}
-
-.section-links-item > * {
-  margin-bottom: 1em;
-  margin-bottom: 0.5em;
-  margin-right: 1em;
+  display: grid;
+  gap: 0.5em;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .section-intro {
   padding: 3em 0 4em;
-  background-color: var(--intro-section-bg);
+  background-color: var(--section-intro-bg);
 }
 
 .intro-eyebrow {
@@ -4962,31 +5020,32 @@ button {
 
 .section-work {
   padding: 3em 0 4em;
-  background-color: var(--work-section-bg);
+  background-color: var(--section-work-bg);
 }
 
 .section-products {
   padding: 3em 0 4em;
-  background-color: var(--products-section-bg);
+  background-color: var(--section-products-bg);
 }
 
 .section-team {
   padding: 3em 0 4em;
-  background-color: var(--team-section-bg);
+  background-color: var(--section-team-bg);
 }
 
 .section-posts {
   padding: 3em 0 4em;
-  background-color: var(--posts-section-bg);
+  background-color: var(--section-posts-bg);
 }
 
 .section-careers {
   padding: 3em 0 4em;
-  background-color: var(--careers-section-bg);
+  background-color: var(--section-careers-bg);
 }
 
 .section-about-intro {
   padding: 3em 0 4em;
+  background-color: var(--section-about-intro-bg);
 }
 
 .list-items-wrapper {
@@ -5078,10 +5137,8 @@ button {
   width: 100%;
 }
 
-@media (max-width: 575.98px) {
-  .list-item-summary {
-    margin-top: 1em;
-  }
+.list-item-summary {
+  margin-top: 1em;
 }
 @media (max-width: 575.98px) {
   .list-card.is-variable .list-item-summary {
@@ -5160,16 +5217,6 @@ html, body, .body-content, .page-content {
 .page-body {
   margin-top: 3em;
   padding-bottom: 4em;
-}
-
-.nav-social {
-  display: flex;
-}
-
-.nav-social-link {
-  text-decoration: none;
-  display: flex;
-  margin: 0 var(--footer-socials-space-between-items);
 }
 
 .company-name {

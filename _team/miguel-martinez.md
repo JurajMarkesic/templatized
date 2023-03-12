@@ -5,7 +5,7 @@ post_title: Miguel Martinez
 thumbnail: assets/images/team/member003.jpg
 description: Pellentesque sagittis fermentum augue, eu egestas leo augue.
 # permalink: /team/miguel
-# is_prominent: true
+# link: https://example.com/
 weight: 30
 ---
 

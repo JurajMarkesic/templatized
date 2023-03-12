@@ -5,7 +5,7 @@ post_title: Prof. Claire Clark
 thumbnail: assets/images/team/member012.jpg
 description: Pellentesque sagittis fermentum augue, eu egestas leo augue.
 # permalink: /team/claire
-# is_prominent: true
+# link: https://example.com/
 weight: 120
 ---
 

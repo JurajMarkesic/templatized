@@ -5,7 +5,7 @@ post_title: Sam Smith
 thumbnail: assets/images/team/member001.jpg
 description: Pellentesque sagittis fermentum augue, eu egestas leo augue.
 # permalink: /team/sam
-is_prominent: true
+link: https://linkedin.com/example-sam-smith
 weight: 10
 ---
 

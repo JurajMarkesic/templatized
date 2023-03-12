@@ -5,7 +5,7 @@ post_title: Microsoft title
 thumbnail: assets/images/intro/landing-page-hero.jpg
 description: Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.
 # permalink: /work/microsoft-custom
-url_external: https://microsoft.com/
+link: https://microsoft.com/
 weight: 60
 ---
 

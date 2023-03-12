@@ -3,8 +3,8 @@ var menuTrigger = document.querySelector('.js-nav-main-trigger');
 
 menuTrigger.onclick = function() {
     html.classList.toggle('nav-main-open');
-    menuTrigger.classList.toggle('is-active')
-    html.classList.toggle('lock-scroll')
+    menuTrigger.classList.toggle('is-active');
+    html.classList.toggle('lock-scroll');
 }
 
 var mobileDropdownToggleButtons = [...document.querySelectorAll(".js-mobile-accordion-trigger")]
@@ -48,7 +48,6 @@ function handleClickMobileDropdownToggle(el) {
 
 function destroyHeights() {
     mobileDropdownToggleButtons.forEach((item) => {
-        console.log("iteeeeeem");
         item.classList.remove("is-open");
         item.nextElementSibling.firstElementChild.classList.remove('active')
         setTimeout(function () {

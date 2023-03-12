@@ -5,36 +5,26 @@ css:
     theme_color_meta_mask: '#0fc5b4'
     theme_color_meta_tile: '#0fc5b4'
     theme_color_meta_name: '#0fc5b4'
-
     theme_color_main: '#0fc5b4'
 
     paper: 'white'
     ink: 'black'
-  
-    button_basic_bg: 'transparent'
-    button_basic_hover_bg: '#d9fcf9'
-  
-    button_primary_bg: '#0fc5b4'
-    button_primary_hover_bg: '#0f99b4'
-    button_primary_label: 'white'
-  
-    button_outline_color: '#0fc5b4'
-    button_outline_hover_bg: 'white'
-    button_outline_hover_color: '#0f99b4'
 
     header_height: '4em'
     header_bg: '#0fc5b4'
     header_color: 'white'
-    header_brand_link_height: 36px
+    header_brand_link_height: '56px'
   
-    footer_padding_top: 2.5em
-    footer_padding_bottom: 0.5em
+    footer_padding_top: '2.5em'
+    footer_padding_bottom: '0.5em'
     footer_bg: '#0fc5b4'
-    footer_brand_link_height: 28px
-    footer_socials_size: 1.5em
-    footer_socials_space_between_items: 0.5em
+    footer_brand_link_height: '28px'
+    footer_socials_space_between_items: '0.5em'
+    footer_socials_text_size: '125%' # % of the text size when icons are disabled
+    footer_socials_short_text_bg: 'white'
+    footer_socials_icon_size: '2em'
     
-    mobile_nav_trigger_width: 2em
+    mobile_nav_trigger_width: '2em'
     mobile_nav_bg: '#12edd9'
     mobile_nav_color: 'black'
     mobile_current_bg: 'white'
@@ -43,24 +33,38 @@ css:
     desktop_current_bg: 'white'
     desktop_nav_color: 'black'
     desktop_nav_space_between_items: '1.5em'
-    desktop_nav_text_size: '1.125em'
+    desktop_nav_text_size_factor: '130%'
+    desktop_nav_submenu_text_size_factor: '85%' # % of the nav text size
     desktop_nav_link_hover_bg: '#12edd9'
     desktop_nav_submenu_bg: '#12edd9'
     desktop_nav_submenu_hover_bg: '#89f6ec'
     desktop_nav_submenu_width: '16em'
   
-    intro_section_bg: 'cornsilk'
-    work_section_bg: 'lavender'
-    products_section_bg: 'cornsilk'
-    team_section_bg: 'lavender'
-    posts_section_bg: 'cornsilk'
-    careers_section_bg: 'lavender'
+    button_basic_bg: 'transparent'
+    button_basic_hover_bg: '#d9fcf9'
+  
+    button_primary_bg: '#0fc5b4'
+    button_primary_hover_bg: '#9f35b4'
+    button_primary_label: 'white'
+  
+    button_outline_color: '#0fc5b4'
+    button_outline_hover_bg: 'white'
+    button_outline_hover_color: '#9f35b4'
+  
+    section_intro_bg: 'cornsilk'
+    section_work_bg: 'lavender'
+    section_products_bg: 'cornsilk'
+    section_team_bg: 'lavender'
+    section_posts_bg: 'cornsilk'
+    section_careers_bg: 'lavender'
+    section_about_intro_bg: 'cornsilk'
 
     list_card_border_color: '#0fc5b4'
     list_card_hover_bg: '#d0fbf7'
     
     transition_duration_slow: '0.9s'
     transition_duration_fast: '0.3s'
+    transition_duration_fastest: '0.1s'
     easing: 'cubic-bezier(.4,0,0,1)'
   
     # using github's free font Mona Sans - https://github.com/github/mona-sans

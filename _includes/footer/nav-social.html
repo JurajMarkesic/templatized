@@ -1,11 +1,13 @@
+{% assign settings = site.data.nav-social.settings %}
+{% assign socials = site.data.nav-social.items %}
 <div class="nav-social">
     {% for item in site.data.nav-social.items %}
-        <a class="nav-social-link" href="{{ item.url }}" target="_blank">
-            {%- if site.data.nav-social.settings.use_icon == true -%}
+        <a class="nav-social-link {% if settings.use_icon %}uses_icon {% elsif settings.use_short %}uses_short{% endif %}" href="{{ item.url }}" target="_blank">
+            {%- if settings.use_icon == true -%}
                 {%- include {{ item.filename | prepend: 'icons/social/' | append: '.svg' }} -%}
                 <span class="is-visually-hidden">{{ item.filename }}</span>
             {%- else -%}
-                {%- if site.data.nav-social.settings.use_short == true -%}
+                {%- if settings.use_short == true -%}
                     {{ item.short }}
                 {%- else -%}
                     {{ item.title }}

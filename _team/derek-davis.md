@@ -5,7 +5,7 @@ post_title: Dr. Derek Davis
 thumbnail: assets/images/team/member007.jpg
 description: Pellentesque sagittis fermentum augue, eu egestas leo augue.
 # permalink: /team/claire
-# is_prominent: true
+# link: https://example.com/
 weight: 70
 ---
 

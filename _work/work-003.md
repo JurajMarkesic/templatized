@@ -5,7 +5,7 @@ post_title: Tre title
 thumbnail: assets/images/intro/landing-page-hero.jpg
 description: Vestibulum euismod felis vitae vestibulum iaculis. Suspendisse vitae metus.
 # permalink: /work/tre-custom
-# url_external: https://example.com/
+# link: https://example.com/
 weight: 30
 ---
 

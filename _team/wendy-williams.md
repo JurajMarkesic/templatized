@@ -5,7 +5,7 @@ post_title: Wendy Williams
 thumbnail: assets/images/team/member004.jpg
 description: Pellentesque sagittis fermentum augue, eu egestas leo augue.
 # permalink: /team/wendy
-# is_prominent: true
+# link: https://example.com/
 weight: 40
 ---
 

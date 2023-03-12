@@ -5,7 +5,7 @@ post_title: Ted Thompson
 thumbnail: assets/images/team/member009.jpg
 description: Pellentesque sagittis fermentum augue, eu egestas leo augue.
 # permalink: /team/ted
-# is_prominent: true
+# link: https://example.com/
 weight: 90
 ---
 

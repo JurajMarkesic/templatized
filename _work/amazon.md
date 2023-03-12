@@ -5,7 +5,7 @@ post_title: Amazon title
 thumbnail: assets/images/intro/landing-page-hero.jpg
 description: Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.
 # permalink: /work/amazon-custom
-url_external: https://amazon.com/
+link: https://amazon.com/
 weight: 60
 ---
 

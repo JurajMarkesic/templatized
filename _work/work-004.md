@@ -5,7 +5,7 @@ post_title: Quattro title
 thumbnail: assets/images/intro/landing-page-hero.jpg
 description: Praesent a quam nec erat commodo facilisis. Donec at mauris.
 # permalink: /work/quattro-custom
-# url_external: https://example.com/
+# link: https://example.com/
 weight: 40
 ---
 

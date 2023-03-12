@@ -94,9 +94,8 @@
 
 
 .list-item-summary {
-    @include media-breakpoint-down(sm) {
-        margin-top: 1em;
-    }
+    margin-top: 1em;
+    
     .list-card.is-variable & {
         @include media-breakpoint-down(sm) {
             margin-top: 1em;
