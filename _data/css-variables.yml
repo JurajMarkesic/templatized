@@ -13,12 +13,12 @@ css:
     header_height: '4em'
     header_bg: '#FFF6E4'
     header_text_color: '#826EE7'
-    header_brand_link_height: '36px'
+    header_brand_link_width: '110px'
   
     footer_padding_top: '2.5em'
     footer_padding_bottom: '0.5em'
     footer_bg: '#FFF6E4'
-    footer_brand_link_height: '18px'
+    footer_brand_link_width: '70px'
     footer_socials_space_between_items: '0.5em'
     footer_socials_text_size: '125%' # % of the text size when icons are disabled
     footer_socials_short_text_bg: '#E1D9FE'

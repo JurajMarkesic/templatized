@@ -4763,6 +4763,7 @@ a[href="#main-content"]:focus {
     display: flex;
     align-items: center;
     padding: 0 var(--desktop-nav-space-between-items);
+    border-radius: 0.75em;
   }
   .nav-link:hover {
     background-color: var(--desktop-nav-link-hover-bg);
@@ -5269,10 +5270,10 @@ html, body, .body-content, .page-content {
   pointer-events: none;
 }
 .header-brand .brand-link {
-  height: var(--header-brand-link-height);
+  width: var(--header-brand-link-width);
 }
 .footer-brand .brand-link {
-  height: var(--footer-brand-link-height);
+  width: var(--footer-brand-link-width);
 }
 
 /*# sourceMappingURL=styles.css.map */

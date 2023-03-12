@@ -63,10 +63,10 @@ html, body, .body-content, .page-content {
     }
 
     .header-brand & {
-        height: var(--header-brand-link-height);
+        width: var(--header-brand-link-width);
     }
     
     .footer-brand & {
-        height: var(--footer-brand-link-height);
+        width: var(--footer-brand-link-width);
     }
 }
