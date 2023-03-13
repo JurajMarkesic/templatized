@@ -47,12 +47,17 @@ html, body, .body-content, .page-content {
     padding-bottom: 4em;
 }
 
-
+.header-brand {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
 
 .company-name {
     text-decoration: none;
+    font-size: 1.5em;
+    font-family: var(--font-family-heading);
 }
-
 
 .brand-link {
     display: flex;

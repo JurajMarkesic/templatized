@@ -2,14 +2,15 @@
 
 a11y_skip: Skip to main content
 
-company_name: "YOUR_BRAND_NAME"
+company_name: "Kurian"
 copyright_label: "All right reserved"
 
-brand_name_description: "YOUR_BRAND_NAME logo"
-brand_logo: true # if false text will be displayed
-brand_svg: true # if false a png will be used
+brand_name_description: "Kurian logo"
+# brand_logo: true # if false text will be displayed
+# brand_svg: true # if false a png will be used
 
 home:
+  limit_features: 3
   limit_works: 3
   # limit_works: # toggle if not used
   limit_products: 4

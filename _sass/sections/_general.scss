@@ -5,10 +5,15 @@
     border-radius: 1em;
 }
 
+.section-head.is-centered {
+    text-align: center;
+}
+
 .section-label {
     margin: 0;
-    font-size: 0.875em;
-    letter-spacing: 0.2em;
+    // font-size: 0.875em;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.125em;
 }
 
 .section-heading {
@@ -18,6 +23,10 @@
 
     @include media-breakpoint-up(lg) {
         font-size: 2.5em;
+    }
+
+    &.is-colored {
+        color: var(--section-intro-heading-color);
     }
 }
 

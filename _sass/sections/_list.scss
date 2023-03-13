@@ -52,6 +52,12 @@
     padding: 0.75em;
     border-radius: 1.75em;
     z-index: 0;
+
+    &.is-not-link {
+        background-color: var(--list-card-not-link-bg);
+        padding: 1.25em;
+        border-radius: 0.75em;
+    }
 }
 
 .list-card-link {

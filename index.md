@@ -9,11 +9,11 @@ image: /assets/images/seo/YOUR_BRAND_NAME_homepage.jpg
 # _includes/sections
 sections:
     intro:    sections/intro.html
+    features: sections/features.html
     work:     sections/work.html
-    products: sections/products.html
-    team:     sections/team.html
-    posts:    sections/posts.html
-    careers:  sections/careers.html
+    # posts:    sections/posts.html
+    # team:     sections/team.html
+    # careers:  sections/careers.html
 ---
 
 ## Contacts

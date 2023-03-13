@@ -1,77 +1,83 @@
 css:
-    selection_bg: '#f1b742'
-    selection_text: '#ffe8d9'
+    selection_bg: '#0056b3'
+    selection_text: '#eff7ff'
 
-    theme_color_meta_mask: '#ffe8d9'
-    theme_color_meta_tile: '#ffe8d9'
-    theme_color_meta_name: '#ffe8d9'
+    theme_color_meta_mask: '#eff7ff'
+    theme_color_meta_tile: '#eff7ff'
+    theme_color_meta_name: '#eff7ff'
 
-    theme_color_main: '#826ee7' # use for accents like buttons
+    theme_color_main: '#0062cc' # use for accents like buttons
 
-    paper: '#ffe8d9'
-    ink: '#101218'
+    paper: '#eff7ff'
+    ink: '#5c5a5a'
 
     header_height: '4em'
-    # header_bg: '#fff6e4'
-    # header_text_color: '#826ee7'
+    header_bg: '#0062cc'
+    header_text_color: 'white'
     header_brand_link_width: '70px'
   
     footer_padding_top: '2.5em'
     footer_padding_bottom: '0.5em'
-    # footer_bg: '#fff6e4'
+    # footer_bg: '#f04'
     footer_brand_link_width: '40px'
     footer_socials_space_between_items: '0.5em'
     footer_socials_text_size: '125%' # % of the text size when icons are disabled
-    # footer_socials_short_text_bg: '#e1d9fe'
+    # footer_socials_short_text_bg: '#d0d'
     footer_socials_short_icon_size: '1.25em'
     
     mobile_nav_trigger_width: '2em'
-    # mobile_nav_bg: '#826ee7'
-    # mobile_nav_color: '#826ee7'
-    # mobile_current_bg: '#f1b742'
-    # mobile_submenu_bg: '#d4caff'
+    mobile_nav_bg: '#0056b3'
+    mobile_nav_text_color: 'white'
+    mobile_current_bg: '#eff7ff'
+    mobile_submenu_bg: '#0062cc'
   
-    # desktop_current_bg: '#f1b742'
-    # desktop_nav_color: '#826ee7'
+    # desktop_current_bg: '#eff7ff'
+    # desktop_nav_text_color: '#0062cc'
     desktop_nav_distance_from_edge: '0.5em'
     desktop_nav_space_between_items: '1.5em'
     desktop_nav_text_size_factor: '130%'
     desktop_nav_submenu_text_size_factor: '85%' # % of the nav text size
-    # desktop_nav_link_hover_bg: '#e1d9fe'
-    # desktop_nav_submenu_bg: '#826ee7'
-    # desktop_nav_submenu_hover_bg: '#f1b742'
+    # desktop_nav_link_hover_bg: '#d0d'
+    desktop_nav_submenu_bg: '#0062cc'
+    desktop_nav_submenu_hover_bg: '#0056b3'
     desktop_nav_submenu_width: '16rem'
   
     button_basic_bg: 'transparent'
-    button_basic_hover_bg: '#ffffff'
+    button_basic_hover_bg: '#e9e9e9'
   
-    button_primary_bg: '#826ee7 '
-    button_primary_hover_bg: '#ffffff'
-    # button_primary_label: '#222222'
-    # button_primary_hover_label: '#222222'
+    button_primary_bg: '#007aff '
+    button_primary_hover_bg: '#e9e9e9'
+    button_primary_label: 'white'
+    button_primary_hover_label: 'black'
   
-    button_outline_color: '#826ee7 '
-    # button_outline_hover_bg: '#ffffff'
-    # button_outline_hover_color: '#826ee7'
+    button_outline_color: '#section_heading_colored '
+    button_outline_hover_bg: '#e9e9e9'
+    # button_outline_hover_color: '#007aff'
   
-    # section_intro_bg: '#fff6e4'
-    # section_work_bg: '#e1d9fe'
-    # section_products_bg: '#fff6e4'
-    # section_team_bg: '#e1d9fe'
-    # section_posts_bg: '#fff6e4'
-    # section_careers_bg: '#e1d9fe'
-    # section_about_intro_bg: '#fff6e4'
+    section_intro_bg: 'white'
+    # section_features_bg: '#d0d'
+    # section_work_bg: '#d0d'
+    # section_products_bg: '#f04'
+    # section_team_bg: '#d0d'
+    # section_posts_bg: '#f04'
+    # section_careers_bg: '#d0d'
+    # section_about_intro_bg: '#f04'
+
+    section_intro_heading_color: '#007aff'
     
-    # section_intro_text_color: '#826ee7' # you can override body text color (ink) for each section on the homepage
-    # section_work_text_color: '#826ee7'
-    # section_products_text_color: '#826ee7'
-    # section_team_text_color: '#826ee7'
-    # section_posts_text_color: '#826ee7'
-    # section_careers_text_color: '#826ee7'
-    # section_about_intro_text_color: '#826ee7'
+    # section_intro_text_color: '#0062cc' # you can override body text color (ink) for each section on the homepage
+    # section_features_text_color: '#0062cc'
+    # section_work_text_color: '#0062cc'
+    # section_products_text_color: '#0062cc'
+    # section_team_text_color: '#0062cc'
+    # section_posts_text_color: '#0062cc'
+    # section_careers_text_color: '#0062cc'
+    # section_about_intro_text_color: '#0062cc'
 
     # list_card_border_color: '#57499b'
     # list_card_hover_bg: '#d4caff'
+
+    list_card_not_link_bg: 'white'
     
     transition_duration_slow: '0.9s'
     transition_duration_fast: '0.3s'
@@ -80,8 +86,5 @@ css:
   
     # using github's free font Mona Sans - https://github.com/github/mona-sans
     font_base: Mona Sans Regular
-    # using fontshare's free font Zodiak - https://www.fontshare.com/fonts/zodiak
-    # font_heading: Zodiak-Black
-    # using fontshare's free font Literata - https://www.fontshare.com/fonts/literata
-    font_heading: Literata-Bold
+    font_heading: Mona Sans Bold
     

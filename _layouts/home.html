@@ -7,6 +7,7 @@ layout: default
         {% if page.sections %}
             <div class="a11y-aligner" {% if site.a11y_skip %}id="main-content"{% endif %}></div>
             {% if page.sections.intro %}{% include {{ page.sections.intro }} %}{% endif %}
+            {% if page.sections.features %}{% include {{ page.sections.features }} %}{% endif %}
             {% if page.sections.work %}{% include {{ page.sections.work }} %}{% endif %}
             {% if page.sections.products %}{% include {{ page.sections.products }} %}{% endif %}
             {% if page.sections.team %}{% include {{ page.sections.team }} %}{% endif %}

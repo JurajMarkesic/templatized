@@ -1,13 +1,13 @@
 homepage_intro:
-    - style: outline
-      label: Discover more
-      link: about
+    # - style: outline
+    #   label: Discover more
+    #   link: about
     - style: primary
-      label: Book now
-      link: https://app.nexhealth.com/appt/swish-oral-care
-    - style: 
       label: Contact
       link: contact
+    # - style: 
+    #   label: Contact
+    #   link: contact
 homepage_work:
     - style: primary
       label: See all of our work

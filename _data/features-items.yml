@@ -1,0 +1,11 @@
+- name: Documentation
+  synopsis: Document tools and processes for continuity and maintenance.
+  thumbnail: /assets/images/intro/landing-page-documentation.png
+
+- name: Processes
+  synopsis: Rollout processes to sustain automation efforts.
+  thumbnail: /assets/images/intro/landing-page-processes.png
+
+- name: Tools
+  synopsis: Help you select the right DevOps toolchain for automation and roll them out.
+  thumbnail: /assets/images/intro/landing-page-tools.png

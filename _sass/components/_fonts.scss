@@ -7,82 +7,11 @@
 	src: local(''), url('../fonts/Mona-Sans-Regular.woff2') format('woff2');
 }
 
-/**
- * @license
- *
- * Font Family: Zodiak
- * Designed by: Jérémie Hornus, Gaetan Baehr, Jean-Baptiste Morizot, Alisa Nowak, Theo Guillard
- * URL: https://www.fontshare.com/fonts/zodiak
- * © 2023 Indian Type Foundry
- *
- * Font Styles:
- * Zodiak Variable(Variable font)
- * Zodiak Variable Italic(Variable font)
- * Zodiak Thin
- * Zodiak Thin Italic
- * Zodiak Light
- * Zodiak Light Italic
- * Zodiak Regular
- * Zodiak Italic
- * Zodiak Bold
- * Zodiak Bold Italic
- * Zodiak Extrabold         
- * Zodiak Extrabold Italic
- * Zodiak Black
- * Zodiak Black Italic
- *
-*/
-
 @font-face {
-	font-family: 'Zodiak-Black';
+	font-family: 'Mona Sans Bold';
 	font-style: normal;
-	font-weight: 900;
+	font-weight: 400;
 	font-display: swap;
-	src: local(''), url('../fonts/Zodiak-Black.woff2') format('woff2');
-}
-
-/**
- * @license
- *
- * Font Family: Literata
- * Designed by: TypeTogether
- * URL: https://www.fontshare.com/fonts/literata
- * © 2023 Indian Type Foundry
- *
- * Font Styles:
- * Literata Variable(Variable font)
- * Literata Variable Italic(Variable font)
- * Literata Extra Light
- * Literata Extra Light Italic
- * Literata Light
- * Literata Light Italic
- * Literata Regular
- * Literata Italic
- * Literata Medium
- * Literata Medium Italic
- * Literata Semi Bold
- * Literata Semi Bold Italic
- * Literata Bold
- * Literata Bold Italic
- * Literata Extra Bold
- * Literata Extra Bold Italic
- * Literata Black
- * Literata Black Italic
- *
-*/
-
-@font-face {
-	font-family: 'Literata-Bold';
-	font-style: normal;
-	font-weight: 700;
-	font-display: swap;
-	src: local(''), url('../fonts/Literata-Bold.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'Literata-Medium';
-	font-style: normal;
-	font-weight: 500;
-	font-display: swap;
-	src: local(''), url('../fonts/Literata-Medium.woff2') format('woff2');
+	// src: local(''), url('../fonts/playfair-display.woff2') format('woff2'); // theme default whn using googlefonts
+	src: local(''), url('../fonts/Mona-Sans-Bold.woff2') format('woff2');
 }

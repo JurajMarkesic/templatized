@@ -1,5 +1,6 @@
-section_label: Welcome
-section_heading: Do more now
-tagline: New way to do ABC and get more out of your XYZ
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie rhoncus vulputate. Nam volutpat, libero eget egestas vulputate, ex eros laoreet orci.
-image: assets/images/intro/landing-page-hero.jpg
+section_label: Welcome to
+section_heading: Kurian
+section_heading_colored: true
+# tagline: New way to do ABC and get more out of your XYZ
+description: Provides building blocks of Cloud Infrastructure and Devops
+image: assets/images/intro/landing-page-hero.png
