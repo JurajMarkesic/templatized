@@ -3,18 +3,20 @@
     {% assign products_posts = site.products | sort: 'weight' %}
 {% endif %}
 {% assign buttons = site.data.buttons.homepage_products %}
-{% assign limit = site.home.limit_products %}
+{% assign limit = site.home.limit_productss %}
 <section class="section-products">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 offset-md-2 col-xl-6 offset-xl-3">
-                {% if products.section_label %}
-                <p class="section-label">
-                    {{ products.section_label }}
-                </p>
-                {% endif %}
-                <h2 class="section-heading">{{ products.section_heading }}</h2>
-                {% if products.description %}<p>{{ products.description }}</p>{% endif %}
+            <div class="col-md-10 offset-md-1 col-xl-8 offset-xl-2">
+                <div class="section-head {% if products.is_centered %}is-centered{% endif %}">
+                    {% if products.section_label %}
+                    <p class="section-label">
+                        {{ products.section_label }}
+                    </p>
+                    {% endif %}
+                    <h2 class="section-heading">{{ products.section_heading }}</h2>
+                    {% if products.description %}<p>{{ products.description }}</p>{% endif %}
+                </div>
             </div>
         </div>
         {% if products_posts %}
@@ -27,12 +29,14 @@
                             <div class="row">
                                 <div class="{% if products.card_variable %}col-sm-4 col-lg-12 {% else %}col-12{% endif %}">
                                     <div class="media-rounded-small o-ratio 
-                                        {% if products.images_ratio == '5:4' %}
+                                        {% if products.images_ratio == '7:4' %}
+                                        o-ratio-7:4
+                                        {% elsif products.images_ratio == '5:4' %}
                                         o-ratio-5:4
-                                        {% elsif products.images_ratio == '5:3' %}
-                                        o-ratio-5:3
-                                        {% elsif products.images_ratio == '3:4' %}
-                                        o-ratio-3:4
+                                        {% elsif products.images_ratio == '4:3' %}
+                                        o-ratio-4:3
+                                        {% elsif products.images_ratio == '3:2' %}
+                                        o-ratio-3:2
                                         {% endif %}
                                     ">
                                         {% if item.thumbnail %}
@@ -72,7 +76,7 @@
                 </div>
             </div>
         </div>
-
+        
         {% else %}
         <p>{{ site.data.page-list.products.no-items }}</p>
         {% endif %}

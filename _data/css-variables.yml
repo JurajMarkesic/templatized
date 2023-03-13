@@ -8,7 +8,7 @@ css:
 
     theme_color_main: '#0062cc' # use for accents like buttons
 
-    paper: '#eff7ff'
+    paper: 'white'
     ink: '#5c5a5a'
 
     header_height: '4em'
@@ -42,6 +42,8 @@ css:
     desktop_nav_submenu_hover_bg: '#0056b3'
     desktop_nav_submenu_width: '16rem'
   
+    link_basic_color: '#007aff'
+
     button_basic_bg: 'transparent'
     button_basic_hover_bg: '#e9e9e9'
   
@@ -55,8 +57,8 @@ css:
     # button_outline_hover_color: '#007aff'
   
     section_intro_bg: 'white'
-    # section_features_bg: '#d0d'
-    # section_work_bg: '#d0d'
+    section_features_bg: '#eff7ff'
+    # section_services_bg: '#d0d'
     # section_products_bg: '#f04'
     # section_team_bg: '#d0d'
     # section_posts_bg: '#f04'
@@ -67,7 +69,7 @@ css:
     
     # section_intro_text_color: '#0062cc' # you can override body text color (ink) for each section on the homepage
     # section_features_text_color: '#0062cc'
-    # section_work_text_color: '#0062cc'
+    # section_services_text_color: '#0062cc'
     # section_products_text_color: '#0062cc'
     # section_team_text_color: '#0062cc'
     # section_posts_text_color: '#0062cc'

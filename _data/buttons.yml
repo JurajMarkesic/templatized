@@ -8,14 +8,14 @@ homepage_intro:
     # - style: 
     #   label: Contact
     #   link: contact
-homepage_work:
+homepage_services:
     - style: primary
-      label: See all of our work
-      link: work
+      label: See all services
+      link: services
 homepage_products:
     - style: primary
       label: See our products
-      link: products
+      link: aws-machine-images
 homepage_team:
     - style: primary
       label: Meet the team
@@ -33,10 +33,10 @@ about_intro:
       label: Contact
       link: contact
 
-work:
+services:
     - style: primary
-      label: Back to work page
-      link: work
+      label: Back to services page
+      link: services
 products:
     - style: primary
       label: Back to products page

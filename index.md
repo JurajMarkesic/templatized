@@ -3,14 +3,15 @@ layout: home
 
 # SEO
 title: Homepage
-description: write_a_HOMEPAGE_description_around_160_characters_long
-image: /assets/images/seo/YOUR_BRAND_NAME_homepage.jpg
+description: # write_a_HOMEPAGE_description_around_160_characters_long
+image: /assets/images/seo/banner.png
 
 # _includes/sections
 sections:
     intro:    sections/intro.html
     features: sections/features.html
-    work:     sections/work.html
+    products: sections/products.html
+    services: sections/services.html
     # posts:    sections/posts.html
     # team:     sections/team.html
     # careers:  sections/careers.html

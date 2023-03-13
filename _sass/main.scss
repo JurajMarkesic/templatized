@@ -45,6 +45,10 @@ html, body, .body-content, .page-content {
 .page-body {
     margin-top: 3em;
     padding-bottom: 4em;
+
+    a:not([class]) {
+        color: var(--link-basic-color);
+    }
 }
 
 .header-brand {

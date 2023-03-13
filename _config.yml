@@ -6,22 +6,21 @@ company_name: "Kurian"
 copyright_label: "All right reserved"
 
 brand_name_description: "Kurian logo"
-# brand_logo: true # if false text will be displayed
-# brand_svg: true # if false a png will be used
+brand_logo: true # if false text will be displayed
+brand_svg: true # if false a png will be used
 
 home:
   limit_features: 3
-  limit_works: 3
-  # limit_works: # toggle if not used
-  limit_products: 4
-  limit_team: 4
-  limit_posts: 5
-  limit_careers: 3
+  limit_services: 6
+  # limit_products: 4
+  # limit_team: 4
+  # limit_posts: 5
+  # limit_careers: 3
 
 collections:
-  # work:
+  # services:
   #   output: true # has to be commented out like this for some reason
-  work:
+  services:
     output: true
   products:
     output: true
@@ -42,7 +41,7 @@ defaults:
       layout: "page"
   # -
   #   scope:
-  #     path: "work"
+  #     path: "services"
   #     type: "pages"
   #   values:
   #     layout: "list"
@@ -80,9 +79,9 @@ defaults:
   -
     scope:
       path: ""
-      type: "work"
+      type: "services"
     values:
-      layout: "work-post"
+      layout: "services-post"
   - scope:
       path: ""
       type: "products"
@@ -112,11 +111,10 @@ plugins:
 
 # Fallback SEO data
 # SEE GUIDE HERE: https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-title: YOUR_BRAND_NAME
+title: Kurian
 tagline: the_best_OCCUPATION_NAME_in_CITY_NAME_COUNTRY_NAME
 description: write_a_WEBSITE_description_around_160_characters_long # https://moz.com/learn/seo/meta-description
-# url: https://your-example-website.com
-url: https://ronca85.github.io
+url: https://your-example-website.com
 twitter:
   card: YOUR_TWITTER_HANDLE
   username: YOUR_TWITTER_SUMMARY
@@ -125,11 +123,11 @@ twitter:
 #   publisher:
 #   admins:
 logo: /assets/images/seo/brand.png
-social:
-  name: YOUR_BRAND_NAME
-  links:
-    - https://twitter.com/YOUR_TWITTER_HANDLE
-    - https://www.facebook.com/YOUR_FACEBOOK_HANDLE
-    - https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE
-    - https://github.com/YOUR_GITHUB_HANDLE
-    - https://keybase.io/YOUR_KEYBASE_HANDLE
+# social:
+#   name: Kurian
+#   links:
+#     - https://twitter.com/YOUR_TWITTER_HANDLE
+#     - https://www.facebook.com/YOUR_FACEBOOK_HANDLE
+#     - https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE
+#     - https://github.com/YOUR_GITHUB_HANDLE
+#     - https://keybase.io/YOUR_KEYBASE_HANDLE

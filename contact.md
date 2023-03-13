@@ -1,13 +1,15 @@
 ---
 # SEO
-title: Contact
-description: write_a_CONTACT_description_around_160_characters_long
-image: /assets/images/seo/YOUR_BRAND_NAME_homepage.jpg
+title: Contact us
+description: # write_a_CONTACT_description_around_160_characters_long
+image: /assets/images/seo/banner.png
 
 # PAGE
-heading: Contact us
+heading: Contact
 ---
 
-Contact us by email
+If you want to engage us or require assistance with using our services, please contact using one of the following options.
 
-E-Mail: [example@example-company.com](mailto:example@example-company.com)
+E-Mail: [contact@kurianinc.com](mailto:contact@kurianinc.com)
+
+Report issues with AWS machine images by Kurian: [https://github.com/kurianinc/ami-pub/issues/new](https://github.com/kurianinc/ami-pub/issues/new)

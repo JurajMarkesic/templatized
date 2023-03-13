@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+{% assign buttons = site.data.buttons.services %}
+
+<div class="page-content">
+    <main class="page-layout">
+        {% if page.title %}
+        <section class="page-intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 class="section-heading">{{ page.post_section_heading }}</h1>
+                        <p>{{ page.date | date_to_string: "ordinal", "US" }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endif %}
+        <div {% if site.a11y_skip %}id="main-content"{% endif %}></div>
+        <section class="page-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {%- if buttons -%}
+        <div class="section-links">
+            {%- for item in buttons -%}
+            {% assign button_style = item.style %}
+            <a class="button {% if item.style == 'primary' %}button-primary {% elsif item.style == 'outline' %}button-outline {% endif %}" href="{{ item.link | relative_url }}">{{ item.label | escape }}</a>
+            {%- endfor -%}
+        </div>
+        {%- endif -%}
+        
+    </main>
+</div>

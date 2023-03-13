@@ -3,8 +3,8 @@ layout: list
 
 # SEO
 title: Blog
-description: write_a_BLOG_description_around_160_characters_long
-image: /assets/images/seo/YOUR_BRAND_NAME_homepage.jpg
+description: # write_a_BLOG_description_around_160_characters_long
+image: /assets/images/seo/banner.png
 
 # PAGE
 heading: Our blog
@@ -26,12 +26,14 @@ synopsis: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibulum
                     <div class="row">
                         <div class="col-sm-4 col-lg-3">
                             <div class="media-rounded-small o-ratio 
-                                {% if posts.images_ratio == '5:4' %}
+                                {% if posts.images_ratio == '7:4' %}
+                                o-ratio-7:4
+                                {% elsif posts.images_ratio == '5:4' %}
                                 o-ratio-5:4
-                                {% elsif posts.images_ratio == '5:3' %}
-                                o-ratio-5:3
-                                {% elsif posts.images_ratio == '3:4' %}
-                                o-ratio-3:4
+                                {% elsif posts.images_ratio == '4:3' %}
+                                o-ratio-4:3
+                                {% elsif posts.images_ratio == '3:2' %}
+                                o-ratio-3:2
                                 {% endif %}
                             ">
                                 {% if item.thumbnail %}

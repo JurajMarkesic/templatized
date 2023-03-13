@@ -1,7 +1,7 @@
 features:
   no-items: No features displayed
-work:
-  no-items: No work posts displayed
+services:
+  no-items: No services posts displayed
 products:
   no-items: No products posts displayed
 team:

@@ -27,12 +27,14 @@
                             <div class="row">
                                 <div class="{% if posts.card_variable %}col-sm-4 col-lg-12 {% else %}col-12{% endif %}">
                                     <div class="media-rounded-small o-ratio 
-                                        {% if posts.images_ratio == '5:4' %}
+                                        {% if posts.images_ratio == '7:4' %}
+                                        o-ratio-7:4
+                                        {% elsif posts.images_ratio == '5:4' %}
                                         o-ratio-5:4
-                                        {% elsif posts.images_ratio == '5:3' %}
-                                        o-ratio-5:3
-                                        {% elsif posts.images_ratio == '3:4' %}
-                                        o-ratio-3:4
+                                        {% elsif posts.images_ratio == '4:3' %}
+                                        o-ratio-4:3
+                                        {% elsif posts.images_ratio == '3:2' %}
+                                        o-ratio-3:2
                                         {% endif %}
                                     ">
                                         {% if item.thumbnail %}

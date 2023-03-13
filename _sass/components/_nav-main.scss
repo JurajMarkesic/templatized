@@ -222,7 +222,7 @@
     }
     .nav-list-submenu {
         background-color: var(--desktop-nav-submenu-bg);
-        border-radius: 0.75em 0.75em 1.25em 1.25em;
+        border-radius: 0.25em 0.25em 0.5em 0.5em;
         overflow: hidden;
     }
     .nav-list-submenu-wrap {
@@ -235,7 +235,7 @@
         pointer-events: none;
         overflow: hidden;
         visibility: hidden;
-        padding: 0em 0 0.75em;
+        padding: 0.5em 0 0.75em;
         transition-delay: var(--transition-duration-fast);
         transition: opacity var(--transition-duration-fast) var(--easing);
 

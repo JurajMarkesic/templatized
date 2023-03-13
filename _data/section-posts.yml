@@ -6,4 +6,4 @@ description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibu
 # layout_columns_3: true # if enabled, the list layout will change into a three column grid on larger screens.
 layout_columns_4: true # if enabled, the list layout will change into a four column grid on larger screens.
 card_variable: true    # if enabled the card layout will move from column to row and to column on larger screens. if disabled card layout will always be a column.
-images_ratio: '5:3'    # if enabled the image radio can be set to '5:4', '5:3' or '3:4'. for best results use '3:4' only when `layout_columns_X` and `card_variable` are enabled. if disabled images will default back to a 1:1 ratio (square).
+images_ratio: '5:3'    # if enabled the image radio can be set to '7:4', '5:4', '4:3' or '3:2'. if disabled images will default back to a 1:1 ratio (square).

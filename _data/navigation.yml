@@ -2,7 +2,7 @@
   link: /
   weight: 10
   
-- name: About
+- name: Company
   # link: /about.html # submenu will be ignored if link is enabled exists
   weight: 20
   submenu:
@@ -17,49 +17,30 @@
   - name: Contact
     link: /contact.html
     weight: 30
-  
-# - name: Materials
-#   weight: 25
-#   submenu:
-#   - name: All Materials
-#     link: /all-materials.html
-#     weight: 0
-    
-#   - name: Metal
-#     link: /metal.html
-#     weight: 10
-
-#   - name: Wood
-#     link: /wood.html
-#     weight: 20
-    
-#   - name: Plastic
-#     link: /plastic.html
-#     weight: 30
 
 - name: Products
-  # link: /products.html
+  # link: /aws-machine-images/
   weight: 30
   submenu:
-    - name: Product 1
-      link: /product-1/
+    - name: AWS Machine Images
+      link: /aws-machine-images/
       weight: 10
       
-    - name: Product 2
-      link: /product-2/
-      weight: 20
+    # - name: Product 2
+    #   link: /product-2/
+    #   weight: 20
       
-    - name: Product 3
-      link: /product-3/
-      weight: 30
+    # - name: Product 3
+    #   link: /product-3/
+    #   weight: 30
       
-    - name: Product 4
-      link: /product-4/
-      weight: 40
+    # - name: Product 4
+    #   link: /product-4/
+    #   weight: 40
       
-    - name: Product 5
-      link: /product-5/
-      weight: 50
+    # - name: Product 5
+    #   link: /product-5/
+    #   weight: 50
       
 # - name: Blog
 #   link: /blog.html

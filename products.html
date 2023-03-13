@@ -2,15 +2,17 @@
 layout: list
 
 # SEO
-title: Products
-description: write_a_PRODUCTS_description_around_160_characters_long
-image: /assets/images/seo/YOUR_BRAND_NAME_homepage.jpg
+title: AWS Machine Images
+description: # write_a_PRODUCTS_description_around_160_characters_long
+image: /assets/images/seo/banner.png
 
 # PAGE
-heading: New products
-synopsis: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibulum nisi. Ut a velit ut erat venenatis euismod. Nulla dictum maximus luctus. Vestibulum et quam efficitur, auctor metus id, iaculis massa. Nulla facilisi. Donec sodales lacinia metus.
+heading: AWS Machine Images
+synopsis: Currently we offer ready-to-use, production quality AMIs that are built on a wide range of Linux platforms updated with latest OS and security patches. The supported OS platforms are listed on the product pages.
+permalink: /aws-machine-images
 ---
 
+{% assign products = site.data.section-products %}
 {% if site.products %}
     {% assign products_posts = site.products | sort: 'weight' %}
 {% endif %}
@@ -25,12 +27,14 @@ synopsis: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibulum
                     <div class="row">
                         <div class="col-sm-4 col-lg-3">
                             <div class="media-rounded-small o-ratio 
-                                {% if products.images_ratio == '5:4' %}
+                                {% if products.images_ratio == '7:4' %}
+                                o-ratio-7:4
+                                {% elsif products.images_ratio == '5:4' %}
                                 o-ratio-5:4
-                                {% elsif products.images_ratio == '5:3' %}
-                                o-ratio-5:3
-                                {% elsif products.images_ratio == '3:4' %}
-                                o-ratio-3:4
+                                {% elsif products.images_ratio == '4:3' %}
+                                o-ratio-4:3
+                                {% elsif products.images_ratio == '3:2' %}
+                                o-ratio-3:2
                                 {% endif %}
                             ">
                                 {% if item.thumbnail %}
