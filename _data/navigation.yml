@@ -23,7 +23,7 @@
   weight: 30
   submenu:
     - name: AWS Machine Images
-      link: /aws-machine-images/
+      link: "/aws-machine-images/"
       weight: 10
       
     # - name: Product 2

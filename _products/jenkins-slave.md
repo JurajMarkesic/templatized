@@ -1,21 +1,21 @@
 ---
 # SEO
 title: Jenkins Slave
-description: write_a_description_around_160_characters_long_about_this_WORK_POST
+description: write_a_description_around_160_characters_long_about_this_PRODUCT_POST
 image: /assets/images/seo/banner.png
 
 # PAGE
 date: 2023-01-01T10:00:00+10:00
-name: Jenkins Slave
+name: Jenkins Build Slave
+post_title: Jenkins Slave
 thumbnail: assets/images/products/jenkins-slave.jpg
-synopsis: Jenkins Slave description
-permalink: aws-machine-images/jenkins-slave
-weight: 30
+permalink: "/aws-machine-images/jenkins-slave/"
 # link: https://example.com/
+weight: 30
 ---
 
 Jenkins Build Slave
-===================
+-------------------
 
 In a Jenkins based CI/CD pipeline the Jenkins slaves are the work horses. A slave machine is configured to perform variety of tasks – compilation of application source code, executing playbooks and running a wide range of automation tasks.
 

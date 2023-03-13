@@ -1,21 +1,21 @@
 ---
 # SEO
 title: Jenkins Server
-description: write_a_description_around_160_characters_long_about_this_WORK_POST
+description: write_a_description_around_160_characters_long_about_this_PRODUCT_POST
 image: /assets/images/seo/banner.png
 
 # PAGE
 date: 2023-01-01T10:00:00+10:00
-name: Jenkins Server
+name: Jenkins Automation Server
+post_title: Jenkins Server
 thumbnail: assets/images/products/jenkins.jpg
-synopsis: Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.
-permalink: aws-machine-images/jenkins-server
+permalink: "/aws-machine-images/jenkins-server/"
 # link: https://example.com/
 weight: 20
 ---
 
 Jenkins Automation Server
-=========================
+-------------------------
 
 Jenkins is mainly used for setting up automated software builds and building CI/CD pipelines in a software development organization. However, it can also be used as a general purpose DevOps automation platform where various automation, provisioning and system maintenance tasks can be hosted and orchestrated from.
 

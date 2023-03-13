@@ -43,6 +43,8 @@ css:
     desktop_nav_submenu_width: '16rem'
   
     link_basic_color: '#007aff'
+    code_color: '#e83e8c'
+    code_bg: 'rgba(232,62,140,0.1)'
 
     button_basic_bg: 'transparent'
     button_basic_hover_bg: '#e9e9e9'

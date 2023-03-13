@@ -1,21 +1,21 @@
 ---
 # SEO
 title: Apache Web Server
-description: write_a_description_around_160_characters_long_about_this_WORK_POST
+description: write_a_description_around_160_characters_long_about_this_PRODUCT_POST
 image: /assets/images/seo/banner.png
 
 # PAGE
 date: 2023-01-01T10:00:00+10:00
 name: Apache Web Server
+post_title: Apache Web Server
 thumbnail: assets/images/products/apache-web-server.jpg
-synopsis: Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.
-permalink: aws-machine-images/apache-web-server
+permalink: "/aws-machine-images/apache-web-server/"
 # link: https://example.com/
 weight: 10
 ---
 
 Apache Web Server
-=================
+-----------------
 
 Apache HTTP server has been running millions of websites of all varieties and it is one of the most popular open source applications also. The Kurian AMI bakes the latest version of Apache HTTP server software onto the target Linux distribution updated with latest OS patches. A node spun out of this AMI will be ready to be added to a cluster or further configuration immediately.
 
