@@ -19,54 +19,65 @@
     weight: 30
 
 - name: Products
-  # link: /aws-machine-images/
+  # link: "/aws-machine-images/"
   weight: 30
   submenu:
     - name: AWS Machine Images
       link: "/aws-machine-images/"
       weight: 10
       
-    # - name: Product 2
-    #   link: /product-2/
-    #   weight: 20
-      
-    # - name: Product 3
-    #   link: /product-3/
-    #   weight: 30
-      
-    # - name: Product 4
-    #   link: /product-4/
-    #   weight: 40
-      
-    # - name: Product 5
-    #   link: /product-5/
-    #   weight: 50
-      
-# - name: Blog
-#   link: /blog.html
-#   weight: 40
-    
-- name: Resources
-  # link: /resources.html
-  weight: 60
-  submenu:
-    - name: Github
-      link: https://github.com/kurianinc/ami-pub
-      weight: 10
-      
-    - name: Kurian DevOps Blog
-      link: https://kurianinc.medium.com/
+    - name: Joomla! on LAMP Stack
+      link: "/aws-machine-images/joomla-on-lamp-stack/"
       weight: 20
       
-    - name: AWS Marketplace Listing
-      link: https://aws.amazon.com/marketplace/search/
+    - name: Docker Host
+      link: "/aws-machine-images/docker-host/"
       weight: 30
       
-    - name: Facebook page
-      link: https://www.facebook.com/kurianinc/
+    - name: Nexus Repository Manager
+      link: "/aws-machine-images/nexus-repository-manager/"
+      weight: 40
+    
+- name: Services
+  # link: "/aws-professional-services/"
+  weight: 40
+  submenu:
+    - name: AWS Professional Services
+      link: "/aws-professional-services/"
+      weight: 10
+      
+    - name: Content Management Hosting
+      link: "/aws-professional-services/content-management-hosting/"
+      weight: 20
+      
+    - name: SmallBiz on the Cloud
+      link: "/aws-professional-services/smallbiz-on-the-cloud/"
+      weight: 30
+      
+    - name: CI/CD Pipeline Cloud Resources
+      link: "/aws-professional-services/ci-cd-pipeline-cloud-resources/"
       weight: 40
 
-- name: Contact
-  link: /contact.html
-  is_button: true
-  weight: 1000
+    - name: Public Cloud Machine Image
+      link: "/aws-professional-services/public-cloud-machine-image/"
+      weight: 50
+
+# - name: Resources
+#   # link: /resources.html
+#   weight: 50
+#   submenu:
+#     - name: Github
+#       link: https://github.com/kurianinc/ami-pub
+#       weight: 10
+      
+#     - name: Kurian DevOps Blog
+#       link: https://kurianinc.medium.com/
+#       weight: 20
+      
+#     - name: AWS Marketplace Listing
+#       link: https://aws.amazon.com/marketplace/search/
+#       weight: 30
+      
+#     - name: Facebook page
+#       link: https://www.facebook.com/kurianinc/
+#       weight: 40

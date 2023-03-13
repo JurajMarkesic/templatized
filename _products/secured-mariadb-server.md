@@ -6,7 +6,7 @@ image: /assets/images/seo/banner.png
 
 # PAGE
 date: 2023-01-01T10:00:00+10:00
-name: Secured MariaDB
+name: Secured MariaDB Server
 post_title: Secured MariaDB Server
 thumbnail: assets/images/products/maria-db.jpg
 permalink: "/aws-machine-images/secured-mariadb-server/"

@@ -6,7 +6,7 @@ image: /assets/images/seo/banner.png
 
 # PAGE
 date: 2023-01-01T10:00:00+10:00
-name: Jenkins Build Slave
+name: Jenkins Slave
 post_title: Jenkins Slave
 thumbnail: assets/images/products/jenkins-slave.jpg
 permalink: "/aws-machine-images/jenkins-slave/"

@@ -7,10 +7,12 @@ description: # write_a_SERVICES_description_around_160_characters_long
 image: /assets/images/seo/banner.png
 
 # PAGE
-heading: New services
-synopsis: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibulum nisi. Ut a velit ut erat venenatis euismod. Nulla dictum maximus luctus. Vestibulum et quam efficitur, auctor metus id, iaculis massa. Nulla facilisi. Donec sodales lacinia metus.
+heading: Services
+# synopsis: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibulum nisi. Ut a velit ut erat venenatis euismod. Nulla dictum maximus luctus. Vestibulum et quam efficitur, auctor metus id, iaculis massa. Nulla facilisi. Donec sodales lacinia metus.
+permalink: "/aws-professional-services/"
 ---
 
+{% assign services = site.data.section-services %}
 {% if site.services %}
     {% assign services_posts = site.services | sort: 'weight' %}
 {% endif %}
@@ -60,9 +62,7 @@ synopsis: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibulum
                                         </span>
                                     </a>
                                 </h3>
-                                {% if item.synopsis %}
-                                  <p class="list-item-synopsis">{{ item.synopsis }}</p>
-                                {% endif %}
+                                <p class="list-item-synopsis is-excerpt">{{ item.content | markdownify | strip_html | truncate: 100 }}</p>
                             </div>
                         </div>
                     </div>

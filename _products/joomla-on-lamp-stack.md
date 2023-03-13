@@ -6,7 +6,7 @@ image: /assets/images/seo/banner.png
 
 # PAGE
 date: 2023-01-01T10:00:00+10:00
-name: Joomla! Content Management System
+name: Joomla! on LAMP Stack
 post_title: Joomla! on LAMP Stack
 thumbnail: assets/images/products/joomla.jpg
 permalink: "/aws-machine-images/joomla-on-lamp-stack/"

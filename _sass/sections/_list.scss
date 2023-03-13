@@ -171,4 +171,10 @@
 .list-item-synopsis {
     line-height: 1.75;
     margin: 1.5em 0 2.5em;
+
+    &.is-excerpt {
+        @include media-breakpoint-up(lg) {
+            max-width: 75%;
+        }
+    }
 }

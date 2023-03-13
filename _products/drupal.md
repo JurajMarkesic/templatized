@@ -6,7 +6,7 @@ image: /assets/images/seo/banner.png
 
 # PAGE
 date: 2023-01-01T10:00:00+10:00
-name: Drupal Content Management System
+name: Drupal
 post_title: Drupal
 thumbnail: assets/images/products/drupal.jpg
 permalink: "/aws-machine-images/drupal/"

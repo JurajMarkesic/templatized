@@ -6,7 +6,7 @@ image: /assets/images/seo/banner.png
 
 # PAGE
 date: 2023-01-01T10:00:00+10:00
-name: DevOps Desk
+name: DevOps Desk with Ansible
 post_title: DevOps Desk with Ansible
 thumbnail: assets/images/products/ansible.jpg
 permalink: "/aws-machine-images/devops-desk-with-ansible/"

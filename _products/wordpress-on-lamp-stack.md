@@ -6,7 +6,7 @@ image: /assets/images/seo/banner.png
 
 # PAGE
 date: 2023-01-01T10:00:00+10:00
-name: WordPress AMI
+name: WordPress on LAMP Stack
 post_title: WordPress on LAMP Stack
 thumbnail: assets/images/products/wordpress-lamp.jpg
 permalink: "/aws-machine-images/wordpress-lamp/"
