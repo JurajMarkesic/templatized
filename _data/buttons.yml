@@ -11,11 +11,11 @@ homepage_intro:
 homepage_services:
     - style: primary
       label: See all services
-      link: "/aws-professional-services/"
+      link: "/aws-professional-services"
 homepage_products:
     - style: primary
       label: See our products
-      link: "/aws-machine-images/"
+      link: "/aws-machine-images"
 homepage_team:
     - style: primary
       label: Meet the team
@@ -36,11 +36,11 @@ about_intro:
 services:
     - style: primary
       label: Back to services page
-      link: "/aws-professional-services/"
+      link: "/aws-professional-services"
 products:
     - style: primary
       label: Back to products page
-      link: "/aws-machine-images/"
+      link: "/aws-machine-images"
 team_member:
     - style: primary
       label: Back to team page

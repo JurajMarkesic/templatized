@@ -9,7 +9,7 @@ date: 2023-01-01T10:00:00+10:00
 name: Content Management Hosting
 post_title: Content Management Hosting
 thumbnail: assets/images/services/content-management-hosting.png
-permalink: "/aws-professional-services/content-management-hosting/" # permalink is ignored if link is enabled
+permalink: "/aws-professional-services/content-management-hosting" # permalink is ignored if link is enabled
 # link: https://aws.amazon.com/marketplace/pp/prodview-i3zr55btyo2ii?qid=1617238109971
 weight: 30
 ---

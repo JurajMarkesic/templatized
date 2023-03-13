@@ -23,11 +23,11 @@
   weight: 30
   submenu:
     - name: AWS Machine Images
-      link: "/aws-machine-images/"
+      link: "/aws-machine-images"
       weight: 10
       
     - name: Joomla! on LAMP Stack
-      link: "/aws-machine-images/joomla-on-lamp-stack/"
+      link: "/aws-machine-images/joomla-on-lamp-stack"
       weight: 20
       
     - name: Docker Host
@@ -35,31 +35,31 @@
       weight: 30
       
     - name: Nexus Repository Manager
-      link: "/aws-machine-images/nexus-repository-manager/"
+      link: "/aws-machine-images/nexus-repository-manager"
       weight: 40
     
 - name: Services
-  # link: "/aws-professional-services/"
+  # link: "/aws-professional-services"
   weight: 40
   submenu:
     - name: AWS Professional Services
-      link: "/aws-professional-services/"
+      link: "/aws-professional-services"
       weight: 10
       
     - name: Content Management Hosting
-      link: "/aws-professional-services/content-management-hosting/"
+      link: "/aws-professional-services/content-management-hosting"
       weight: 20
       
     - name: SmallBiz on the Cloud
-      link: "/aws-professional-services/smallbiz-on-the-cloud/"
+      link: "/aws-professional-services/smallbiz-on-the-cloud"
       weight: 30
       
     - name: CI/CD Pipeline Cloud Resources
-      link: "/aws-professional-services/ci-cd-pipeline-cloud-resources/"
+      link: "/aws-professional-services/ci-cd-pipeline-cloud-resources"
       weight: 40
 
     - name: Public Cloud Machine Image
-      link: "/aws-professional-services/public-cloud-machine-image/"
+      link: "/aws-professional-services/public-cloud-machine-image"
       weight: 50
 
 # - name: Resources
