@@ -57,6 +57,11 @@ html, body, .body-content, .page-content {
 .brand-link {
     display: flex;
 
+    & > img {
+        width: 100%;
+        pointer-events: none;
+    }
+
     & > svg {
         fill: currentColor;
         pointer-events: none;

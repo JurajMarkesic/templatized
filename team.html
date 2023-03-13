@@ -1,9 +1,14 @@
 ---
 layout: list
 
-title: Our team
-description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibulum nisi. Ut a velit ut erat venenatis euismod. Nulla dictum maximus luctus. Vestibulum et quam efficitur, auctor metus id, iaculis massa. Nulla facilisi. Donec sodales lacinia metus.
-# description: # toggle description text if needed
+# SEO
+title: Team
+description: write_a_TEAM_description_around_160_characters_long
+image: /assets/images/seo/YOUR_BRAND_NAME_homepage.jpg
+
+# PAGE
+heading: Our team
+synopsis: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibulum nisi. Ut a velit ut erat venenatis euismod. Nulla dictum maximus luctus. Vestibulum et quam efficitur, auctor metus id, iaculis massa. Nulla facilisi. Donec sodales lacinia metus.
 ---
 
 {% assign team = site.data.section-team %}
@@ -46,7 +51,9 @@ description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibu
                                         </span>
                                     </a>
                                 </h3>
-                                {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+                                {% if item.synopsis %}
+                                  <p class="list-item-synopsis">{{ item.synopsis }}</p>
+                                {% endif %}
                             </div>
                         </div>
                     </div>

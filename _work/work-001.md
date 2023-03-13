@@ -1,9 +1,15 @@
 ---
+# SEO
+title: Uno
+description: write_a_description_around_160_characters_long_about_this_WORK_POST
+image: /assets/images/seo/YOUR_BRAND_NAME_homepage.jpg
+
+# PAGE
 date: 2023-01-01T10:00:00+10:00
 name: Uno
 post_title: Uno title
 thumbnail: assets/images/intro/landing-page-hero.jpg
-description: Condimentum neque sit amet id.
+synopsis: Condimentum neque sit amet id.
 permalink: /work/uno-custom
 link: https://example.com/
 weight: 10

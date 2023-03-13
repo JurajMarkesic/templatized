@@ -1,7 +1,13 @@
 ---
 layout: about
 
+# SEO
 title: About us
+description: write_a_ABOUT_description_around_160_characters_long
+image: /assets/images/seo/YOUR_BRAND_NAME_homepage.jpg
+
+# PAGE
+heading: About us
 
 sections:
     intro:    sections/about/intro.html

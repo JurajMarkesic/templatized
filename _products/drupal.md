@@ -1,9 +1,15 @@
 ---
+# SEO
+title: Drupal
+description: write_a_description_around_160_characters_long_about_this_PRODUCT
+image: /assets/images/seo/YOUR_BRAND_NAME_homepage.jpg
+
+# PAGE
 date: 2023-01-01T10:00:00+10:00
 name: Drupal
 post_title: Drupal
 thumbnail: https://picsum.photos/300/400?v=2
-description: Pellentesque sagittis fermentum augue, eu egestas leo augue.
+synopsis: Pellentesque sagittis fermentum augue, eu egestas leo augue.
 # permalink: /products/drupal
 weight: 20
 ---

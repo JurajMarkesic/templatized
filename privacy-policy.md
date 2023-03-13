@@ -1,5 +1,11 @@
 ---
+# SEO
 title: Privacy policy
+description: write_a_PRIVACY_POLICY_description_around_160_characters_long
+image: /assets/images/seo/YOUR_BRAND_NAME_homepage.jpg
+
+# PAGE
+heading: Privacy policy
 ---
 
 # h1 heading

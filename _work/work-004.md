@@ -1,9 +1,15 @@
 ---
+# SEO
+title: Quattro
+description: write_a_description_around_160_characters_long_about_this_WORK_POST
+image: /assets/images/seo/YOUR_BRAND_NAME_homepage.jpg
+
+# PAGE
 date: 2023-01-01T10:00:00+10:00
 name: Quattro
 post_title: Quattro title
 thumbnail: assets/images/intro/landing-page-hero.jpg
-description: Praesent a quam nec erat commodo facilisis. Donec at mauris.
+synopsis: Praesent a quam nec erat commodo facilisis. Donec at mauris.
 # permalink: /work/quattro-custom
 # link: https://example.com/
 weight: 40

@@ -1,24 +1,29 @@
 section_label: Job opportunities
-title: Careers
+section_heading: Careers
 description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibulum nisi. Ut a velit ut erat venenatis euismod. Nulla dictum maximus luctus. Vestibulum et quam efficitur, auctor metus id, iaculis massa. Nulla facilisi. Donec sodales lacinia metus.
 
 items:
   - name: Full Stack Software Engineer
     link: https://talentlyft.com/ # example - add your link to the job post
+    synopsis: (Remote) 3+ years of experience
     weight: 10
 
   - name: Privacy Data Analyst
     link: https://talentlyft.com/ # example - add your link to the job post
+    synopsis: (Remote) 5+ years of experience
     weight: 20
-
-  - name: iOS Software Engineer
-    link: https://talentlyft.com/ # example - add your link to the job post
-    weight: 30
-
-  - name: Strategic Insurance Program Manager
-    link: https://talentlyft.com/ # example - add your link to the job post
-    weight: 40
 
   - name: Art Director
     link: https://talentlyft.com/ # example - add your link to the job post
+    synopsis: (On-site) Junior position
+    weight: 30
+
+  - name: iOS Software Engineer
+    link: https://talentlyft.com/ # example - add your link to the job post
+    synopsis: (Remote) Senior position
+    weight: 40
+
+  - name: Strategic Insurance Program Manager
+    link: https://talentlyft.com/ # example - add your link to the job post
+    synopsis: (On-site) 5+ years of experience
     weight: 50

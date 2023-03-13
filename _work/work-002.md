@@ -1,9 +1,15 @@
 ---
+# SEO
+title: Due
+description: write_a_description_around_160_characters_long_about_this_WORK_POST
+image: /assets/images/seo/YOUR_BRAND_NAME_homepage.jpg
+
+# PAGE
 date: 2023-01-01T10:00:00+10:00
 name: Due
 post_title: Duo title
 thumbnail: assets/images/intro/landing-page-hero.jpg
-description: Pellentesque rhoncus sapien vel erat mattis, id tincidunt diam porttitor. Duis vestibulum.
+synopsis: Pellentesque rhoncus sapien vel erat mattis, id tincidunt diam porttitor. Duis vestibulum.
 # permalink: /work/due-custom
 # link: https://example.com/
 weight: 20

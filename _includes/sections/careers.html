@@ -13,7 +13,7 @@
                     {{ careers.section_label }}
                 </p>
                 {% endif %}
-                <h2 class="section-title">{{ careers.title }}</h2>
+                <h2 class="section-heading">{{ careers.section_heading }}</h2>
                 {% if careers.description %}<p>{{ careers.description }}</p>{% endif %}
             </div>
         </div>
@@ -43,6 +43,9 @@
                                         </span>
                                     </a>
                                 </h3>
+                                {% if item.synopsis %}
+                                  <p class="list-item-synopsis">{{ item.synopsis }}</p>
+                                {% endif %}
                             </div>
                         </li>
                         {% endfor %}

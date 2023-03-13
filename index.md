@@ -1,6 +1,12 @@
 ---
 layout: home
 
+# SEO
+title: Homepage
+description: write_a_HOMEPAGE_description_around_160_characters_long
+image: /assets/images/seo/YOUR_BRAND_NAME_homepage.jpg
+
+# _includes/sections
 sections:
     intro:    sections/intro.html
     work:     sections/work.html

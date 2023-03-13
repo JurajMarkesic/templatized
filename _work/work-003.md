@@ -1,9 +1,15 @@
 ---
+# SEO
+title: Tre
+description: write_a_description_around_160_characters_long_about_this_WORK_POST
+image: /assets/images/seo/YOUR_BRAND_NAME_homepage.jpg
+
+# PAGE
 date: 2023-01-01T10:00:00+10:00
 name: Tre
 post_title: Tre title
 thumbnail: assets/images/intro/landing-page-hero.jpg
-description: Vestibulum euismod felis vitae vestibulum iaculis. Suspendisse vitae metus.
+synopsis: Vestibulum euismod felis vitae vestibulum iaculis. Suspendisse vitae metus.
 # permalink: /work/tre-custom
 # link: https://example.com/
 weight: 30

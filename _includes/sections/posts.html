@@ -13,7 +13,7 @@
                     {{ posts.section_label }}
                 </p>
                 {% endif %}
-                <h2 class="section-title">{{ posts.title }}</h2>
+                <h2 class="section-heading">{{ posts.section_heading }}</h2>
                 {% if posts.description %}<p>{{ posts.description }}</p>{% endif %}
             </div>
         </div>
@@ -63,8 +63,8 @@
                                         {% if item.date %}
                                           <p class="list-item-date">{{ item.date | date_to_string: "ordinal", "US" }}</p>
                                         {% endif %}
-                                        {% if item.description %}
-                                          <p class="list-item-description">{{ item.description }}</p>
+                                        {% if item.synopsis %}
+                                          <p class="list-item-synopsis">{{ item.synopsis }}</p>
                                         {% endif %}
                                     </div>
                                 </div>

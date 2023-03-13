@@ -1,9 +1,15 @@
 ---
+# SEO
+title: Microsoft
+description: write_a_description_around_160_characters_long_about_this_WORK_POST
+image: /assets/images/seo/YOUR_BRAND_NAME_homepage.jpg
+
+# PAGE
 date: 2023-01-01T10:00:00+10:00
 name: Microsoft
 post_title: Microsoft title
 thumbnail: assets/images/intro/landing-page-hero.jpg
-description: Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.
+synopsis: Nam eu quam maximus, mattis nisl volutpat, euismod magna. Duis bibendum interdum placerat.
 # permalink: /work/microsoft-custom
 link: https://microsoft.com/
 weight: 60
