@@ -85,7 +85,7 @@ title: Example Company
 tagline: the_best_OCCUPATION_NAME_in_CITY_NAME_COUNTRY_NAME
 description: write_a_WEBSITE_description_around_160_characters_long # https://moz.com/learn/seo/meta-description
 # url: https://your-example-website.com
-url: https://ronca85.github.io
+url: https://templatized.vercel.app
 twitter:
   card: YOUR_TWITTER_HANDLE
   username: YOUR_TWITTER_SUMMARY
