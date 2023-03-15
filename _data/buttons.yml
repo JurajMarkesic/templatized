@@ -4,18 +4,18 @@ homepage_intro:
     #   link: about
     - style: primary
       label: Contact
-      link: contact
+      link: "/contact"
     # - style: 
     #   label: Contact
     #   link: contact
 homepage_services:
     - style: primary
       label: See all services
-      link: services
+      link: "/services"
 homepage_products:
     - style: primary
       label: See our products
-      link: products
+      link: "/products"
 homepage_team:
     - style: primary
       label: Meet the team
@@ -23,29 +23,29 @@ homepage_team:
 homepage_posts:
     - style: primary
       label: See all posts
-      link: blog
+      link: "/blog"
 homepage_careers:
     - style: primary
       label: See all jobs
-      link: careers
+      link: "/careers"
 about_intro:
     - style: primary
       label: Contact
-      link: contact
+      link: "/contact"
 
 services:
     - style: primary
       label: Back to services page
-      link: services
+      link: "/services"
 products:
     - style: primary
       label: Back to products page
-      link: products
+      link: "/products"
 team_member:
     - style: primary
       label: Back to team page
-      link: team
+      link: "/team"
 blog_post:
     - style: primary
       label: Back to blog posts
-      link: blog
+      link: "/blog"
