@@ -1,18 +1,19 @@
+google_analytics: aaaaaaaaaaaaaaaaaaa
+
 # lang: hr # overrides default en
 
 a11y_skip: Skip to main content
 
-company_name: "Kurian"
+company_name: "Example Company"
 copyright_label: "All right reserved"
 
-brand_name_description: "Kurian logo"
+brand_name_description: "Example Company logo"
 brand_logo: true # if false text will be displayed
 brand_svg: true # if false a png will be used
 
 home:
-  limit_features: 3
-  limit_services: 6
-  # limit_products: 4
+  limit_services: 4
+  limit_products: 4
   # limit_team: 4
   # limit_posts: 5
   # limit_careers: 3
@@ -39,37 +40,6 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-  # -
-  #   scope:
-  #     path: "services"
-  #     type: "pages"
-  #   values:
-  #     layout: "list"
-  # - scope:
-  #     path: "products"
-  #     type: "pages"
-  #   values:
-  #     layout: "list"
-  # - scope:
-  #     path: "team"
-  #     type: "pages"
-  #   values:
-  #     layout: "list"
-  # - scope:
-  #     path: "blog"
-  #     type: "pages"
-  #   values:
-  #     layout: "list"
-  # - scope:
-  #     path: "careers"
-  #     type: "pages"
-  #   values:
-  #     layout: "list"
-  # - scope:
-  #     path: "about"
-  #     type: "pages"
-  #   values:
-  #     layout: "about"
   -
     scope:
       path: ""
@@ -111,7 +81,7 @@ plugins:
 
 # Fallback SEO data
 # SEE GUIDE HERE: https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-title: Kurian
+title: Example Company
 tagline: the_best_OCCUPATION_NAME_in_CITY_NAME_COUNTRY_NAME
 description: write_a_WEBSITE_description_around_160_characters_long # https://moz.com/learn/seo/meta-description
 # url: https://your-example-website.com
@@ -125,7 +95,7 @@ twitter:
 #   admins:
 logo: /assets/images/seo/brand.png
 # social:
-#   name: Kurian
+#   name: Example Company
 #   links:
 #     - https://twitter.com/YOUR_TWITTER_HANDLE
 #     - https://www.facebook.com/YOUR_FACEBOOK_HANDLE

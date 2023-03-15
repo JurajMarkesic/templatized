@@ -1,7 +1,6 @@
 section_label: Latest news
 section_heading: Blog
 description: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibulum nisi. Ut a velit ut erat venenatis euismod. Nulla dictum maximus luctus. Vestibulum et quam efficitur, auctor metus id, iaculis massa. Nulla facilisi. Donec sodales lacinia metus.
-# description: # toggle description text if needed
 # layout_columns_2: true # if enabled, the list layout will change into a two column grid on larger screens.
 # layout_columns_3: true # if enabled, the list layout will change into a three column grid on larger screens.
 layout_columns_4: true # if enabled, the list layout will change into a four column grid on larger screens.

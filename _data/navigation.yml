@@ -3,81 +3,73 @@
   weight: 10
   
 - name: Company
-  # link: /about.html # submenu will be ignored if link is enabled exists
+  # link: "/about" # submenu will be ignored if link is enabled exists
   weight: 20
   submenu:
   - name: About us
-    link: /about.html # if submenu exists use link to page inside the submenu
+    link: "/about" # if submenu exists use link to page inside the submenu
     weight: 10
 
   - name: Team
-    link: /team.html
+    link: "/team"
     weight: 20
 
   - name: Contact
-    link: /contact.html
+    link: "/contact"
     weight: 30
 
 - name: Products
-  # link: "/aws-machine-images/"
+  # link: "/products/"
   weight: 30
   submenu:
-    - name: AWS Machine Images
-      link: "/aws-machine-images"
+    - name: Products
+      link: "/products"
       weight: 10
       
-    - name: Joomla! on LAMP Stack
-      link: "/aws-machine-images/joomla-on-lamp-stack"
+    - name: Example Product A
+      link: "/products/product-a"
       weight: 20
       
-    - name: Docker Host
-      link: "/aws-machine-images/docker-host/"
+    - name: Example Product B
+      link: "/products/product-b"
       weight: 30
       
-    - name: Nexus Repository Manager
-      link: "/aws-machine-images/nexus-repository-manager"
+    - name: Example Product C
+      link: "/products/product-c"
       weight: 40
-    
-- name: Services
-  # link: "/aws-professional-services"
-  weight: 40
-  submenu:
-    - name: AWS Professional Services
-      link: "/aws-professional-services"
-      weight: 10
       
-    - name: Content Management Hosting
-      link: "/aws-professional-services/content-management-hosting"
-      weight: 20
-      
-    - name: SmallBiz on the Cloud
-      link: "/aws-professional-services/smallbiz-on-the-cloud"
-      weight: 30
-      
-    - name: CI/CD Pipeline Cloud Resources
-      link: "/aws-professional-services/ci-cd-pipeline-cloud-resources"
-      weight: 40
-
-    - name: Public Cloud Machine Image
-      link: "/aws-professional-services/public-cloud-machine-image"
+    - name: Example Product D
+      link: "/products/product-d"
       weight: 50
 
-# - name: Resources
-#   # link: /resources.html
-#   weight: 50
-#   submenu:
-#     - name: Github
-#       link: https://github.com/kurianinc/ami-pub
-#       weight: 10
+- name: Services
+  # link: "/services"
+  weight: 40
+  submenu:
+    - name: Services
+      link: "/services"
+      weight: 10
       
-#     - name: Kurian DevOps Blog
-#       link: https://kurianinc.medium.com/
-#       weight: 20
+    - name: Example Service A
+      link: "/services/example-service-a"
+      weight: 20
       
-#     - name: AWS Marketplace Listing
-#       link: https://aws.amazon.com/marketplace/search/
-#       weight: 30
+    - name: Example Service B
+      link: "/services/example-service-b"
+      weight: 30
       
-#     - name: Facebook page
-#       link: https://www.facebook.com/kurianinc/
-#       weight: 40
+    - name: Example Service C
+      link: "/services/example-service-c"
+      weight: 40
+
+    - name: Example Service D
+      link: "/services/example-service-d"
+      weight: 50
+
+- name: Blog
+  link: "/blog/"
+  weight: 50
+
+- name: Support
+  link: "/support"
+  weight: 1000

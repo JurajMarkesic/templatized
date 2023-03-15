@@ -3,13 +3,12 @@ layout: list
 
 # SEO
 title: Services
-description: # write_a_SERVICES_description_around_160_characters_long
+description: write_a_SERVICES_description_around_160_characters_long
 image: /assets/images/seo/banner.png
 
 # PAGE
 heading: Services
-# synopsis: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibulum nisi. Ut a velit ut erat venenatis euismod. Nulla dictum maximus luctus. Vestibulum et quam efficitur, auctor metus id, iaculis massa. Nulla facilisi. Donec sodales lacinia metus.
-permalink: "/aws-professional-services"
+synopsis: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibulum nisi. Ut a velit ut erat venenatis euismod. Nulla dictum maximus luctus. Vestibulum et quam efficitur, auctor metus id, iaculis massa. Nulla facilisi. Donec sodales lacinia metus.
 ---
 
 {% assign services = site.data.section-services %}
@@ -62,6 +61,9 @@ permalink: "/aws-professional-services"
                                         </span>
                                     </a>
                                 </h3>
+                                {% if item.synopsis %}
+                                  <p class="list-item-synopsis">{{ item.synopsis }}</p>
+                                {% endif %}
                                 <p class="list-item-synopsis is-excerpt">{{ item.content | markdownify | strip_html | truncate: 100 }}</p>
                             </div>
                         </div>

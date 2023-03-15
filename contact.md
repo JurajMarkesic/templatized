@@ -1,15 +1,19 @@
 ---
 # SEO
 title: Contact us
-description: # write_a_CONTACT_description_around_160_characters_long
+description: write_a_CONTACT_description_around_160_characters_long
 image: /assets/images/seo/banner.png
 
 # PAGE
 heading: Contact
 ---
 
-If you want to engage us or require assistance with using our services, please contact using one of the following options.
+## Who we are
 
-E-Mail: [contact@kurianinc.com](mailto:contact@kurianinc.com)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-Report issues with AWS machine images by Kurian: [https://github.com/kurianinc/ami-pub/issues/new](https://github.com/kurianinc/ami-pub/issues/new)
+## Support
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+E-Mail: [contact@example.com](mailto:contact@example.com)

@@ -65,9 +65,7 @@
                                                 </span>
                                             </a>
                                         </h3>
-                                        {% if item.synopsis %}
-                                          <p class="list-item-synopsis">{{ item.synopsis }}</p>
-                                        {% endif %}
+                                        <p class="list-item-synopsis is-excerpt">{{ item.content | markdownify | strip_html | truncate: 100 }}</p>
                                     </div>
                                 </div>
                             </div>

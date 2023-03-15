@@ -1,6 +1,6 @@
 section_label: Welcome to
-section_heading: Kurian
+section_heading: Example Company
 section_heading_colored: true
 # tagline: New way to do ABC and get more out of your XYZ
 description: Provides building blocks of Cloud Infrastructure and Devops
-image: assets/images/features/hero.png
+image: assets/images/intro/city.jpg

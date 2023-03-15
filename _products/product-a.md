@@ -1,0 +1,97 @@
+---
+# SEO
+title: Example product A
+description: write_a_description_around_160_characters_long_about_this_PRODUCT_POST
+image: /assets/images/seo/banner.png
+
+# PAGE
+date: 2023-01-01T10:00:00+10:00
+name: Example product A
+post_title: Example product A
+thumbnail: assets/images/products/product-a/thumbnail.jpg
+featured_image: assets/images/products/product-a/city-a.jpg
+permalink: "/products/product-a/"
+# link: https://example.com/
+weight: 10
+---
+
+Through the power of a bespoke WordPress-powered extension, selected streamers now have the ability to add interactive, customizable shopping experiences to their streams.
+
+### Services Provided
+
+*   Product & Engineering Discovery
+*   Custom Plugin Development
+*   User Focused Design
+*   Ongoing Support
+
+**Challenge:** Our partner promotes products through broadcasts on its brand-owned channels. Their team wanted to provide an easy way for viewers to access those products directly, without having to leave the stream to search for them.
+
+**Solution:** XWP’s design and development expertise to create a WordPress-powered stream extension, paired with [WP Engine](https://wpengine.com/partners/agencies/xwp/)’s fully managed WordPress hosting platform
+
+**Results:** Our team created a WordPress-powered extension built to our partner’s internal specifications, allowing viewers to browse featured product listings directly from the live stream. It premiered on-stream to an audience of more than 58,000 viewers. 
+
+![](https://xwp.co/wp-content/uploads/2023/02/Working-With-The-Worlds-Largest-Livestream-Platform.png)
+
+Working With The World’s Largest Livestream Platform
+----------------------------------------------------
+
+Our partner is the world’s largest and most popular live streaming platform, with streams covering everything from gaming and music to arts and “in real life” streams.
+
+Average combined viewership on the platform is over 2.5 Million at any given moment, with as many as 8 million unique creators streaming each month, more than 31 million average daily visitors, and more than 1.3 trillion minutes of streams watched in 2021.
+
+### New Partnerships, New Reach
+
+On one of their brand channels, our partners review and suggest products live on stream. This is primarily done through an interactive variety show with entertainment segments and shoppable items from sponsored brands.
+
+These broadcasts opened the door to new opportunities to work with brands to design bespoke game show-esque segments and provide a new way for them to authentically connect with online communities and showcase their products.
+
+Sensing an opportunity to take these broadcasts to the next level, our partners got in touch with our team. They wanted to craft an easily manageable but highly customizable extension that would allow their web team to quickly and easily load product listings in real-time. The launch date was set in line with an upcoming promotional event being held by their main retail partner.
+
+![](https://xwp.co/wp-content/uploads/2023/02/Outstanding-Results-A-Lasting-Impact-on-Streaming-1024x577.png)
+
+Building a Custom WordPress-Powered Solution
+--------------------------------------------
+
+After a thorough and highly collaborative [discovery process](https://xwp.co/why-discovery-is-crucial-to-winning-the-race/), our team of performance experts created a stream extension (built to our partner’s internal guidelines), managed by a WordPress-powered backend, that features a number of truly powerful integrations.
+
+Through the new WordPress-managed backend, our partner’s web teams are able to prepare product collections and customize how they display on the in-stream overlay. Product collections will then be presented on stream as carousels.
+
+As part of the package, we also installed an analytics panel that allowed web teams to obtain data on clicks of the carousel. This means they can constantly improve their output by reviewing and optimizing their listings for future broadcasts. This was paired with extensive documentation and video walkthroughs from our team that enable anybody to get to grips with the new tool quickly. 
+
+The entire shopping extension package was delivered with a tight deadline, so that we could launch in time for a large annual promotion at our partner’s main retail partners—but that didn’t mean the finished product was any less robust. All deliverables underwent extensive QA testing from XWP’s in-house team, including load tests of up to 750k concurrent users with no issues and a simulated test with 1 million users which passed with flying colors.
+
+[Looking to empower your web teams with custom tooling from XWP? Check out our services.](https://xwp.co/services/)
+
+![](https://xwp.co/wp-content/uploads/2023/02/Truly-Powerful-Integrations.png)
+
+Truly Powerful Integrations
+---------------------------
+
+### Product Integrations
+
+We also built a custom solution that allows our partners to import product listings from multiple Amazon markets (Amazon Aus, Amazon US, Amazon BR, etc.) through Direct integration with [Amazon’s product listing API](https://webservices.amazon.com/paapi5/documentation/search-items.html).
+
+This allows our partner’s web staff to input Amazon Standard Identification Numbers (ASINs). These unique blocks of 10 letters and/or numbers are used to identify items, creating a seamless experience for viewers that choose to purchase promoted products through the platform and giving them the freedom to market to stream viewers in new regions as the product evolves.
+
+But perhaps one of the most valuable parts of this is that the web team doesn’t have to manually add products during the stream. Instead, attributes such as product data, images, availability, URL and price can be fetched automatically—they even refresh for the latest data every few minutes, saving valuable time and reducing the risk of human error.
+
+But of course, not all product partnerships will be with Amazon-based retailers, so, our team maintained the ability for our partner’s internal teams to manually create product listings in the case they exist on a third-party site.
+
+### Technical Integrations
+
+Like everything we do at XWP, [performance](https://xwp.co/the-four-pillars-of-website-performance/) was kept central to our vision for the solution. By working with WP Engine, we were able to easily provide a boost to backend performance through some clever technical integrations.
+
+The first was WP Engine’s [Application Performance Monitoring](https://wpengine.com/support/performance-monitoring-faq/), which provides code-level visibility required for web teams to troubleshoot problems more quickly, optimize the WordPress experience, and develop the most agile, performant extension possible.
+
+We also integrated the WordPress back end with [Smart Plugin Manager](https://wpengine.com/support/smart-plugin-manager/) to keep plugins up to date while also ensuring those updates don’t negatively impact the end-user experience. 
+
+![](https://xwp.co/wp-content/uploads/2023/02/Building-a-Custom-WordPress-Powered-Solution.png)
+
+Outstanding Results & A Lasting Impact on Streaming
+---------------------------------------------------
+
+We launched the extension live to an audience of 58,000 viewers—and it worked perfectly! The WP Engine-hosted custom WordPress backend was well-received by our partner’s web team, who had played a crucial role throughout the product definition and building phases.
+
+One of the biggest results of this project was the potential impact it could have on the live-streaming industry. With almost 548 billion hours of live stream content [being viewed each year](https://www.statista.com/statistics/1285501/global-time-spent-live-streaming-apps/#:~:text=In%202020%2C%20global%20users%20have,from%20users%20worldwide%20in%202021.), the shopping extension represents the first exploration of an entirely new form of interactivity—pairing large engaged streaming communities with high-relevancy brands and products. 
+
+Now, content creators are able to more easily provide their growing audience with links to relevant products without interrupting the streaming experience, and do so safely and securely thanks to team XWP and WP Engine.

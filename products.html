@@ -2,14 +2,13 @@
 layout: list
 
 # SEO
-title: AWS Machine Images
-description: # write_a_PRODUCTS_description_around_160_characters_long
+title: Products
+description: write_a_PRODUCTS_description_around_160_characters_long
 image: /assets/images/seo/banner.png
 
 # PAGE
-heading: AWS Machine Images
-synopsis: Currently we offer ready-to-use, production quality AMIs that are built on a wide range of Linux platforms updated with latest OS and security patches. The supported OS platforms are listed on the product pages.
-permalink: "/aws-machine-images/"
+heading: Products
+synopsis: Pellentesque ullamcorper porttitor pretium. Pellentesque ut vestibulum nisi. Ut a velit ut erat venenatis euismod. Nulla dictum maximus luctus. Vestibulum et quam efficitur, auctor metus id, iaculis massa. Nulla facilisi. Donec sodales lacinia metus.
 ---
 
 {% assign products = site.data.section-products %}
@@ -62,9 +61,7 @@ permalink: "/aws-machine-images/"
                                         </span>
                                     </a>
                                 </h3>
-                                {% if item.synopsis %}
-                                  <p class="list-item-synopsis">{{ item.synopsis }}</p>
-                                {% endif %}
+                                <p class="list-item-synopsis is-excerpt">{{ item.content | markdownify | strip_html | truncate: 100 }}</p>
                             </div>
                         </div>
                     </div>

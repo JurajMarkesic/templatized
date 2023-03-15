@@ -59,7 +59,6 @@ css:
     # button_outline_hover_color: '#007aff'
   
     section_intro_bg: 'white'
-    section_features_bg: '#eff7ff'
     # section_services_bg: '#d0d'
     # section_products_bg: '#f04'
     # section_team_bg: '#d0d'
@@ -70,7 +69,6 @@ css:
     section_intro_heading_color: '#007aff'
     
     # section_intro_text_color: '#0062cc' # you can override body text color (ink) for each section on the homepage
-    # section_features_text_color: '#0062cc'
     # section_services_text_color: '#0062cc'
     # section_products_text_color: '#0062cc'
     # section_team_text_color: '#0062cc'
