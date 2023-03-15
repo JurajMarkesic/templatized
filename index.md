@@ -4,7 +4,7 @@ layout: home
 # SEO
 title: Homepage
 description: write_a_HOMEPAGE_description_around_160_characters_long
-image: /assets/images/seo/banner.png
+image: /assets/images/seo/share-card.png
 
 # _includes/sections
 sections:

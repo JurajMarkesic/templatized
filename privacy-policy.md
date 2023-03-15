@@ -2,7 +2,7 @@
 # SEO
 title: Privacy policy
 description: write_a_PRIVACY_POLICY_description_around_160_characters_long
-image: /assets/images/seo/banner.png
+image: /assets/images/seo/share-card.png
 
 # PAGE
 heading: Privacy policy
