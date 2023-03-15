@@ -2,13 +2,13 @@
 # SEO
 title: Alice Anderson # if disabled, the filename will be displayed
 description: write_a_description_around_160_characters_long_about_this_TEAM_MEMBER
-image: /assets/images/seo/alice.jpg
+image: /assets/images/seo/team/alice.jpg
 
 # PAGE
 date: 2023-01-01T10:00:00+10:00
 name: Alice Anderson # used as name in the list
 post_title: Alice Anderson # used in the post heading
-thumbnail: assets/images/team/member001.jpg
+thumbnail: assets/images/team/alice.jpg
 synopsis: Pellentesque sagittis fermentum augue, eu egestas leo augue.
 # permalink: "/team/alice"
 link: https://linkedin.com/EXAMPLE_USERNAME

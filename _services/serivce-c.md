@@ -2,7 +2,7 @@
 # SEO
 title: Example Service C
 description: write_a_description_around_160_characters_long_about_this_SERVICE
-image: /assets/images/seo/banner.png
+image: /assets/images/seo/services/service-c/city-c.jpg
 
 # PAGE
 date: 2023-01-01T10:00:00+10:00

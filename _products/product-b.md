@@ -2,7 +2,7 @@
 # SEO
 title: Example product B
 description: write_a_description_around_160_characters_long_about_this_PRODUCT_POST
-image: /assets/images/seo/banner.png
+image: /assets/images/seo/products/product-b/city-b.jpg
 
 # PAGE
 date: 2023-01-01T10:00:00+10:00

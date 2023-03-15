@@ -2,13 +2,13 @@
 # SEO
 title: Dr. Derek Davis
 description: write_a_description_around_160_characters_long_about_this_TEAM_MEMBER
-# image: /assets/images/seo/derek.jpg
+image: /assets/images/seo/team/derek.jpg
 
 # PAGE
 date: 2023-01-01T10:00:00+10:00
 name: Dr. Derek Davis
 post_title: Dr. Derek Davis
-thumbnail: assets/images/team/member004.jpg
+thumbnail: assets/images/team/derek.jpg
 synopsis: Pellentesque sagittis fermentum augue, eu egestas leo augue.
 permalink: "/team/derek"
 # link: https://example.com/

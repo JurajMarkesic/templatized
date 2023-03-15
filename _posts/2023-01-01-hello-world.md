@@ -2,7 +2,7 @@
 # SEO
 title: Hello world
 description: write_a_description_around_160_characters_long_about_this_POST
-image: /assets/images/seo/banner.png
+image: /assets/images/seo/posts/post-a/city-a.jpg
 
 # PAGE
 name: Hello world
