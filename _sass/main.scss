@@ -93,3 +93,15 @@ html, body, .body-content, .page-content {
         width: var(--footer-brand-link-width);
     }
 }
+
+.post-content {
+    img, iframe {
+        width: 100%;
+    }
+    a {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        display: inline-block;
+    }
+}

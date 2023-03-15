@@ -9,7 +9,7 @@ date: 2023-01-01T10:00:00+10:00
 name: Example Service A
 post_title: Example Service A
 thumbnail: assets/images/services/service-a/thumbnail.jpg
-featured_image: assets/images/services/service-d/city-d.jpg
+featured_image: assets/images/services/service-a/city-a.jpg
 permalink: "/services/example-service-a" # permalink is ignored if link is enabled
 # link: https://example.com/
 weight: 10

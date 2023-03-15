@@ -2,28 +2,52 @@
 layout: default
 ---
 
+{% assign services = site.data.section-services %}
 {% assign buttons = site.data.buttons.services %}
 
 <div class="page-content">
     <main class="page-layout">
-        {% if page.post_title %}
         <section class="page-intro">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
+                        {% if page.post_title %}
                         <h1 class="section-heading">{{ page.post_title }}</h1>
+                        {% endif %}
+                        {% if page.date %}
                         <p>{{ page.date | date_to_string: "ordinal", "US" }}</p>
+                        {% endif %}
+                        {% if page.featured_image %}
+                        <div class="page-featured-image">
+                            <div class="media-rounded-small o-ratio 
+                                {% if services.images_ratio == '7:4' %}
+                                o-ratio-7:4
+                                {% elsif services.images_ratio == '5:4' %}
+                                o-ratio-5:4
+                                {% elsif services.images_ratio == '5:3' %}
+                                o-ratio-5:3
+                                {% elsif services.images_ratio == '4:3' %}
+                                o-ratio-4:3
+                                {% elsif services.images_ratio == '3:2' %}
+                                o-ratio-3:2
+                                {% endif %}
+                            ">
+                                <img draggable="false" alt="{{ page.name }}" src="{{ page.featured_image | relative_url }}" />
+                            </div>
+                        </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
         </section>
-        {% endif %}
         <div {% if site.a11y_skip %}id="main-content"{% endif %}></div>
         <section class="page-body">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        {{ content }}
+                        <div class="post-content">
+                            {{ content }}
+                        </div>
                     </div>
                 </div>
             </div>
