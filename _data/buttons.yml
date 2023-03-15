@@ -4,7 +4,7 @@ homepage_intro:
     #   link: about
     - style: primary
       label: Contact
-      link: contact
+      link: "/contact"
     # - style: 
     #   label: Contact
     #   link: contact
@@ -23,15 +23,15 @@ homepage_team:
 homepage_posts:
     - style: primary
       label: See all posts
-      link: blog
+      link: "/blog"
 homepage_careers:
     - style: primary
       label: See all jobs
-      link: careers
+      link: "/careers"
 about_intro:
     - style: primary
       label: Contact
-      link: contact
+      link: "/contact"
 
 services:
     - style: primary
@@ -44,8 +44,8 @@ products:
 team_member:
     - style: primary
       label: Back to team page
-      link: team
+      link: "/team"
 blog_post:
     - style: primary
       label: Back to blog posts
-      link: blog
+      link: "/blog"

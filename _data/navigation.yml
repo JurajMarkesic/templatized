@@ -19,7 +19,7 @@
     weight: 30
 
 - name: Products
-  # link: "/products/"
+  # link: "/products"
   weight: 30
   submenu:
     - name: Products
@@ -67,7 +67,7 @@
       weight: 50
 
 - name: Blog
-  link: "/blog/"
+  link: "/blog"
   weight: 50
 
 - name: Support
