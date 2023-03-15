@@ -2,9 +2,9 @@ css:
     selection_bg: '#0056b3'
     selection_text: '#eff7ff'
 
-    theme_color_meta_mask: '#eff7ff'
-    theme_color_meta_tile: '#eff7ff'
-    theme_color_meta_name: '#eff7ff'
+    theme_color_meta_mask: '#0062cc'
+    theme_color_meta_tile: '#0062cc'
+    theme_color_meta_name: '#0062cc'
 
     theme_color_main: '#0062cc' # use for accents like buttons
 
